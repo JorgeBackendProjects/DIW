@@ -15,6 +15,7 @@
     </head>
     <body>
 
+        <!-- Etiquetas de formato de texto (abbr: pasar ratón y ver texto flotante)-->
         <pre><h1><abbr title="Esta página es muy interesante">Lorem ipsum dolor sit amet, consectetur adipis&shy;cing elit,</h1></abbr> 
             <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong> 
             <em><a href="#oye">Ut tellus elementum sagittis vitae.</a></em> 
@@ -30,15 +31,18 @@
             Dictum varius duis at consectetur lorem donec.
         </pre>
   
+        <!-- Subíndice y superíndice (matemático)-->
         <sup>3</sup>
         <sub>2<sub>1<sub>0patatero</sub></sub></sub>
 
         <br>
 
+        <!-- Imagen -->
         <img src="./iconos/131502_god_problem_evil_red_hell_icon.png" width="500px" title="Demonio paciente" alt="Demonio paciente"/>
 
         <br>
 
+        <!-- Mapear ciertas posiciones en una imagen para redirigir -->
         <map name="mapita">
             <area shape="rect" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb83atOZw5qzzs5swzMyUfES1NKAmEv1g0OgSFyVgtcQ&s" 
             coords="371, 247, 601, 12">
@@ -46,17 +50,88 @@
             <area shape="circle" href="https://img.freepik.com/vector-premium/fondo-patron-silueta-circulos-colores-sobre-fondo-blanco_391563-159.jpg?w=740"
             coords="733, 126, 60">
 
-            <area shape="poly" href="" coords=""
+            <area shape="poly" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Polygon_types_es.svg/285px-Polygon_types_es.svg.png" 
+            coords="209, 469, 198, 421, 217, 351, 277, 332, 285, 300, 329, 294, 669, 291, 696, 308, 709, 328, 778, 347, 788, 391, 786, 463">
         </map>
 
+        <!-- Imagen -->
         <img src="./imagenes/room.jpg" title="HABITANSIA" usemap="#mapita"/>
 
         <br>
+
+        <!-- Indicar condiciones en píxeles a una imagen para redimensionarla. <img> es el default.-->
+        <picture>
+            <source media="(min-width:1200px)" width="950px" srcset="./imagenes/Lago2000.jpg">
+            <source media="(min-width:100px)" width="600px" srcset="./imagenes/Lago1000.jpg">
+            <img src="./imagenes/Lago300.png" alt="Foto pequeña">
+        </picture>
         
+        <br>
+
+        <!-- Enlaces -->
         <a type="x-icon" href="./iconos/iconoCorazon.png" download>DESCARGAR MI CORAZÓN</a>
         <a target="blank" href="https://www.iconfinder.com/icons/131502/god_problem_evil_red_hell_fire_devil_icon?coming-from=related-results">Iconos</a>
         <a href="https://www.istockphoto.com/es/search/search-by-asset?affiliateredirect=true&assetid=1337501976&assettype=image&cid=IS&clickid=xW9X-l3WoxyPWjLz67xZCWaxUkFWVkV9GW%3ATQ00&irgwc=1&irpid=1412025&utm_content=258824&utm_medium=affiliate&utm_source=Iconfinder+ApS&utm_term=ADP">Imágenes de fantasmitas</a>
 
+        <!-- Figure para añadir figcaption a una imagen -->
+        <figure>
+            <picture>
+                <source media="(min-width:1200px)" width="950px" srcset="./imagenes/fondo.jpg">
+                <source media="(min-width:100px)" width="600px" srcset="./imagenes/fondo1000.jpg">
+                <img src="./imagenes/Lago300.png" alt="Foto pequeña">
+            </picture>
+            <figcaption>Paisaje Internacional</figcaption>
+        </figure>
+
+        <!-- Enlace interno -->
         <p id="oye">Aqui se llega mediante el enlace interno href="#'id'"</p>
+    
+        <!-- Listas -->
+        <ol start="3">
+            <li>Propiedades de CSS</li>
+            <ol reversed type="a">
+                <li>Selectores</li>
+                <li>Reglas</li>
+                <li>Formato</li>
+            </ol>
+            <li>Posicionamiento de elementos</li>
+            <ul>
+                <li>Atributo position</li>
+                <li>Z-index</li>
+                <li>float</li>
+            </ul>
+        </ol>
+
+        <!-- Lista con descripción-->
+        <p>
+            <dt>Patata</dt>
+                <dd>Hortaliza</dd>
+            <dt>Tomate</dt>
+                <dd>Fruta</dd>
+            <dt>Limón</dt>
+                <dd>Fruta</dd>
+        </p>
+
+        <!-- Resaltar parte del texto -->
+        <p>
+            <blockquote>Elementos de lista</blockquote>
+            <blockquote>Ligeramente adentrados respecto al resto del texto</blockquote>
+            <blockquote>Puede interpretarse como listas, técnicamente</blockquote>
+        </p>
+
+        <!-- Desplegable -->
+        <p>
+            <details>
+                <summary>Despleguemos los fantásticos detalles</summary>
+                    <ul>
+                        <li>Qué detalle tan interesante</li>
+                        <li>Por favor, cuéntame más</li>
+                        <li>Todo esto es absolutamente sensacional</li>
+                    </ul>
+                <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-1200x675.jpg">
+            </details>
+        </p>
+
+        
     </body>
 </html>
