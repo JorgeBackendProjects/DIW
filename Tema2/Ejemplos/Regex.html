@@ -37,7 +37,22 @@
 
                 <p>
                     <label for="exp06">Dos dígitos seguidos de una o dos vocales minúsculas, siendo la última de ellas una de estas: a/e/o</label>
-                    <input name="exp06" id="exp06" type="text" size="10" pattern="[0-9]{2}[aeiou]{1,2}">
+                    <input name="exp06" id="exp06" type="text" size="10" pattern="[0-9]{2}[aeiou]?[aeo]">
+                </p>
+
+                <p>
+                    <label for="exp07">Cadena de caracteres en la que solo se admiten mayúsculas y minúsculas. Cada letra minúscula si aparece debe ir precedida por una mayúscula:</label>
+                    <input name="exp07" id="exp07" type="text" size="10" pattern="([A-Z]+[a-z]?)+">
+                </p>
+
+                <p>
+                    <label for="exp08">Direcciones IP privadas de clave B: </label>
+                    <input name="exp08" id="exp08" type="text" size="10" pattern="([1][7][2]\.) (1[6-9] | 2[0-9] | 3[0-1]) (\. ([0-9]) | ([1-9][0-9]) | (1[0-9]{2}) | (2[0-4][0-9] | 25[0-5])){2}">
+                </p>
+
+                <p>
+                    <label for="exp09">Dirección MAC de una tarjeta de red:</label>
+                    <input name="exp09" id="exp09" type="text" size="10" pattern="([0-9A-F]{2}:){5}[0-9A-F]{2}">
                 </p>
 
             </fieldset>
@@ -66,6 +81,20 @@
         . => Cualquier caracter una vez.
         ^ => Operador NOT.
         | => Operador OR.
+
+    Abreviaturas =>
+        \d => [0-9].
+        \D => [^0-9].
+        \w => [0-9 A-Z a-z _].
+        \W => (ñ, tildes y el resto de caracteres).
+        \s => Espacio en blanco/tabulación.
+        \S => Cualquier caracter distinto al espacio en blanco o tabulación.
+    
+    ASERCIONES =>
+        
+
+
+
     -->
         
     </body>
