@@ -17,7 +17,7 @@
 
                 <p>
                     <label for="exp02">Tres números pares seguidos de dos números impares:</label>
-                    <input name="exp02" id="exp02" type="text" size="10" pattern="[02468]{3}[13579]{2}">
+                    <input name="exp02" id="exp02" type="text" size="10" pattern="[02468]{3}[13579]{2}" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
 
                 <p>
@@ -55,6 +55,35 @@
                     <input name="exp09" id="exp09" type="text" size="10" pattern="([0-9A-F]{2}:){5}[0-9A-F]{2}">
                 </p>
 
+                <p>
+                    <label for="exp10"></label>
+                    <input name="exp10" id="exp10" type="text" size="10" pattern="">
+                </p>
+
+                <p>
+                    <label for="exp11"></label>
+                    <input name="exp11" id="exp11" type="text" size="10" pattern="">
+                </p>
+
+                <p>
+                    <label for="exp12"></label>
+                    <input name="exp12" id="exp12" type="text" size="10" pattern="">
+                </p>
+
+                <p>
+                    <label for="exp13"></label>
+                    <input name="exp13" id="exp13" type="text" size="10" pattern="">
+                </p>
+
+                <p>
+                    <label for="exp14">Cadena de 3 dígitos entre 1 y 5 en la que cada dígito es menor o igual que el siguiente: 134, 244, 223</label>
+                    <input name="exp14" id="exp14" type="text" size="10" pattern="(1*2*3*4*5*){3}" oninvalid="alert('Error: Cada dígito debe ser menor o igual que el siguiente:');">
+                </p>
+
+                <p>
+                    <label for="exp15">Expresión para comparar un párrafo de texto con puntos y seguido (opcionales), comas (opcionales) y punto final. Después de cada punto y seguido se empieza con mayúscula.</label>
+                    <input name="exp15" id="exp15" type="text" size="10" pattern="[A-Za-z]+((\.[A-Z])|(\,[a-z]))*\.{1,}">
+                </p>
             </fieldset>
             
             <p>
