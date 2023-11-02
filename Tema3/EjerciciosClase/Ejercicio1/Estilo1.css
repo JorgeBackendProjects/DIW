@@ -1,0 +1,46 @@
+*{
+    background-color: salmon;
+}
+
+h1, h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section p{
+    color: purple;
+}
+
+/*Solo hijos directos.*/
+section > span{ 
+    color: limegreen;
+}
+
+/*Aplicar a los elementos de la clase.*/
+/*h1*/.primerParrafo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+#especial{
+    color: royalblue;
+}
+
+/*Hermanos de h1 en la clase.
+.seccionImportante h1 ~ p{
+    text-decoration: overline;
+}
+*/
+
+/*Solo a los párrafos hermanos directos de h2 que aparezcan luego de h2*/
+.seccionImportante h2 + p{
+    text-decoration: overline;
+}
+
+
+section :first-child{
+    text-align: center;
+}
+
+.seccionImportante p:nth-child(odd){
+    text-align: center;
+}
