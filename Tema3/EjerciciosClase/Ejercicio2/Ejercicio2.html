@@ -20,12 +20,17 @@
 
                 <p>
                     <label>Dirección</label>
-                    <input type="text" placeholder="Escribe tu dirección" size="40">
+                    <input type="text" placeholder="Escribe tu dirección" size="40" readonly>
                 </p>
             
                 <p>
                     <label>Teléfono</label>
-                    <input type="text" placeholder="Escribe tu número de teléfono" size="40">
+                    <input type="number" placeholder="Escribe tu número de teléfono" min="1" max="999999999" size="40">
+                </p>
+
+                <p>
+                    <label>Código postal</label>
+                    <input type="number" placeholder="Escribe tu código postal" size="40" pattern="(0[1-9]|[1-4][0-9]|5[0-2])[0-9]{3}">
                 </p>
             </fieldset>
 
@@ -43,13 +48,40 @@
                 </p>
 
                 <p>
+                    <label>Trabajando</label>
+                    <input type="checkbox">Si</input>
+                    <input type="checkbox">No</input>
+                    <input type="checkbox">Soy un vago</input>
+                    <input type="checkbox">Soy un nini</input>
+                    <input type="checkbox">No tengo ganas</input>
+                    <input type="checkbox">Si pero no voy</input>
+                </p>
+
+                <p>
+                    <label>Trabajando<input type="checkbox">Si</input></label>
+                    
+                </p>
+
+                <p>
+                    <label>Trabajando</label>
+                    <input type="checkbox">Si</input>
+                </p>
+
+                <p>
+                    <label>Trabajando
+                        <input type="radio">Si</input>
+                        <input type="radio">No</input>
+                    </label>
+                    
+                </p>
+
+                <p>
                     <label>Dirección</label>
                     <input type="text" placeholder="Escribe tu dirección" size="40">
                 </p>
             
                 <p>
-                    <label>Teléfono</label>
-                    <input type="text" placeholder="Escribe tu número de teléfono" size="40">
+                    <label>Teléfono<input type="text" placeholder="Escribe tu número de teléfono" size="40"></label>
                 </p>
             </fieldset>
         </form>

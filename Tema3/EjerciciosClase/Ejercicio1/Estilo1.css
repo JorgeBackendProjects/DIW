@@ -44,3 +44,22 @@ section :first-child{
 .seccionImportante p:nth-child(odd){
     text-align: center;
 }
+
+h1:active{
+    color: yellowgreen;
+}
+
+a:link{
+    font-weight: bold;
+    color: red;
+}
+
+a:visited{
+    font-weight: lighter;
+    text-decoration: none;
+    color: papayawhip;
+}
+
+section p:first-of-type::first-line{
+    background-color: aqua;
+}

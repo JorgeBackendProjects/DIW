@@ -1,9 +1,49 @@
-input[required]{
+label :checked{
+    color: greenyellow;
+    text-decoration: underline;
+    box-shadow: 10px 10px greenyellow;
+}
+
+input:focus{
+    background-color: rgb(114, 151, 39);
+    border-color: black;
+}
+
+input:required{
+    border-color: yellowgreen;
+}
+
+input[type="number"]:in-range{
+    background-color: aqua;
+}
+
+input[type="number"]:out-of-range{
     background-color: red;
 }
 
-input[checked][type="checkbox"]{
+input[type="number"]:valid{
+    border-color: aqua;
+}
+
+input[type="number"]:invalid{
+    border-color: red;
+}
+
+input:read-only{
+    color: aliceblue;
+    background-color: black;
+}
+
+label:has(input[type="radio"]:default){
     color: greenyellow;
     box-shadow: 10px 10px greenyellow;
 }
+
+p:nth-child(2)::first-letter{
+    font-size: 36pt;
+    color: rebeccapurple;
+}
+/*label:focus-within{
+    background-color: firebrick;
+}*/
 
