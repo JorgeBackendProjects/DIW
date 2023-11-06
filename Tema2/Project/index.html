@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice 2</title>
+    </head>
+    <body>
+        <h1>Please input your data</h1>
+
+        <form name="firstForm" action="#" method="get">
+            <!--First section-->
+            <fieldset>
+                <legend>Personal information</legend>
+
+                <fieldset>        
+                    <legend>Title:</legend>
+
+                    <label><input type="radio" name="title" value="Ms.">Ms.</label>
+                    <label><input type="radio" name="title" value="Mrs.">Mrs.</label>
+                    <label><input type="radio" name="title" value="Mr.">Mr.</label>
+                    <label><input type="radio" name="title" value="Dr.">Dr.</label>
+                    <label><input type="radio" name="title" value="Mx.">Mx.</label>
+                    <label><input type="radio" name="title" value="Ind." checked>Ind.</label>
+                </fieldset>
+
+                <p>
+                    <label for="name">First Name: </label>
+                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-]+">
+
+                    <label for="surname">Last Name: </label>
+                    <input type="text" name="surname" id="surname" required pattern="[A-Za-z\-]+">
+                </p>
+
+                <p>
+                    <label for="birthdate">Birthdate: </label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                </p>
+
+                <p>
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id="city" pattern="[A-Za-z\-]+">
+
+                    <label for="region">Region: </label>
+                    <select name="region" id="region">
+                        
+                        <option value="" hidden selected>--Please select--</option>
+
+                        <optgroup label="North">
+                            <option value="Durham">Durham</option>
+                            <option value="Northumberland">Northumberland</option>
+                            <option value="Lancashire">Lancashire</option>
+                        </optgroup>
+
+                        <optgroup label="Center">
+                            <option value="Yorkshire">Yorkshire</option>
+                            <option value="Chesire">Chesire</option>
+                            <option value="Rutland">Rutland</option>
+                            <option value="West Midlands">West Midlands</option>
+                        </optgroup>
+
+                        <optgroup label="South">
+                            <option value="Kent">Kent</option>
+                            <option value="Essex">Essex</option>
+                            <option value="Dorset">Dorset</option>
+                            <option value="Devon">Devon</option>
+                            <option value="Cornwall">Cornwall</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="postcode">Postcode: </label>
+                    <input type="text" name="postcode" id="postcode" pattern="" maxlength="5">
+
+                    <label for="regionalCode">Regional code: </label>
+                    <input type="text" name="regionalCode" id="regionalCode" pattern="(^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$)" minlength="5" maxlength="7">
+                </p>
+            </fieldset>
+
+            <!--Second section-->
+            <fieldset>
+                <legend>Subscription information</legend>
+
+                <p>
+                    <label for="subscritionType">Subscrition type: </label>
+                    <input type="text" name="subscritionType" id="subscritionType" required>
+
+                    <label for="subscritionCode">Subscrition code: </label>
+                    <input type="text" name="subscritionCode" id="subscritionCode" >
+                </p>
+
+                <fieldset>        
+                    <legend>Areas of interest:</legend>
+
+                    <label><input type="checkbox" name="option 1" value="Science">Science</label>
+                    <label><input type="checkbox" name="option 2" value="Arts and Crafts">Arts and Crafts</label>
+                    <label><input type="checkbox" name="option 3" value="Literature">Literature</label>
+                    <label><input type="checkbox" name="option 4" value="Technology and Gadgets">Technology and Gadgets</label>
+                    <label><input type="checkbox" name="option 5" value="Self Improvement">Self Improvement</label>
+                </fieldset>
+
+                <p>
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" id="username" placeholder="Valid username" >
+
+                    <label for="password">Password: </label>
+                    <input type="text" name="password" id="password" placeholder="Password" required>
+                </p>
+            </fieldset>
+            
+            <p>
+                <input type="submit" name="submit" id="submit" value="Send data">
+            </p>
+            
+        </form>
+    </body>
+</html>
