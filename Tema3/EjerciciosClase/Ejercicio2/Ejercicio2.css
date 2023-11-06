@@ -34,6 +34,23 @@ input:read-only{
     background-color: black;
 }
 
+/*
+/*Seleccionar label con hermano directo input required.
+label:has(+ input:required)::before{
+    content: "* ";
+    color: goldenrod;
+}
+*/
+
+label:has(+ input:required){
+    &::before{
+        content: "* ";
+        color: goldenrod;
+    }
+    
+    
+}
+
 label:has(input[type="radio"]:default){
     color: greenyellow;
     box-shadow: 10px 10px greenyellow;
