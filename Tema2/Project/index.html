@@ -26,10 +26,12 @@
 
                 <p>
                     <label for="name">First Name: </label>
-                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-]+">
+                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-]+" >
+                    <script>//document.getElementById("name").setCustomValidity("Only letters and the character '-' are allowed");</script>
 
                     <label for="surname">Last Name: </label>
                     <input type="text" name="surname" id="surname" required pattern="[A-Za-z\-]+">
+                    <script>//document.getElementById("surname").setCustomValidity("Only letters and the character '-' are allowed");</script>
                 </p>
 
                 <p>
@@ -43,7 +45,6 @@
 
                     <label for="region">Region: </label>
                     <select name="region" id="region">
-                        
                         <option value="" hidden selected>--Please select--</option>
 
                         <optgroup label="North">
@@ -72,7 +73,7 @@
                     <input type="text" name="postcode" id="postcode" pattern="" maxlength="5">
 
                     <label for="regionalCode">Regional code: </label>
-                    <input type="text" name="regionalCode" id="regionalCode" pattern="(^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$)" minlength="5" maxlength="7">
+                    <input type="text" name="regionalCode" id="regionalCode" pattern="^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$" minlength="5" maxlength="7">
                 </p>
             </fieldset>
 
@@ -81,11 +82,19 @@
                 <legend>Subscription information</legend>
 
                 <p>
-                    <label for="subscritionType">Subscrition type: </label>
-                    <input type="text" name="subscritionType" id="subscritionType" required>
+                    <label for="subscritionTypes">Subscrition type: </label>
+                    <input list="subscritionTypes" name="subscritionType" id="subscritionType" required>
+                        <datalist id="subscritionTypes">
+                            <option value="Daily Subscription">
+                            <option value="Weekly Subscription">
+                            <option value="Quarterly Subscription">
+                            <option value="Monthly Subscription">
+                            <option value="Yearly Subscription">
+                            <option value="Unlimited Subscription">                        
+                        </datalist>
 
                     <label for="subscritionCode">Subscrition code: </label>
-                    <input type="text" name="subscritionCode" id="subscritionCode" >
+                    <input type="text" name="subscritionCode" id="subscritionCode" pattern="^\d{4,}(0|5){2}$">
                 </p>
 
                 <fieldset>        
@@ -106,11 +115,34 @@
                     <input type="text" name="password" id="password" placeholder="Password" required>
                 </p>
             </fieldset>
+
+            <!--Third section-->
+            <fieldset>
+                <legend>Billing details</legend>
+
+                <p>
+                    <label for="creditCardType">Credit Card Type: </label>
+                    <select name="creditCardType" id="creditCardType" required>
+                        <option value="" hidden selected>--Please select--</option>
+
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="Maestro">Maestro</option>
+                    </select>
+
+                    <label for="cardNumber">Card Number: </label>
+                    <input type="text" name="cardNumber" id="cardNumber" required>
+                </p>
+
+                <p>
+                    <label for="discountCode">If you have a discount code please enter it here: </label>
+                    <input type="text" name="discountCode" id="discountCode" placeholder="Discount code">
+                </p>
+            </fieldset>
             
             <p>
-                <input type="submit" name="submit" id="submit" value="Send data">
+                <input type="submit" name="sendData" id="sendData" value="Send data">
             </p>
-            
         </form>
     </body>
 </html>
