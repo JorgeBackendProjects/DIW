@@ -29,12 +29,10 @@
 
                 <p>
                     <label for="name">First Name: </label>
-                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-ñáéíóú]+" size="10">
-                    <script>//document.getElementById("name").setCustomValidity("Only letters and the character '-' are allowed");</script>
+                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-ñáéíóú]+" size="10" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
 
                     <label for="surname">Last Name: </label>
-                    <input type="text" name="surname" id="surname" required pattern="[A-Za-z\-\sñáéíóú]+" size="25">
-                    <script>//document.getElementById("surname").setCustomValidity("Only letters and the character '-' are allowed");</script>
+                    <input type="text" name="surname" id="surname" required pattern="[A-Za-z\-\sñáéíóú]+" size="25" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
 
                 <p>
@@ -44,7 +42,7 @@
 
                 <p>
                     <label for="city">City: </label>
-                    <input type="text" name="city" id="city" pattern="[A-Za-z\-]+" size="16">
+                    <input type="text" name="city" id="city" pattern="[A-Za-z\-]+" size="16" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
 
                     <label for="region">Region: </label>
                     <select name="region" id="region">
@@ -73,10 +71,10 @@
                     </select>
 
                     <label for="postcode">Postcode: </label>
-                    <input type="text" name="postcode" id="postcode" pattern="^(?!.*(\d).*\1)\d{5}$" maxlength="5" size="8">
+                    <input type="text" name="postcode" id="postcode" maxlength="5" size="8" pattern="^(?!.*(\d).*\1)\d{5}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
 
                     <label for="regionalCode">Regional code: </label>
-                    <input type="text" name="regionalCode" id="regionalCode" pattern="^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$" minlength="5" maxlength="7" size="10">
+                    <input type="text" name="regionalCode" id="regionalCode" minlength="5" maxlength="7" size="10" pattern="^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
             </fieldset>
 
@@ -86,7 +84,7 @@
 
                 <p>
                     <label for="subscritionTypes">Subscrition type: </label>
-                    <input list="subscritionTypes" name="subscritionType" id="subscritionType" size="22" required>
+                    <input list="subscritionTypes" name="subscritionType" id="subscritionType" required size="22" >
                         <datalist id="subscritionTypes">
                             <option value="Daily Subscription">
                             <option value="Weekly Subscription">
@@ -97,7 +95,7 @@
                         </datalist>
 
                     <label for="subscritionCode">Subscrition code: </label>
-                    <input type="text" name="subscritionCode" id="subscritionCode" pattern="^[A-Za-z\d]{4,}\d(0|5)$" minlength="4" size="10">
+                    <input type="text" name="subscritionCode" id="subscritionCode" minlength="4" size="10" pattern="^[A-Za-z\d]{4,}\d(0|5)$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
 
                 <fieldset>        
@@ -112,10 +110,10 @@
 
                 <p>
                     <label for="username">Username: </label>
-                    <input type="text" name="username" id="username" placeholder="Valid username" pattern="^(?!.*\.\.)(?!.*\_\_)[a-z\d\.\_]{4,16}$" size="13">
+                    <input type="text" name="username" id="username" placeholder="Valid username" size="13" pattern="^(?!.*\.\.)(?!.*\_\_)[a-z\d\.\_]{4,16}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
 
                     <label for="password">Password: </label>
-                    <input type="password" name="password" id="password" placeholder="Password" size="15" pattern="^(?!\W)(?:(?!.*(\d)\1).)+(?=.*[A-Z])(?=.*[a-z])(?=.*\d){8,}[A-Za-z0-9]*$" required>
+                    <input type="password" name="password" id="password" required placeholder="Password" size="15" pattern="^(?!\W)(?:(?!.*(\d)\1).)+(?=.*[A-Z])(?=.*[a-z])(?=.*\d){8,}[A-Za-z0-9]*$"  oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
             </fieldset>
 
@@ -134,12 +132,12 @@
                     </select>
 
                     <label for="cardNumber">Card Number: </label>
-                    <input type="text" name="cardNumber" id="cardNumber" pattern="^(\d{16})|(?:\d{4}\s?){4}$" minlength="16" maxlength="19" required>
+                    <input type="text" name="cardNumber" id="cardNumber" required minlength="16" maxlength="19" pattern="^(\d{16})|(?:\d{4}\s?){4}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
 
                 <p>
                     <label for="discountCode">If you have a discount code please enter it here: </label>
-                    <input type="text" name="discountCode" id="discountCode" placeholder="Discount code" pattern="^[A-Z]{3}(?!.*(\d).*\1)\d{2}$" maxlength="5" size="10">
+                    <input type="text" name="discountCode" id="discountCode" placeholder="Discount code" maxlength="5" size="10" pattern="^[A-Z]{3}(?!.*(\d).*\1)\d{2}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
                 </p>
             </fieldset>
 
@@ -165,7 +163,7 @@
 
                 <p>
                     <label for="tags">Add tags: </label>
-                    <input name="tags" id="tags"  size="100" pattern="^([A-Z][a-z]*)(\,\s?[A-Z][a-z]*)"></textarea>
+                    <input name="tags" id="tags"  size="100" pattern="^([A-Z][a-z]*)(\,\s?[A-Z][a-z]*)" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');"></textarea>
                 </p>
             </fieldset>
             
