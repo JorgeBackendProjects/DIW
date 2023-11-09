@@ -29,10 +29,10 @@
 
                 <p>
                     <label for="name">First Name: </label>
-                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-ñáéíóú]+" size="10" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="name" id="name" required autofocus pattern="[A-Za-z\-ñáéíóú]+" size="10" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('Only letters and - are allowed');">
 
                     <label for="surname">Last Name: </label>
-                    <input type="text" name="surname" id="surname" required pattern="[A-Za-z\-\sñáéíóú]+" size="25" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="surname" id="surname" required pattern="[A-Za-z\-\sñáéíóú]+" size="25" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('Only letters, spaces and - are allowed');">
                 </p>
 
                 <p>
@@ -42,7 +42,7 @@
 
                 <p>
                     <label for="city">City: </label>
-                    <input type="text" name="city" id="city" pattern="[A-Za-z\-]+" size="16" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="city" id="city" pattern="[A-Za-z\-]+" size="16" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('Only letters and - are allowed');">
 
                     <label for="region">Region: </label>
                     <select name="region" id="region">
@@ -71,10 +71,10 @@
                     </select>
 
                     <label for="postcode">Postcode: </label>
-                    <input type="text" name="postcode" id="postcode" maxlength="5" size="8" pattern="^(?!.*(\d).*\1)\d{5}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="postcode" id="postcode" maxlength="5" size="8" pattern="^(?!.*(\d).*\1)\d{5}$" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('Only 5 numbers are accepted, none can be repeated');">
 
                     <label for="regionalCode">Regional code: </label>
-                    <input type="text" name="regionalCode" id="regionalCode" minlength="5" maxlength="7" size="10" pattern="^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="regionalCode" id="regionalCode" minlength="5" maxlength="7" size="10" pattern="^[A-Z]{1,3}[a-z\d]*[NSW][A-Z]?$" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('Only 5 to 7 characters are accepted. The first letters must be one to three capital letters from A to Z, then it can contain lowercase letters from a to z and must end with one or two capital letters, of which at least one is N, S or W');">
                 </p>
             </fieldset>
 
@@ -95,7 +95,7 @@
                         </datalist>
 
                     <label for="subscritionCode">Subscrition code: </label>
-                    <input type="text" name="subscritionCode" id="subscritionCode" minlength="4" size="10" pattern="^[A-Za-z\d]{4,}\d(0|5)$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="subscritionCode" id="subscritionCode" minlength="4" size="10" pattern="^[A-Za-z\d]{4,}\d(0|5)$" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('At least 4 alphanumeric characters, finishing with a 2 digit number ending in 0 or 5');">
                 </p>
 
                 <fieldset>        
@@ -110,10 +110,10 @@
 
                 <p>
                     <label for="username">Username: </label>
-                    <input type="text" name="username" id="username" placeholder="Valid username" size="13" pattern="^(?!.*\.\.)(?!.*\_\_)[a-z\d\.\_]{4,16}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="username" id="username" placeholder="Valid username" size="13" pattern="^(?!.*\.\.)(?!.*\_\_)[a-z\d\.\_]{4,16}$" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('String with 4 to 16 characters. Only lowercase letters, digits and the special characters dot and underscore are allowed. The username cannot begin or end with a dot, and it cannot contain two or more consecutive dots');">
 
                     <label for="password">Password: </label>
-                    <input type="password" name="password" id="password" required placeholder="Password" size="15" pattern="^(?!\W)(?:(?!.*(\d)\1).)+(?=.*[A-Z])(?=.*[a-z])(?=.*\d){8,}[A-Za-z0-9]*$"  oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="password" name="password" id="password" required placeholder="Password" size="15" pattern="^(?!\W)(?:(?!.*(\d)\1).)+(?=.*[A-Z])(?=.*[a-z])(?=.*\d){8,}[A-Za-z0-9]*$" oninput="this.setCustomValidity('');" oninvalid="this.alert('Your password must contain uppercase characters, lowercase characters, special characters and digits not repeating in consecutive positions. Also, it cannot begin or end with a special character and it must be at least 8 characters long. Thanks for yout understanding.');">
                 </p>
             </fieldset>
 
@@ -132,12 +132,12 @@
                     </select>
 
                     <label for="cardNumber">Card Number: </label>
-                    <input type="text" name="cardNumber" id="cardNumber" required minlength="16" maxlength="19" pattern="^(\d{16})|(?:\d{4}\s?){4}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="cardNumber" id="cardNumber" required minlength="16" maxlength="19" pattern="^(\d{16})|(?:\d{4}\s?){4}$" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('16 numbers with no spaces, or groups of 4 digits each separated with nothing, hyphens or whitespaces, but no mixed symbols');">
                 </p>
 
                 <p>
                     <label for="discountCode">If you have a discount code please enter it here: </label>
-                    <input type="text" name="discountCode" id="discountCode" placeholder="Discount code" maxlength="5" size="10" pattern="^[A-Z]{3}(?!.*(\d).*\1)\d{2}$" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');">
+                    <input type="text" name="discountCode" id="discountCode" placeholder="Discount code" maxlength="5" size="10" pattern="^[A-Z]{3}(?!.*(\d).*\1)\d{2}$" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('5 digits, 3 Capital letters followed by 2 different, non-repeating numbers between 0 and 3');">
                 </p>
             </fieldset>
 
@@ -163,7 +163,7 @@
 
                 <p>
                     <label for="tags">Add tags: </label>
-                    <input name="tags" id="tags"  size="100" pattern="^([A-Z][a-z]*)(\,\s?[A-Z][a-z]*)" oninput="this.setCustomValidity('Texto al pasar el puntero encima del input vacío');" oninvalid="this.setCustomValidity('Por favor, escribe 3 números pares y 2 números impares');"></textarea>
+                    <input name="tags" id="tags"  size="100" pattern="^([A-Z][a-z]*)(\,\s?[A-Z][a-z]*)" oninput="this.setCustomValidity('');" oninvalid="this.setCustomValidity('List of words separated by commas with an optional blank space, each of which might begin with an uppercase letter. No digits or symbols are allowed.');"></textarea>
                 </p>
             </fieldset>
             
