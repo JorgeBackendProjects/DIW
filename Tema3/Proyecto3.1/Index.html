@@ -4,9 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto 3.1</title>
+
+        <link rel="stylesheet" type="text/css" href="./Style.css" media="screen"/>
     </head>
     <body>
         <form action="#" method="post">
+
+            <h1>Introduzca datos</h1>
+
             <fieldset>
                 <legend>Datos personales</legend>
 
@@ -17,77 +22,72 @@
 
                 <p>
                     <label for="apellidos">Apellidos: </label>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Obligatorio" required>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Obligatorio" size="35" required>
                 </p>
                 
                 <fieldset>
                     <legend>Edad:</legend>
 
-                    <p>
-                        <input type="radio" name="edad1" value="18 a 25">18 a 25
-                        <input type="radio" name="edad2" value="26 a 35">26 a 35
-                        <input type="radio" name="edad3" value="36 a 45">36 a 45
-                        <input type="radio" name="edad4" value="46 a 55">46 a 55
-                        <input type="radio" name="edad5" value="Mayor de 55">Mayor de 55
-                        <input type="radio" name="edad6" value="NS/NC" checked>NS/NC
-                    </p>
+                    <label class="radio"><input type="radio" name="edad" value="18 a 25">18 a 25</label>
+                    <label class="radio"><input type="radio" name="edad" value="26 a 35">26 a 35</label>
+                    <label class="radio"><input type="radio" name="edad" value="36 a 45">36 a 45</label>
+                    <label class="radio"><input type="radio" name="edad" value="46 a 55">46 a 55</label>
+                    <label class="radio"><input type="radio" name="edad" value="Mayor de 55">Mayor de 55</label>
+                    <label class="radio"><input type="radio" name="edad" value="NS/NC" checked>NS/NC</label>
                 </fieldset>
                 
                 <fieldset>
                     <legend>Intereses:</legend>
-                    
-                    <p>
-                        <label>Arte y Literatura<input type="checkbox" name="check[]" value="Arte y Literatura"></label>
-                    </p>
 
-                    <p>
-                        <label>Ciencia y Tecnología<input type="checkbox" name="check[]" value="Ciencia y Tecnología"></label>
-                    </p>
-                    
-                    <p>
-                        <label>Política y Sociedad<input type="checkbox" name="check[]" value="Política y Sociedad"></label>
-                    </p>
-
-                    <p>
+                    <label>Arte y Literatura<input type="checkbox" name="check[]" value="Arte y Literatura"></label>
+                    <br/>
+                    <label>Ciencia y Tecnología<input type="checkbox" name="check[]" value="Ciencia y Tecnología"></label>
+                    <br/>
+                    <label>Política y Sociedad<input type="checkbox" name="check[]" value="Política y Sociedad"></label>
+                    <br/>
                     <label>Ocio y Deporte<input type="checkbox" name="check[]" value="Ocio y Deporte"></label>
-                    </p>
-
-                    <p>
-                        <label>Cine y Televisión<input type="checkbox" name="check[]" value="Cine y Televisión"></label>
-                    </p>
+                    <br/>
+                    <label>Cine y Televisión<input type="checkbox" name="check[]" value="Cine y Televisión"></label>
                 </fieldset>
                 
                 <p>
                     <label for="codigoPostal">Código postal: </label>
-                    <input type="text" name="codigoPostal" id="codigoPostal" size="10">
+                    <input class="inputNumber" type="text" name="codigoPostal" id="codigoPostal" size="10">
                 </p>
             </fieldset>
 
             <fieldset>
                 <legend>Otros datos</legend>
 
-                <label>Color favorito</label>
-                <p>
-                    <input type="radio" name="color1" value="Rojo" checked>Rojo
-                    <input type="radio" name="color2" value="Azul">Azul
-                    <input type="radio" name="color3" value="Amarillo">Amarillo
-                    <input type="radio" name="color4" value="Verde">Verde
-                </p>
+                <p><label class="resaltar">Color favorito</label></p>
+                
+                <label class="radio"><input type="radio" name="color" value="Rojo" checked>Rojo</label>
+                <label class="radio"><input type="radio" name="color" value="Azul">Azul</label>
+                <label class="radio"><input type="radio" name="color" value="Amarillo">Amarillo</label>
+                <label class="radio"><input type="radio" name="color" value="Verde">Verde</label>
 
-                <p>
-                    <label>Asignaturas favoritas:</label>
+                <p><label class="resaltar">Asignaturas favoritas</label></p>
                     
-                    <input type="checkbox" name="check[]" value="DWEC">DWEC
-                    <input type="checkbox" name="check[]" value="DWES">DWES
-                    <input type="checkbox" name="check[]" value="DIW" checked>DIW
-                    <input type="checkbox" name="check[]" value="DAW">DAW
-                    <input type="checkbox" name="check[]" value="EIEM">EIEM
-                </p>
+                <label>DWEC<input type="checkbox" name="check[]" value="DWEC"></label>
+                <br/>
+                <label>DWES<input type="checkbox" name="check[]" value="DWES"></label>
+                <br/>
+                <label>DIW<input type="checkbox" name="check[]" value="DIW" checked></label>
+                <br/>
+                <label>DAW<input type="checkbox" name="check[]" value="DAW"></label>
+                <br/>
+                <label>EIEM<input type="checkbox" name="check[]" value="EIEM"></label>
                 
-                <label for="porcentaje">Probabilidad de aprobar: </label>
-                <input type="number" name="porcentaje" id="porcentaje" value="50">
-                
+                <p><label class="resaltar">Probabilidad de aprobar</label></p>
+
+                <label for="porcentaje">Porcentaje: </label>
+                <input class="inputNumber" type="number" name="porcentaje" id="porcentaje" value="50">
             </fieldset>
+
+            <p>
+                <input type="submit" name="submit" id="submit" value="Enviar datos">
+                <input type="reset" name="reset" id="reset" value="Reiniciar">
+            </p>
         </form>
     </body>
 </html>

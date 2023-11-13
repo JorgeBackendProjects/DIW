@@ -1,0 +1,63 @@
+body{
+    background-color: aquamarine;
+}
+
+/*Bien*/
+label{
+    color: green;
+}
+
+/*MAL*/
+p > label{
+    font-weight: bold;
+    color: blue;
+}
+
+/*Bien*/
+.radio{
+    color: rgb(77, 23, 128);
+}
+
+/*Bien*/
+.resaltar{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(127, 38, 211);
+}
+
+/*Bien*/
+.inputNumber{
+    background-color: wheat;
+}
+
+/*MAL*/
+input[type="radio"]:checked{
+    color: green;
+    border-color: green;
+    
+}
+
+/*Bien*/
+fieldset{
+    background-color: thistle;
+    font-weight: bold;
+}
+
+/*Bien*/
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+/*Bien*/
+fieldset input[required]{
+    background-color: rgb(250, 168, 16);
+
+    &::placeholder{
+        color: rgb(255, 0, 0);
+    }
+}
+
+
