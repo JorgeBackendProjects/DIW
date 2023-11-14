@@ -1,57 +1,16 @@
+/*Color de fondo de la web.*/
 body{
     background-color: aquamarine;
 }
 
-/*Bien*/
+/*Pintar todos los label de verde*/
 label{
     color: green;
-}
-
-/*MAL*/
-p > label{
-    font-weight: bold;
-    color: blue;
-}
-
-/*Bien*/
-.radio{
-    color: rgb(77, 23, 128);
-}
-
-/*Bien*/
-.resaltar{
-    font-size: 25px;
-    font-weight: bold;
-    font-style: oblique;
-    color: rgb(127, 38, 211);
-}
-
-/*Bien*/
-.inputNumber{
-    background-color: wheat;
-}
-
-/*MAL*/
-input[type="radio"]:checked{
-    color: green;
-    border-color: green;
-    
-}
-
-/*Bien*/
-fieldset{
-    background-color: thistle;
     font-weight: bold;
 }
 
-/*Bien*/
-legend{
-    font-size: 20px;
-    font-weight: bold;
-    color: blue;
-}
-
-/*Bien*/
+/*Mostrar los input required dentro de un fieldset con un color distinto y 
+las letras del placeholder de otro distinto.*/
 fieldset input[required]{
     background-color: rgb(250, 168, 16);
 
@@ -59,5 +18,88 @@ fieldset input[required]{
         color: rgb(255, 0, 0);
     }
 }
+
+/*Resaltar el color de letra de los label que tienen input radio.*/
+.radio{
+    color: rgb(77, 23, 128);
+}
+
+/*Resaltar los textos de título dentro de los figcaption.*/
+.resaltar{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(127, 38, 211);
+}
+
+/*Resaltar el color de fondo de los input que recibirán números. Si se comprueba que no
+cumple con los requisitos y es invalid se mostrará de color rojo.*/
+.inputNumber{
+    background-color: wheat;
+
+    &:invalid{
+        background-color: red;        
+    }
+}
+
+/*Mostrar las letras de los input radio verde si está seleccionada la opción.*/
+label:has(input[type="radio"]:checked){
+    color: green;
+}
+
+/*Resaltar con sombra verde los checkbox marcados de la clase resaltarChecked.*/
+.resaltarChecked:checked{
+    color: green;
+    text-decoration: underline;
+    box-shadow: 3px 3px greenyellow;
+}
+
+/*Para darle otro color y estilo de fuente a los checkbox bajo el título 'Intereses'.*/
+.anotherColor{
+    color: rgb(37, 134, 134);
+    font-style: oblique;
+}
+
+/*Darle un color a los fieldset, y otro diferente a los que estén dentro de un fieldset.*/
+fieldset{
+    background-color: thistle;
+
+    &>fieldset{
+        background-color: rgb(226, 170, 86);
+    }
+}
+
+/*Estilo de letras de los legend, agranda el tamaño, resalta en negrita y las pinta en azul.*/
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+/*Estilo del botón de envío para aumentar el tamaño de letra así como su tamaño, aplicarle
+borde y darle color al fondo. También se ha intentado centrar pero no funciona.*/
+input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: antiquewhite;
+    color: blue;
+    margin: 0 auto;
+}
+
+/*Estilo del botón de reenvío para aumentar el tamaño de letra así como su tamaño, aplicarle
+borde y darle color al fondo. También se ha intentado centrar pero no funciona.*/
+input[type="reset"]{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+
 
 

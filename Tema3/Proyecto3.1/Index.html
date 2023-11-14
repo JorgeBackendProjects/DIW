@@ -39,20 +39,20 @@
                 <fieldset>
                     <legend>Intereses:</legend>
 
-                    <label>Arte y Literatura<input type="checkbox" name="check[]" value="Arte y Literatura"></label>
+                    <label class="anotherColor">Arte y Literatura<input type="checkbox" name="check[]" value="Arte y Literatura"></label>
                     <br/>
-                    <label>Ciencia y Tecnología<input type="checkbox" name="check[]" value="Ciencia y Tecnología"></label>
+                    <label class="anotherColor">Ciencia y Tecnología<input type="checkbox" name="check[]" value="Ciencia y Tecnología"></label>
                     <br/>
-                    <label>Política y Sociedad<input type="checkbox" name="check[]" value="Política y Sociedad"></label>
+                    <label class="anotherColor">Política y Sociedad<input type="checkbox" name="check[]" value="Política y Sociedad"></label>
                     <br/>
-                    <label>Ocio y Deporte<input type="checkbox" name="check[]" value="Ocio y Deporte"></label>
+                    <label class="anotherColor">Ocio y Deporte<input type="checkbox" name="check[]" value="Ocio y Deporte"></label>
                     <br/>
-                    <label>Cine y Televisión<input type="checkbox" name="check[]" value="Cine y Televisión"></label>
+                    <label class="anotherColor">Cine y Televisión<input type="checkbox" name="check[]" value="Cine y Televisión"></label>
                 </fieldset>
                 
                 <p>
                     <label for="codigoPostal">Código postal: </label>
-                    <input class="inputNumber" type="text" name="codigoPostal" id="codigoPostal" size="10">
+                    <input class="inputNumber" type="text" name="codigoPostal" id="codigoPostal" size="10" maxlength="5" pattern="^\d{5}$" oninvalid="setCustomValidity('');">
                 </p>
             </fieldset>
 
@@ -68,15 +68,15 @@
 
                 <p><label class="resaltar">Asignaturas favoritas</label></p>
                     
-                <label>DWEC<input type="checkbox" name="check[]" value="DWEC"></label>
+                <label>DWEC<input type="checkbox" name="check[]" value="DWEC" class="resaltarChecked"></label>
                 <br/>
-                <label>DWES<input type="checkbox" name="check[]" value="DWES"></label>
+                <label>DWES<input type="checkbox" name="check[]" value="DWES" class="resaltarChecked"></label>
                 <br/>
-                <label>DIW<input type="checkbox" name="check[]" value="DIW" checked></label>
+                <label>DIW<input type="checkbox" name="check[]" value="DIW" checked class="resaltarChecked"></label>
                 <br/>
-                <label>DAW<input type="checkbox" name="check[]" value="DAW"></label>
+                <label>DAW<input type="checkbox" name="check[]" value="DAW" class="resaltarChecked"></label>
                 <br/>
-                <label>EIEM<input type="checkbox" name="check[]" value="EIEM"></label>
+                <label>EIEM<input type="checkbox" name="check[]" value="EIEM" class="resaltarChecked"></label>
                 
                 <p><label class="resaltar">Probabilidad de aprobar</label></p>
 
@@ -85,8 +85,8 @@
             </fieldset>
 
             <p>
-                <input type="submit" name="submit" id="submit" value="Enviar datos">
-                <input type="reset" name="reset" id="reset" value="Reiniciar">
+                <input type="submit" name="submit" id="submit" value="Enviar formulario">
+                <input type="reset" name="reset" id="reset" value="Reiniciar formulario">
             </p>
         </form>
     </body>
