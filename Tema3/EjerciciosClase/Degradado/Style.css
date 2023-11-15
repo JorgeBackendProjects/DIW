@@ -1,0 +1,12 @@
+h1{
+    background: linear-gradient(45deg, hotpink 0%, rebeccaPurple 100%);
+}
+
+p{
+    background: radial-gradient(circle at bottom right, aqua 0%, blue 100%);
+}
+
+ul li{
+    list-style-type: "\1F435";
+    list-style-position: inside;
+}

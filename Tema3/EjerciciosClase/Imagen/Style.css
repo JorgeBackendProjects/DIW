@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+
+img{
+    width: 50%;
+    /*clip-path: circle(50%);*/
+    /* clip-path: inset(10% 10% 1% 1% round 10%); */
+    /* clip-path: ellipse(25% 50% at 50% 100%); Iglú*/
+    /* clip-path: ellipse(80% 100% at bottom right); */
+    
+}
