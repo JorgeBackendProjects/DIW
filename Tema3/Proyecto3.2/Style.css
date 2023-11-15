@@ -1,7 +1,61 @@
-section{
+body{
+    margin: 0;
+    padding: 0;
+}
 
+section{
+    position: relative;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+}
+
+.image{
+    position: relative;
+    margin-bottom: 20px;
+    
 }
 
 div{
-    overflow-y: scroll;
+    position: relative;
+}
+
+img{
+    width: 100%;
+}
+
+.centerText{
+    position: absolute;
+    top: 50px;
+    left: 750px;
+    text-align: center;
+}
+
+.rightText{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    text-align: right;
+}
+
+.leftText{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    text-align: left;
+}
+
+h1{
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: white;
+}
+
+p{
+    margin-top: 0;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
 }
