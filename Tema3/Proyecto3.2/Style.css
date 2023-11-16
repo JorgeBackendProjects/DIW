@@ -14,17 +14,15 @@ section{
     overflow-y: scroll;
 }
 
-/*Le damos a las imágenes todo el ancho y todo el alto del navegador.*/
-img{
-    width: 100vw;
+/*Cuando detecte la parte superior de un div/imagen se posicionará sobre él.*/
+div{
+    scroll-snap-align: start;
+    width: 100%;
     height: 100vh; 
 }
 
-/*Cuando detecte la parte superior de un div se posicionará sobre él.*/
-div{
-    scroll-snap-align: start;
-}
-
+/*Usamos un id para que si es la primera imagen, posicionar el texto en el centro
+superior.*/
 #firstImage{
     & p, & h1{
         text-align: center;
@@ -32,6 +30,8 @@ div{
     }
 }
 
+/*Si el div es impar se alinea el texto a la derecha. En caso contrario aparece en
+la izquierda por defecto.*/
 div:nth-child(odd) {
     text-align: right;
 
@@ -44,11 +44,15 @@ div:nth-child(odd) {
 div h1{
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 40px;
+    color: azure;
 }
 
 div p{
     margin-top: 0;
     font-weight: bold;
+    font-size: 20px;
+    color: azure;
 }
 
 
