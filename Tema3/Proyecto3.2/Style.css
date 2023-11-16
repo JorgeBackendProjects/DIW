@@ -1,61 +1,55 @@
+/*Con margin y padding a 0 evitamos que haya espacios entre las imágenes y 
+los bordes del navegador o del sitio web.*/
 body{
     margin: 0;
     padding: 0;
 }
 
+/*Con scroll-snap-type indicamos que se moverá en el eje vertical 'y'.
+Además de mandatory que ajusta automáticamente la posición de la pantalla.
+Con overflow-y indicamos el tipo, que será scroll.*/
 section{
-    position: relative;
+    height: 100vh;
     scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
     overflow-y: scroll;
 }
 
-.image{
-    position: relative;
-    margin-bottom: 20px;
-    
-}
-
-div{
-    position: relative;
-}
-
+/*Le damos a las imágenes todo el ancho y todo el alto del navegador.*/
 img{
-    width: 100%;
+    width: 100vw;
+    height: 100vh; 
 }
 
-.centerText{
-    position: absolute;
-    top: 50px;
-    left: 750px;
-    text-align: center;
+/*Cuando detecte la parte superior de un div se posicionará sobre él.*/
+div{
+    scroll-snap-align: start;
 }
 
-.rightText{
-    position: absolute;
-    top: 50px;
-    right: 150px;
+#firstImage{
+    & p, & h1{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+div:nth-child(odd) {
     text-align: right;
+
+    & p, & h1{
+        text-align: right;
+    } 
 }
 
-.leftText{
-    position: absolute;
-    top: 50px;
-    left: 150px;
-    text-align: left;
-}
-
-h1{
-    margin-bottom: 0;
-    font-size: 2em;
+/*Ajustamos los textos.*/
+div h1{
+    margin-bottom: 5px;
     font-weight: bold;
-    background-color: white;
 }
 
-p{
+div p{
     margin-top: 0;
-    font-size: 1.2em;
-    text-align: center;
     font-weight: bold;
-    background-color: white;
 }
+
+
+
