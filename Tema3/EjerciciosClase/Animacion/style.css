@@ -1,0 +1,53 @@
+body{
+    background-color: lavender;
+    font-family: 'Bitter', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    width: 40vw;
+    border: 5px solid black;
+    background-color: mediumvioletred;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    margin: 0 auto;
+
+    animation: anim_h1 16s linear infinite normal forwards;
+}
+
+img{
+    animation: anim_img 300ms ease-in-out 0s infinite normal forwards;
+}
+
+@keyframes anim_img{
+    20%{
+        transform: translateX(80vw) rotateZ(100deg);
+    }
+
+    40%{
+        transform: translate(-40vw ,40vh) rotateZ(-45seg);
+    }
+}
+
+@keyframes anim_h1{
+    25%{
+        background-color: darkorchid;
+        color: lemonchiffon;
+    }
+
+    50%{
+        background-color: peachpuff;
+        color: rebeccapurple;
+    }
+
+    75%{
+        background-color: teal;
+        color: azure;
+    }
+
+    100%{
+        background-color: lightgoldenrodyellow;
+        color: darkmagenta;
+    }
+}
