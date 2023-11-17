@@ -1,6 +1,6 @@
 /*Con margin y padding a 0 evitamos que haya espacios entre las imágenes y 
 los bordes del navegador o del sitio web.*/
-body{
+body, html{
     margin: 0;
     padding: 0;
 }
@@ -10,16 +10,19 @@ Además de mandatory que ajusta automáticamente la posición de la pantalla.
 Con overflow-y indicamos el tipo, que será scroll.*/
 section{
     height: 100vh;
+    width: 100vw;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
 /*Cuando detecte la parte superior de un div/imagen se posicionará sobre él.*/
 div{
-    /* background-size:auto auto; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     scroll-snap-align: start;
-    width: 100%;
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
 }
 
 /*Usamos un id para que si es la primera imagen, posicionar el texto en el centro
@@ -38,11 +41,17 @@ div:nth-child(odd) {
 
     & p, & h1{
         text-align: right;
+        transform: translateX(-30px);
     } 
+    
+    
 }
 
 /*Ajustamos los textos.*/
 div h1{
+    position: relative;
+    top: 10px;
+    left: 10px;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 40px;
@@ -50,9 +59,11 @@ div h1{
 }
 
 div p{
-    margin-top: 0;
+    position: relative;
+    left: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     color: azure;
 }
 
