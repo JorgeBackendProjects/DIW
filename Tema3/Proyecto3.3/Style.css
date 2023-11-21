@@ -13,7 +13,7 @@ i{
     font-size: 130px;
     color: white;
     width: 25vw;
-    height: auto;
+    transition: transform 4s, color 4s;
 }
 
 h1{
@@ -23,7 +23,10 @@ h1{
 } 
 
 h2{
-    margin-top: 38.2svh;
     text-align: center;
-    font-size: 2em;
+    margin-top: 20px;
+    color: darkorange;
+    font-size: 40px;
 }
+
+
