@@ -1,35 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Russo+One&family=Voces&display=swap');
 
-/*font-family: 'JetBrains Mono', monospace;*/
-
 body{
-    background-image: url("./Images/tile.png");
-    background: linear-gradient(#b880de 0%, #381967 100%);
-    
+    background-image: url("./Images/tile.png"), linear-gradient(#b880de 0%, #381967 100%);
 }
 
 section{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
+/*----CLASSES----*/
 .first_section{
     & article{
-        width: 100%;
         background-color: #dcdcdc;
-        padding: 15px;
-        margin-bottom: 10px;
+        padding: 0.5vw;
         border-radius: 10px;
+
+        /*TEXT OF FIRST SECTION*/
+        & p{
+            color: #9e2f98;
+        }
+        
         & h1{
             text-align: center;
             margin-top: 0vh;
             font-size: 8em;
             color: #8b008b;
 
+            /*ADJUST THE PARAGRAPH BROTHER OF H1*/
             &+p{
                 margin-top: -10vh;
             }
         }
+    }
+}
+
+.second_section{
+    margin-top: 1vh;
+
+    border: 2px solid white;
+    border-radius: 5px;
+
+    & article{
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        background-color: #b036c6;
     }
 }
 
@@ -38,16 +55,33 @@ h1{
     font-family: 'Russo One', sans-serif;
 }
 
+.another_strong{
+    color: #71073d;
+    transition: color 1s;
+
+    &:hover{
+        color: #daece4;
+    }
+}
+
 p{
     text-align: justify;
+
     padding-left: 1.5vw;
     padding-right: 1.5vw;
+
+    font-size: 1.2em;
+    color: white;
     font-family: 'Voces', sans-serif;
 }
 
 .second_section p::first-letter{
     font-size: 2em;
     color: #f660df;
+}
+
+span{
+    font-style: italic;
 }
 
 
@@ -66,20 +100,24 @@ img{
     border: 5px solid #942891;
     border-radius: 5px;
 
+    display: block;
+    margin: auto;
+
     &[alt="first"]{
-        width: 80%;
+        width: 65%;
     }
     &[alt="second"]{
-        width: 70%;
+        width: 55%;
     }
 }
 
 /*----IFRAME----*/
 iframe{
-    border: 5px solid #f9c0cb;
-    border-radius: 5px;
     width: 550px; 
     height: 300px;
+
+    border: 5px solid #f9c0cb;
+    border-radius: 5px;
 }
 
 /*----LISTS----*/
