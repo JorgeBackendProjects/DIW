@@ -1,0 +1,14 @@
+body{
+    background-image: url("./Images/tile.png");
+    background: linear-gradient(pink 0%, blueviolet 100%);
+    
+}
+
+ul{
+    border: 8px solid #e470e4;
+    background-color: blueviolet;
+}
+
+ul li{
+    color: #ee82ee;
+}
