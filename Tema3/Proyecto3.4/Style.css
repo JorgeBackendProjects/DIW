@@ -1,14 +1,31 @@
 body{
     background-image: url("./Images/tile.png");
-    background: linear-gradient(pink 0%, blueviolet 100%);
+    background: linear-gradient(#b880de 0%, #381967 100%);
     
 }
 
 ul{
-    border: 8px solid #e470e4;
-    background-color: blueviolet;
+    border: 8px solid #f468b4;
+    background-color: #f7b0dc;
+    width: 30vw;
 }
 
 ul li{
-    color: #ee82ee;
+    color: #a32594;
+    margin-top: 1.2svh;
+}
+
+ul li strong{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    height: 3.5vh;
+    margin: 0 auto;
+    margin-top: 1vh;
+    padding-top: 2vh;
+    background-color: gray;
+    border-top: 0.5vh solid white;
+    border-bottom: 0.5vh solid white;
 }
