@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Salsa&display=swap');
+
+/*Se asigna un fondo al cuerpo del documento HTML y se indica que ocupe su total con cover.*/
+body{
+    background-image: url(./Images/water.jpg);
+    background-size: cover;
+}
+
+/*Con la propiedad anidada se aplica estilo al icono dentro del h1.*/
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Salsa', cursive;
+
+    & i{
+        filter: brightness(100%) contrast(100%);
+    }
+}
+
+/*Se asignan atributos comunes a los párrafos y con las propiedades anidadas a los párrafos
+pertenecientes a clases por separados.*/
+p{
+    color: white;
+    font-family: 'Salsa', cursive;
+    text-align: justify;
+
+    &.first_paragraph{
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    &.second_paragraph{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 1.1em;
+    }
+}
+
+/*En este div tenemos las etiquetas a con enlaces externos y en ellas las imágenes.
+Con la primera anidación nos referimos a las imágenes dentro de a y con el segundo
+al hover de dichas imágenes. 
+Para su figura se usa clip-path y para el hover transform rotateZ y scale para rotar.*/
+div{
+    margin: 0 auto;
+    margin-left: 8.5vw;
+    margin-right: 5vw;
+
+    & a img{
+        border-radius: 7px;
+        clip-path: ellipse(200px 220px at 10px 10px);
+
+        display: inline-block;
+        width: 20vw;
+        height: 35vh;
+        
+        &:hover{
+            transition-duration: 1s;
+            transform: rotateZ(50deg) scale(0.7);
+        }
+    }
+}
+
+/*Se le aplica un tamaño y color distinto al pie de página y se le 
+aplica una transformación del tamaño.*/
+footer p{
+    font-size: 2em;
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Mansalva', sans-serif;
+    
+    transition-delay: 1s;
+    transition-duration: 3s;
+    transform: scale(1.1); 
+}
