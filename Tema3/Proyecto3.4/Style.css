@@ -42,11 +42,15 @@ section{
     border-radius: 5px;
 
     & article{
-        width: 99%;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
+        margin-bottom: 2vh;
         background-color: #b036c6;
+
+        & p{
+            margin-left: 6.5vw;
+            margin-right: 6.5vw;
+        }
     }
 }
 
@@ -87,6 +91,12 @@ span{
 
 /*----A----*/
 a{
+    &:hover{
+        transition-duration: 3s;
+        font-size: 115%;
+        text-shadow: 0 0 7px black;
+        font-family: 'JetBrains Mono', monospace;
+    }
     &:link{
         color: #e65db8;
     }
@@ -101,7 +111,7 @@ img{
     border-radius: 5px;
 
     display: block;
-    margin: auto;
+    margin: 0 auto;
 
     &[alt="first"]{
         width: 65%;
@@ -116,15 +126,30 @@ iframe{
     width: 550px; 
     height: 300px;
 
+    margin: auto auto;
+
     border: 5px solid #f9c0cb;
     border-radius: 5px;
 }
 
 /*----LISTS----*/
 ul{
-    width: 30vw;
+    width: 75%;
+    margin: 0 auto;
+
+    list-style: square;
     border: 8px solid #f468b4;
     background-color: #f7b0dc;
+
+    transition: 1s;
+
+    &:hover{
+        background-color: #680e75;
+
+        & li{
+            color: #f7b0dc;
+        }
+    }
 }
 
 ul li{
