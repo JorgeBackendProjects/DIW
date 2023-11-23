@@ -47,9 +47,31 @@ section{
         margin-bottom: 2vh;
         background-color: #b036c6;
 
+        & h1{
+            background-color: white;
+            color: #942ea3;
+            font-size: 2em;
+        }
+
         & p{
             margin-left: 6.5vw;
             margin-right: 6.5vw;
+
+            &::first-letter{
+                font-size: 2em;
+                color: #f660df;
+            }
+        }
+
+        & iframe{
+            width: 50vw; 
+            height: 50vh;
+        
+            display: block;
+            margin: 0 auto;
+        
+            border: 5px solid #f9c0cb;
+            border-radius: 5px;
         }
     }
 }
@@ -57,15 +79,6 @@ section{
 /*----TEXT----*/
 h1{
     font-family: 'Russo One', sans-serif;
-}
-
-.another_strong{
-    color: #71073d;
-    transition: color 1s;
-
-    &:hover{
-        color: #daece4;
-    }
 }
 
 p{
@@ -79,15 +92,22 @@ p{
     font-family: 'Voces', sans-serif;
 }
 
-.second_section p::first-letter{
-    font-size: 2em;
-    color: #f660df;
-}
-
 span{
     font-style: italic;
 }
 
+strong{
+    font-family: 'Voces', sans-serif;
+}
+
+.another_strong{
+    color: #71073d;
+    transition: color 1s;
+
+    &:hover{
+        color: #daece4;
+    }
+}
 
 /*----A----*/
 a{
@@ -121,17 +141,6 @@ img{
     }
 }
 
-/*----IFRAME----*/
-iframe{
-    width: 550px; 
-    height: 300px;
-
-    margin: auto auto;
-
-    border: 5px solid #f9c0cb;
-    border-radius: 5px;
-}
-
 /*----LISTS----*/
 ul{
     width: 75%;
@@ -150,26 +159,28 @@ ul{
             color: #f7b0dc;
         }
     }
-}
 
-ul li{
-    margin-top: 1.2svh;
-    color: #a32594;
-    font-family: 'JetBrains Mono', monospace;
-}
+    & li{
+        margin-top: 1.2svh;
+        color: #a32594;
+        font-family: 'JetBrains Mono', monospace;
 
-ul li strong{
-    text-decoration: underline;
+        & strong{
+            text-decoration: underline;
+        }
+    }
 }
 
 /*----FOOTER----*/
 footer{
+    display: block;
     text-align: center;
     height: 3.5vh;
 
-    margin: 0 auto;
     margin-top: 1vh;
     padding-top: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
     
     background-color: gray;
     border-top: 0.5vh solid white;
