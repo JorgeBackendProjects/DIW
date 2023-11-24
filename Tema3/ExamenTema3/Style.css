@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Salsa&display=swap');
 
+html{
+    margin: 0;
+    height: 100vh;
+}
+
 /*Se asigna un fondo al cuerpo del documento HTML y se indica que ocupe su total con cover.*/
 body{
     background-image: url(./Images/water.jpg);
@@ -14,7 +19,29 @@ h1{
     font-family: 'Salsa', cursive;
 
     & i{
-        filter: brightness(100%) contrast(100%);
+        animation: sombrilla 10s linear 0s infinite alternate none;
+    }
+}
+
+@keyframes sombrilla{
+    20%{
+        text-shadow: 3px 3px 3px 3px white -3px -3px 3px, red 3px -3px -3px, red 3px -3px 3px, red -3px 3px 3px;
+    }
+    40%{
+        text-shadow: 3px 3px 3px 3px white -3px -3px 3px, red 3px -3px -3px, red 3px -3px 3px, red -3px 3px 3px;
+
+    }
+    60%{
+        text-shadow: 3px 3px 3px 3px white -3px -3px 3px, red 3px -3px -3px, red 3px -3px 3px, red -3px 3px 3px;
+
+    }
+    80%{
+        text-shadow: 3px 3px 3px 3px white -3px -3px 3px, red 3px -3px -3px, red 3px -3px 3px, red -3px 3px 3px;
+
+    }
+    100%{
+        text-shadow: 3px 3px 3px 3px white -3px -3px 3px, red 3px -3px -3px, red 3px -3px 3px, red -3px 3px 3px;
+
     }
 }
 
@@ -46,17 +73,74 @@ div{
     margin-left: 8.5vw;
     margin-right: 5vw;
 
-    & a img{
-        border-radius: 7px;
-        clip-path: ellipse(200px 220px at 10px 10px);
-
-        display: inline-block;
+    & a section{
         width: 20vw;
         height: 35vh;
+
+        border-radius: 7px;
+        display: inline-block;
+
+        clip-path: ellipse(200px 220px at 10px 10px);
         
+        &.firstImage{
+            background-image: url("./Images/i1.jpg");
+            background-size: 20vw 35vh;
+            transition: all 1s ease-in-out;
+
+            & h3{
+                width: 33%;
+                margin-left: 5vw;
+            }
+        }
+
+        &.secondImage{
+            background-image: url("./Images/i2.jpg");
+            background-size: 20vw 35vh;
+            transition: all 1s ease-in-out;
+
+            & h3{
+                width: 33%;
+                margin-left: 5vw;
+            }
+        }
+
+        &.thirdImage{
+            background-image: url("./Images/i3.jpg");
+            background-size: 20vw 35vh;
+            transition: all 1s ease-in-out;
+
+            & h3{
+                width: 55%;
+                margin-left: 3vw;
+            }
+        }
+
+        &.fourthImage{
+            background-image: url("./Images/i4.jpg");
+            background-size: 20vw 35vh;
+            transition: all 1s ease-in-out;
+
+            & h3{
+                width: 55%;
+                margin-left: 3vw;
+            }
+        }
+
+        & h3{
+            border-radius: 4px;
+            backdrop-filter: invert(80%);
+            color: white;
+        }
+
         &:hover{
+            transition: all;
             transition-duration: 1s;
-            transform: rotateZ(50deg) scale(0.7);
+            transform: rotateZ(50deg) scale(0.8);
+            filter: hue-rotate(70deg);
+
+            & h3{
+                transform: rotateZ(-45deg) translateX(-3vw);
+            }
         }
     }
 }
@@ -69,7 +153,15 @@ footer p{
     color: aquamarine;
     font-family: 'Mansalva', sans-serif;
     
-    transition-delay: 1s;
-    transition-duration: 3s;
-    transform: scale(1.1); 
+    animation: footerText 10s linear 0s infinite alternate none;
+
+}
+
+@keyframes footerText{
+    0%{
+
+    }
+    100%{
+        transform: scale(0.5);
+    }
 }
