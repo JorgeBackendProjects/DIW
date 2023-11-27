@@ -67,5 +67,117 @@ h3{
     border:2px solid var(--color_texto);
     width:100px;
     height:100px;  
+
+    /*CASILLAS FILA 1*/
+    &.fila1{
+        animation-delay: 0s;
+
+        &.casilla1{}
+        &.casilla2{}
+        &.casilla3{}
+        &.casilla4{}
+        &.casilla5{}
+        &.casilla6{}
+        &.casilla7{}
+        &.casilla8{}
+    }
+
+    /*CASILLAS FILA 2*/
+    &.fila2{
+        animation-delay: 0s;
+
+        &.casilla9{}
+        &.casilla10{}
+        &.casilla11{}
+        &.casilla12{}
+        &.casilla13{}
+        &.casilla14{}
+        &.casilla15{}
+        &.casilla16{}
+    }
+
+    /*CASILLAS FILA 3*/
+    &.fila3{
+        animation-delay: 0s;
+
+        &.casilla17{}
+        &.casilla18{}
+        &.casilla19{}
+        &.casilla20{}
+        &.casilla21{}
+        &.casilla22{}
+        &.casilla23{}
+        &.casilla24{}
+    }
+
+    /*CASILLAS FILA 4*/
+    &.fila4{
+        animation-delay: 0s;
+
+        &.casilla25{}
+        &.casilla26{}
+        &.casilla27{}
+        &.casilla28{}
+        &.casilla29{}
+        &.casilla30{}
+        &.casilla31{}
+        &.casilla32{}
+    }
+    
+    /*CASILLAS FILA 5*/
+    &.fila5{
+        animation-delay: 0s;
+
+        &.casilla33{}
+        &.casilla34{}
+        &.casilla35{}
+        &.casilla36{}
+        &.casilla37{}
+        &.casilla38{}
+        &.casilla39{}
+        &.casilla40{}
+    }
+
+    /*CASILLAS FILA 6*/
+    &.fila6{
+        animation-delay: 0s;
+
+        &.casilla41{}
+        &.casilla42{}
+        &.casilla43{}
+        &.casilla44{}
+        &.casilla45{}
+        &.casilla46{}
+        &.casilla47{}
+        &.casilla48{}
+    }
+
+    /*CASILLAS FILA 7*/
+    &.fila7{
+        animation-delay: 0s;
+
+        &.casilla49{}
+        &.casilla50{}
+        &.casilla51{}
+        &.casilla52{}
+        &.casilla53{}
+        &.casilla54{}
+        &.casilla55{}
+        &.casilla56{}
+    }
+
+    /*CASILLAS FILA 8*/
+    &.fila8{
+        animation-delay: 0s;
+        
+        &.casilla57{}
+        &.casilla58{}
+        &.casilla59{}
+        &.casilla60{}
+        &.casilla61{}
+        &.casilla62{}
+        &.casilla63{}
+        &.casilla64{}
+    }
 }
 
