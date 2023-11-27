@@ -8,7 +8,6 @@
     --color_texto:#5a0075;
     --color_borde:#dd0a85;
     --color_sombra:whitesmoke;
-
     --color_blanco: white;
     --color_rojo: red;
     --color_naranja: orange;
@@ -71,34 +70,27 @@ h3{
     /*CASILLAS FILA 1*/
     &.fila1{
         animation-delay: 0s;
+        animation: animacion 5s;
 
-        &.casilla1{}
-        &.casilla2{}
-        &.casilla3{}
-        &.casilla4{}
-        &.casilla5{}
-        &.casilla6{}
-        &.casilla7{}
-        &.casilla8{}
+        /*&.casilla1, &.casilla2, &.casilla3, &.casilla4, &.casilla5, &.casilla6, &.casilla7, &.casilla8{
+            animation: animacion 20s 5s;
+        }*/
     }
 
     /*CASILLAS FILA 2*/
     &.fila2{
-        animation-delay: 0s;
+        animation-delay: 5s;
+        animation: animacion 5s;
 
-        &.casilla9{}
-        &.casilla10{}
-        &.casilla11{}
-        &.casilla12{}
-        &.casilla13{}
-        &.casilla14{}
-        &.casilla15{}
-        &.casilla16{}
+        /*&.casilla9, &.casilla10, &.casilla11, &.casilla12, &.casilla13, &.casilla14, &.casilla15, &.casilla16{
+            animation: animacion 20s 5s;
+        }*/
     }
 
     /*CASILLAS FILA 3*/
     &.fila3{
-        animation-delay: 0s;
+        animation-delay: 10s;
+        animation: animacion 5s;
 
         &.casilla17{}
         &.casilla18{}
@@ -112,7 +104,8 @@ h3{
 
     /*CASILLAS FILA 4*/
     &.fila4{
-        animation-delay: 0s;
+        animation-delay: 15s;
+        animation: animacion 5s;
 
         &.casilla25{}
         &.casilla26{}
@@ -126,7 +119,8 @@ h3{
     
     /*CASILLAS FILA 5*/
     &.fila5{
-        animation-delay: 0s;
+        animation-delay: 20s;
+        animation: animacion 5s;
 
         &.casilla33{}
         &.casilla34{}
@@ -140,7 +134,8 @@ h3{
 
     /*CASILLAS FILA 6*/
     &.fila6{
-        animation-delay: 0s;
+        animation-delay: 25s;
+        animation: animacion 5s;
 
         &.casilla41{}
         &.casilla42{}
@@ -154,7 +149,8 @@ h3{
 
     /*CASILLAS FILA 7*/
     &.fila7{
-        animation-delay: 0s;
+        animation-delay: 30s;
+        animation: animacion 5s;
 
         &.casilla49{}
         &.casilla50{}
@@ -168,7 +164,8 @@ h3{
 
     /*CASILLAS FILA 8*/
     &.fila8{
-        animation-delay: 0s;
+        animation-delay: 35s;
+        animation: animacion 5s;
         
         &.casilla57{}
         &.casilla58{}
@@ -178,6 +175,33 @@ h3{
         &.casilla62{}
         &.casilla63{}
         &.casilla64{}
+    } 
+}
+
+@keyframes animacion{
+    10% {
+        background-color: var(--color_blanco);
+    }
+    25% {
+        background-color: var(--color_rojo);
+    }
+    40% {
+        background-color: var(--color_naranja);
+    }
+    55% {
+        background-color: var(--color_amarillo);
+    }
+    60% {
+        background-color: var(--color_verde);
+    }
+    75% {
+        background-color: var(--color_rosa);
+    }
+    90% {
+        background-color: var(--color_morado);
+    }
+    100% {
+        background-color: var(--color_azul);
     }
 }
 
