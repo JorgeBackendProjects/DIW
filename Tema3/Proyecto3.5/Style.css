@@ -67,114 +67,29 @@ h3{
     width:100px;
     height:100px;  
 
-    /*CASILLAS FILA 1*/
     &.fila1{
-        animation-delay: 0s;
-        animation: animacion 5s;
-
-        /*&.casilla1, &.casilla2, &.casilla3, &.casilla4, &.casilla5, &.casilla6, &.casilla7, &.casilla8{
-            animation: animacion 20s 5s;
-        }*/
+        animation: animacion 5s ease 0.5s forwards;
     }
-
-    /*CASILLAS FILA 2*/
     &.fila2{
-        animation-delay: 5s;
-        animation: animacion 5s;
-
-        /*&.casilla9, &.casilla10, &.casilla11, &.casilla12, &.casilla13, &.casilla14, &.casilla15, &.casilla16{
-            animation: animacion 20s 5s;
-        }*/
+        animation: animacion 5s ease 0.5*2 forwards;
     }
-
-    /*CASILLAS FILA 3*/
     &.fila3{
-        animation-delay: 10s;
-        animation: animacion 5s;
-
-        &.casilla17{}
-        &.casilla18{}
-        &.casilla19{}
-        &.casilla20{}
-        &.casilla21{}
-        &.casilla22{}
-        &.casilla23{}
-        &.casilla24{}
+        animation: animacion 5s ease 0.5*3 forwards;
     }
-
-    /*CASILLAS FILA 4*/
     &.fila4{
-        animation-delay: 15s;
-        animation: animacion 5s;
-
-        &.casilla25{}
-        &.casilla26{}
-        &.casilla27{}
-        &.casilla28{}
-        &.casilla29{}
-        &.casilla30{}
-        &.casilla31{}
-        &.casilla32{}
+        animation: animacion 5s ease 0.5*4 forwards;
     }
-    
-    /*CASILLAS FILA 5*/
     &.fila5{
-        animation-delay: 20s;
-        animation: animacion 5s;
-
-        &.casilla33{}
-        &.casilla34{}
-        &.casilla35{}
-        &.casilla36{}
-        &.casilla37{}
-        &.casilla38{}
-        &.casilla39{}
-        &.casilla40{}
+        animation: animacion 5s ease 0.5*5 forwards;
     }
-
-    /*CASILLAS FILA 6*/
     &.fila6{
-        animation-delay: 25s;
-        animation: animacion 5s;
-
-        &.casilla41{}
-        &.casilla42{}
-        &.casilla43{}
-        &.casilla44{}
-        &.casilla45{}
-        &.casilla46{}
-        &.casilla47{}
-        &.casilla48{}
+        animation: animacion 5s ease 0.5*6 forwards;
     }
-
-    /*CASILLAS FILA 7*/
     &.fila7{
-        animation-delay: 30s;
-        animation: animacion 5s;
-
-        &.casilla49{}
-        &.casilla50{}
-        &.casilla51{}
-        &.casilla52{}
-        &.casilla53{}
-        &.casilla54{}
-        &.casilla55{}
-        &.casilla56{}
+        animation: animacion 5s ease 0.5*7 forwards;
     }
-
-    /*CASILLAS FILA 8*/
     &.fila8{
-        animation-delay: 35s;
-        animation: animacion 5s;
-        
-        &.casilla57{}
-        &.casilla58{}
-        &.casilla59{}
-        &.casilla60{}
-        &.casilla61{}
-        &.casilla62{}
-        &.casilla63{}
-        &.casilla64{}
+        animation: animacion 5s ease 0.5*8 forwards;
     } 
 }
 
