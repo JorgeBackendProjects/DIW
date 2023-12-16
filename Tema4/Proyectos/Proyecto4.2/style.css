@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: image();
+}
+
+.main{
+
+}
+
+em{
+    color: #830404;
+    font-weight: bold;
+    font-size: 1em;
+}
