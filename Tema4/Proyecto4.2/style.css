@@ -49,6 +49,10 @@ body{
             padding: 15px;
         }
 
+        & p{
+            font-family: 'Merriweather', serif;
+        }
+
         & .box1{
             margin-left: 5em;
         }
@@ -97,6 +101,7 @@ body{
             }
     
             & p{
+                padding-top: 1em;
                 text-align: justify;
                 font-family: 'Merriweather', serif;
             }
@@ -122,15 +127,15 @@ body{
     
         & div{
             width: 18vw;
-            height: 60vh;
+            height: 65vh;
             float: left;
             margin: 1em;
-            border: 3px solid black;
+            border: 4px solid black;
             background-color: rgba(13, 31, 34,.8);
 
             & .first{
                 background-color: rgba(163, 180, 162) ;
-                border-bottom: 3px solid black;
+                border-bottom: 5px solid black;
                 width: auto;
                 height: auto;
                 margin: auto;
@@ -208,4 +213,3 @@ body{
         font-family: 'Lemon', serif;
     }
 }
-
