@@ -1,0 +1,16 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 10vh;
+    padding-top: 5px;
+}
+
