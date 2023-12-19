@@ -3,12 +3,47 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&family=Suez+One&display=swap');
 
 *{
-    /*background-image: url(./images/background.jpg);*/
-    /*background-color: #dc143c;*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
     color:  #2e0404;
 
-    /*Titulo*/
-    font-family: 'Suez One', serif;
-    /*Menu y parrafos*/
-    font-family: 'KoHo', sans-serif;
 }
+
+body{
+    background-image: url(./images/background.jpg);
+}
+
+nav{
+    background-color: #dc143c;
+    height: 8vh;
+    font-family: 'KoHo', sans-serif;
+
+    & a{
+        color: white;
+    }
+}
+
+section{ 
+    margin-top: 30vh;
+    
+    & h1{
+        font-family: 'Suez One', serif;
+        text-align: center;
+        font-size: 4.5em;
+        color: white;
+    }
+
+    & p{
+        font-family: 'KoHo', sans-serif;
+        text-align: center;
+        font-size: 2.44em;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10vh;
+        color: white;
+    }
+
+}
+
