@@ -20,13 +20,11 @@ body{
     
     /*CLASSES*/
     & .header h1{
-        font-size: 4em;
-        height: 13vh;
+        font-size: 3vw;
     }
 
     & .subtitle1 h2{
-        font-size: 2.5em;
-        height: 8vh;
+        font-size: 2vw;
     }
 
     & .content1{
@@ -43,8 +41,8 @@ body{
         }
 
         & img{
-            width:40%;
-            height: 45%;
+            width: 45%;
+            height: 50%;
             float: left;
             padding: 15px;
         }
@@ -54,19 +52,20 @@ body{
         }
 
         & .box1{
-            margin-left: 5em;
+            margin-left: 5vw;
         }
     
         & .box4{
-            margin-left: 15em;
-            margin-top: 2em;
-            margin-bottom: 3em;
+            clear: both;
+            margin-left: 13vw;
+            margin-top: 10vh;
+            margin-bottom: 3vh;
             width: 30vw;
         }
     
         & .box5{
-            margin-top: 2em;
-            margin-bottom: 3em;
+            margin-top: 10vh;
+            margin-bottom: 3vh;
             width: 30vw;
         }
     }
@@ -76,22 +75,21 @@ body{
         padding-top: 1vh;
 
         & h2{
-            font-size: 2.5em;
-            height: 8vh;
+            font-size: 2vw;
         }
     }
 
     & .content2{
         width: 95%;
         margin: 0 auto;
-        margin-left: 10%;
+        margin-left: 3vw;
 
         & div{
             text-align: center;
-            width: 13vw;
-            padding: 2.5em;
+            width: 17vw;
             float: left;
-            margin: 2em;
+            padding: 5px;
+            margin: 1vw;
             border: 3px solid black;
             border-radius: 5px;
             background-image: linear-gradient(to bottom, rgba(13, 31, 34,.7) 10%, rgba(163, 180, 162,.7) 20%);
@@ -108,8 +106,9 @@ body{
     
             & h3{
                 color: rgb(142, 151, 137);
-                font-size: 1.8em;
-                padding-bottom: 1em;
+                font-size: 2vw;
+                padding-top: 10px;
+                padding-bottom: 20px;
                 font-family: 'Lemon', serif;
             }
 
@@ -122,14 +121,13 @@ body{
 
     & .content3{
         clear: both;
-        margin: 0 auto;
-        margin-left: 5%;
+        margin-left: 2vw;
     
         & div{
-            width: 18vw;
-            height: 65vh;
+            width: 20.5vw;
             float: left;
-            margin: 1em;
+            margin: 0.7vw;
+            margin-top: 7vh;
             border: 4px solid black;
             background-color: rgba(13, 31, 34,.8);
 
@@ -141,15 +139,16 @@ body{
                 margin: auto;
                 
                 & img{
-                    width: 25%;
+                    width: 23%;
                     float: right;
+                    display: block;
                     margin: 1.2rem;
                 }
 
                 & h4{
                     color: black;
                     float: left;
-                    font-size: 2.3em;
+                    font-size: 2vw;
                     width: 60%;
                     text-align: center;
                     font-weight: bold;
@@ -164,7 +163,7 @@ body{
                 padding-top: 5em;
                 text-align: justify;
                 line-height: 1.5em;
-                padding: 1em;
+                padding: 10px;
                 font-family: 'Merriweather', serif;
             }
         }
@@ -178,6 +177,7 @@ body{
         font-size: 1.2em;
         font-weight:bold;
         font-family: 'Lemon', serif;
+        margin-top: 7vh;
     
         & a{
             color: #8B0000;
