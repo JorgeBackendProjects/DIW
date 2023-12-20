@@ -86,7 +86,7 @@ body{
 
         & div{
             text-align: center;
-            width: 17vw;
+            width: 18vw;
             float: left;
             padding: 5px;
             margin: 1vw;
@@ -121,10 +121,10 @@ body{
 
     & .content3{
         clear: both;
-        margin-left: 2vw;
+        margin-left: 3.85vw;
     
         & div{
-            width: 20.5vw;
+            width: 19vw;
             float: left;
             margin: 0.7vw;
             margin-top: 7vh;
