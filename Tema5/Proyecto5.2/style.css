@@ -1,0 +1,67 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./images/burger.jpg);
+}
+
+nav{
+    /*Hamburguer menu*/
+    & .menuButton{
+        cursor: pointer;
+        position: absolute;
+        width: 43px;
+        height: 44px;
+        margin-top: 5vh;
+        margin-left: 89.4vw;
+        z-index: 10;
+        opacity: 0;
+
+        &:checked~.bars{
+            & .bar1{
+                transform: rotate(45deg);
+                background-color: brown;
+            }
+
+            & .bar2{
+                opacity: 0;
+            }
+
+            & .bar3{
+                transform: rotate(-45deg);
+                background-color: brown;
+            }
+        }
+
+        &:checked~.menu{
+        
+        }
+    }
+
+    & .bars{
+        position: absolute;
+        margin-left: 89.3vw;
+        margin-top: 5vh;
+        width: 5vw;
+        height: 5vh;
+        z-index: 5;
+
+        & .bar1, .bar2, .bar3{
+            background-color: yellow;
+            height: 6px;
+            width: 45px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: 1s;
+            z-index: 5;
+            transform-origin: left;
+        }
+    }
+
+    
+}
