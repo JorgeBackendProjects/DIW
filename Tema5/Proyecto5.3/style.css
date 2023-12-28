@@ -81,6 +81,7 @@ nav{
 
 section{
     background-image: url(./images/campero.jpg);
+    background-size: 100% 100%;
     border-radius: 10px;
     width: 70vw;
     padding: 1.5em;
