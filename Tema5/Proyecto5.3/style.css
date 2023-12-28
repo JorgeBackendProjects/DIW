@@ -1,0 +1,81 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./images/background.jpg);
+    background-size: 100% 100%;
+}
+
+header{
+
+    & h1{
+
+    }
+
+}
+
+nav{
+
+    & input{
+
+    }
+
+    & .bars{
+
+        & .bar1, .bar3{
+
+        }
+
+        & .bar2{
+
+        }
+    }
+
+    & .menu{
+
+        & div{
+
+            & p{
+
+            }
+
+            & img{
+
+            }
+        }
+
+        & ul{
+
+            & li{
+
+                & a{
+
+                }
+
+                & a:hover{
+
+                }
+            }
+        }
+    }
+}
+
+section{
+
+    & h2{
+
+    }
+
+    & p{
+        
+    }
+}
+
+footer{
+
+}
