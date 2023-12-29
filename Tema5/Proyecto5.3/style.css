@@ -33,7 +33,7 @@ header{
 
 nav{
     & input{
-        z-index: 5;
+        z-index: 7;
         position: relative;
         opacity: 0;
         cursor: pointer;
@@ -45,7 +45,8 @@ nav{
 
     /*Me faltan las transiciones de las barras.*/
     & .bars{
-        z-index: 3;
+        z-index: 6;
+        position: fixed;
         margin-top: -4.5vh;
         margin-left: 3.3vw;
         transform-origin: top left;
@@ -69,29 +70,65 @@ nav{
     & .menu{
         position: fixed;
         z-index: 5;
-        right: 100vw;
+        background: linear-gradient(to bottom, rgb(84, 126, 218, 0.95), rgba(115, 145, 211, 0.95), rgb(236, 236, 236, 0.95), rgb(84, 126, 218, 0.95));
+        width: 100%;
+        height: 100%;
+        right: 100%;
+        top: 0%;
         
         & div{
-
+            position: relative;
+            margin-top: 4vh;
+            
             & p{
-
+                position: absolute;
+                z-index: 5;
+                background-color: rgba(32, 79, 100, 0.5);
+                color: white;
+                width: 11.8vw;
+                padding: 5px;
+                margin-top: 12vh;
+                margin-left: 43.12vw;
+                font-size: 1.5em;
+                font-weight: bold;
+                text-align: center;
             }
 
             & img{
-                
+                position: absolute;
+                width: 12vw;
+                height: 25vh;
+                margin-left: 43vw;
+                margin-top: 1vh;
+                border: solid 3px white;
+                border-radius: 5px;
             }
         }
 
         & ul{
-            
+            width: 90%;
+            position: relative;
+            margin-top: 33vh;
+            margin-left: 4.5vw;
+            text-align: center;
+            list-style: none;
+
             & li{
+                position: relative;
+                margin-right: 100%;
+                padding: 12px;
 
                 & a{
-
+                    color: #EF4AC0;
+                    font-size: 2.3em;
+                    text-shadow: black 0px 1px 1px;
+                    text-decoration: none;
                 }
 
                 & a:hover{
-
+                    text-decoration: underline;
+                    text-decoration-color: #db73be;
+                    color: white;
                 }
             }
         }
@@ -133,7 +170,7 @@ section{
 
 footer{
     position: fixed;
-    z-index: 3;
+    z-index: 7;
     background-color: #C5B8D9;
     color: #003D6A;
     font-size: 35px;
@@ -146,20 +183,103 @@ footer{
 /*Bars transitions*/
 input[type="checkbox"]:checked~.bars{
     transform: translateX(-0.8vh) translateY(2vh) rotate(-45deg);
-    transition-delay: 0.5s;
+    transition-delay: 0.9s;
 }
 
 input[type="checkbox"]:checked~.bars .bar1 {
     transform: translateY(15px);
     background-color: white;
+    transition-delay: 0.7s;
 }
 
 input[type="checkbox"]:checked~.bars .bar2 {
-    opacity: 0;
-    transition: 0.7s;
+    width: 0;
+    transform-origin: right;
+    transition: 0.5s;
 }
 
 input[type="checkbox"]:checked~.bars .bar3 {
     transform: translateY(-16px) rotate(-90deg);
     background-color: white;
+    transition-delay: 0.7s;
+}
+
+/*Menu transition*/
+input[type="checkbox"]:checked~.menu {
+    right: 0;
+    transition: 2s;
+}
+
+/*List animations*/
+input[type="checkbox"]:checked~.menu ul li:nth-child(1) {
+    animation: background1 1s linear 1s forwards, change_background 1s linear 2s forwards;
+}
+
+input[type="checkbox"]:checked~.menu ul li:nth-child(2) {
+    animation: background2 1.5s linear 1s forwards, change_background 1s linear 2.4s forwards;
+}
+
+input[type="checkbox"]:checked~.menu ul li:nth-child(3) {
+    animation: background3 2s linear 1s forwards, change_background 1s linear 2.8s forwards;
+}
+
+input[type="checkbox"]:checked~.menu ul li:nth-child(4) {
+    animation: background1 2.5s linear 1s forwards, change_background 1s linear 3.2s forwards;
+}
+
+input[type="checkbox"]:checked~.menu ul li:nth-child(5) {
+    animation: background2 3s linear 1s forwards, change_background 1s linear 3.6s forwards;
+}
+
+input[type="checkbox"]:checked~.menu ul li:nth-child(6) {
+    animation: background3 3.5s linear 1s forwards, change_background 1s linear 4s forwards;
+}
+
+@keyframes change_background{
+    to {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes background1 {
+    from {
+        background-color: #8B0755;
+        width: 0;
+        left: -100%;
+    }
+
+    to {
+        background-color: #8B0755;
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+@keyframes background2 {
+    from {
+        background-color: #F2BC5E;
+        width: 0;
+        left: -100%;
+    }
+
+    to {
+        background-color: #F2BC5E;
+        width: 100%;
+        left: 0;
+    }
+}
+
+@keyframes background3 {
+    from {
+        background-color: #9FA9E0;
+        width: 0;
+        left: -100%;
+    }
+
+    to {
+        background-color: #9FA9E0;
+        width: 100%;
+        left: 0;
+    }
 }
