@@ -25,7 +25,7 @@ header{
         font-size: 2em;
         text-align: center;
         border: 5px solid #D2BFE6;
-        padding-top: 15px;
+        padding-top: 20px;
         padding-bottom: 15px;
     }
 
@@ -33,7 +33,8 @@ header{
 
 nav{
     & input{
-        z-index: 4;
+        z-index: 5;
+        position: relative;
         opacity: 0;
         cursor: pointer;
         width: 50px;
@@ -42,26 +43,32 @@ nav{
         margin-left: 3vw;
     }
 
+    /*Me faltan las transiciones de las barras.*/
     & .bars{
         z-index: 3;
         margin-top: -4.5vh;
         margin-left: 3.3vw;
+        transform-origin: top left;
+        transition: transform 1s ease;
         
         & .bar1, .bar2, .bar3{
-            background-color: black;
+            background-color: #F89650;
             border-radius: 5px;
             width: 45px;
             height: 7px;
             margin-bottom: 8px;
+            transition: transform 1s ease;
+            transform-origin: center center;
         }
 
         & .bar2{
-            background-color: red;
+            background-color: #6C6460;
         }
     }
 
     & .menu{
         position: fixed;
+        z-index: 5;
         right: 100vw;
         
         & div{
@@ -132,6 +139,27 @@ footer{
     font-size: 35px;
     text-align: center;
     width: 100%;
-    bottom: 20px;
-    padding: 15px;
+    bottom: 40px;
+    padding: 10px;
+}
+
+/*Bars transitions*/
+input[type="checkbox"]:checked~.bars{
+    transform: translateX(-0.8vh) translateY(2vh) rotate(-45deg);
+    transition-delay: 0.5s;
+}
+
+input[type="checkbox"]:checked~.bars .bar1 {
+    transform: translateY(15px);
+    background-color: white;
+}
+
+input[type="checkbox"]:checked~.bars .bar2 {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+input[type="checkbox"]:checked~.bars .bar3 {
+    transform: translateY(-16px) rotate(-90deg);
+    background-color: white;
 }
