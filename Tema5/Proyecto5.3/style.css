@@ -15,9 +15,9 @@ body{
 header{
     position: fixed;
     z-index: 2;
-    width: 65vw;
+    width: 68vw;
     margin-top: 3vh;
-    margin-left: 16vw;
+    margin-left: 14.5vw;
 
     & h1{
         background-color: #003D6A;
@@ -32,19 +32,31 @@ header{
 }
 
 nav{
-
     & input{
-
+        z-index: 4;
+        opacity: 0;
+        cursor: pointer;
+        width: 50px;
+        height: 45px;
+        margin-top: 5vh;
+        margin-left: 3vw;
     }
 
     & .bars{
-
-        & .bar1, .bar3{
-
+        z-index: 3;
+        margin-top: -4.5vh;
+        margin-left: 3.3vw;
+        
+        & .bar1, .bar2, .bar3{
+            background-color: black;
+            border-radius: 5px;
+            width: 45px;
+            height: 7px;
+            margin-bottom: 8px;
         }
 
         & .bar2{
-
+            background-color: red;
         }
     }
 
@@ -85,7 +97,7 @@ section{
     border-radius: 10px;
     width: 70vw;
     padding: 1.5em;
-    margin-top: 150px;
+    margin-top: 80px;
     margin-bottom: 12vh;
     margin-left: 13.5vw;
     
@@ -104,7 +116,7 @@ section{
     }
 
     & p{
-        color: white;
+        color: #C5B8D9;
         font-size: 2em;
         text-align: justify;
         margin-top: 4vh;
@@ -115,8 +127,8 @@ section{
 footer{
     position: fixed;
     z-index: 3;
-    background-color: #9E8AA2;
-    color: #002546;
+    background-color: #C5B8D9;
+    color: #003D6A;
     font-size: 35px;
     text-align: center;
     width: 100%;
