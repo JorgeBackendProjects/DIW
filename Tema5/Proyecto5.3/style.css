@@ -1,5 +1,7 @@
 /*Jorge Muñoz García*/
 
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Playfair+Display&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,32 +24,33 @@ header{
     & h1{
         background-color: #003D6A;
         color: #DFEEF5;
+        font-family: 'Ibarra Real Nova', serif;
         font-size: 2em;
         text-align: center;
         border: 5px solid #D2BFE6;
-        padding-top: 20px;
-        padding-bottom: 15px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
-
 }
 
 nav{
+    position: relative;
+    
     & input{
-        z-index: 7;
-        position: relative;
+        z-index: 10;
+        position: sticky;
         opacity: 0;
         cursor: pointer;
         width: 50px;
-        height: 45px;
+        height: 55px;
         margin-top: 5vh;
         margin-left: 3vw;
     }
 
-    /*Me faltan las transiciones de las barras.*/
     & .bars{
         z-index: 6;
-        position: fixed;
-        margin-top: -4.5vh;
+        position: sticky;
+        margin-top: -6.5vh;
         margin-left: 3.3vw;
         transform-origin: top left;
         transition: transform 1s ease;
@@ -85,6 +88,7 @@ nav{
                 z-index: 5;
                 background-color: rgba(32, 79, 100, 0.5);
                 color: white;
+                font-family: 'Playfair Display', serif;
                 width: 11.8vw;
                 padding: 5px;
                 margin-top: 12vh;
@@ -120,12 +124,15 @@ nav{
 
                 & a{
                     color: #EF4AC0;
-                    font-size: 2.3em;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 2em;
                     text-shadow: black 0px 1px 1px;
                     text-decoration: none;
+                    transition: 0.3s;
                 }
 
                 & a:hover{
+                    font-size: 2.3em;
                     text-decoration: underline;
                     text-decoration-color: #db73be;
                     color: white;
@@ -141,7 +148,7 @@ section{
     border-radius: 10px;
     width: 70vw;
     padding: 1.5em;
-    margin-top: 80px;
+    margin-top: 10vh;
     margin-bottom: 12vh;
     margin-left: 13.5vw;
     
@@ -150,17 +157,19 @@ section{
         z-index: 3;
         background-color: #003D6A;
         color: #C5B8D9;
+        font-family: 'Ibarra Real Nova', serif;
         font-size: 2em;
         text-align: center;
         border-radius: 6px;
         width: 50vw;
-        height: 43px;
-        top: 5%;
+        height: 7vh;
+        top: 5.5%;
         margin-left: 13%;
+        padding-top: 0.7vh;
     }
 
     & p{
-        color: #C5B8D9;
+        color: #ffffff;
         font-size: 2em;
         text-align: justify;
         margin-top: 4vh;
@@ -176,7 +185,7 @@ footer{
     font-size: 35px;
     text-align: center;
     width: 100%;
-    bottom: 40px;
+    bottom: 2vh;
     padding: 10px;
 }
 
@@ -207,6 +216,11 @@ input[type="checkbox"]:checked~.bars .bar3 {
 /*Menu transition*/
 input[type="checkbox"]:checked~.menu {
     right: 0;
+    transition: 2s;
+}
+
+input[type="checkbox"]:not(:checked)~.menu {
+    transform: translateX(-100%);
     transition: 2s;
 }
 
