@@ -1,0 +1,132 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --herocolor:#cb1da0;
+    --fondolanding: #120f0fa3;
+    --textcolor: #d1d1d1;
+    --fondopoema: #1c262b;
+    --fondocruz: #f0f0f055;
+
+}
+
+body{
+    background-image: url('./images/road.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+main{
+
+    /*Hamburguer menu*/
+    & .burguer_icon{
+        margin-top: 5vh;
+        margin-left: 93vw;
+        display: block;
+        cursor: pointer;  
+
+        & span{ 
+            display: block;
+            width: 40px;
+            height: 5px;
+            margin-bottom: 8px;
+            background: var(--herocolor);
+            border-radius: 3px; 
+        }
+
+        & .bar1{}
+
+        & .bar2{}
+        
+        & .bar3{}
+    }
+
+    /*Panel de la landing page*/
+    & .panel{
+        position: relative;
+        margin-top: 10vh;
+        margin-right: 12vw;
+        margin-left: 12vw;
+        background-color: var(--fondolanding);
+        border: 5px solid var(--herocolor);
+        border-radius: 15px;
+
+        & h1{
+            font-family: 'Lexend Mega', sans-serif;
+            font-weight: normal;
+            font-size: 4.5vw;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 5px solid var(--herocolor);
+            color: var(--herocolor);
+            padding: 50px;
+        }
+    
+        & p{
+            font-family: 'Habibi', serif;
+            font-size: 1.7rem;   
+            color: var(--herocolor);
+            padding: 50px;
+        }
+    }
+
+    & .left_panel{
+        width: 40%;
+        height: 100%;
+        background-color: var(--fondopoema);
+        
+        & p{
+            font-family: 'Habibi', serif;
+            font-weight: normal;
+            font-size: 1.3rem;
+            text-align: center;
+            color: var(--textcolor);
+        }
+    }
+
+    & .right_panel{
+        width:60%;
+        height:100%;
+        background-image: url('./images/background.jpg');    
+
+        & .right_names{
+            & h2, h3{
+                text-decoration: none;
+                font-family: 'Lexend Mega', sans-serif;
+                font-size: 3rem;
+                font-weight: 200;
+                text-align: center;
+                line-height: 5rem;
+                color: var(--textcolor);
+                font-weight: 700;
+            }
+
+            & h3{
+                font-size: 2rem;
+            }
+        }
+
+        & .right_elements{
+            & li{
+                & a{
+                    text-decoration: none;
+                    font-family: 'Lexend Mega', sans-serif;
+                    font-size: 3rem;
+                    font-weight: 200;
+                    text-align: center;
+                    line-height: 5rem;
+                    color: var(--textcolor);
+                }
+
+                & a:hover{}
+            }
+        }
+    }
+}
