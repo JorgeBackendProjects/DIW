@@ -43,12 +43,6 @@ main{
             border-radius: 3px; 
             transition: 5s;
         }
-
-        & .bar1{}
-
-        & .bar2{}
-        
-        & .bar3{}
     }
 
     /*Panel de la landing page*/
@@ -86,7 +80,7 @@ main{
         height: 100%;
         background-color: var(--fondopoema);
         position: relative;
-        right: 100%;
+        right: 40%;
         transition: 1s;
         
         & p{
@@ -137,7 +131,10 @@ main{
                     color: var(--textcolor);
                 }
 
-                & a:hover{}
+                & a:hover{
+                    border: 5px solid white;
+                    background-color: #1c262bde;
+                }
             }
         }
     }
