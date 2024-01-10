@@ -25,52 +25,6 @@ body{
     overflow-y: hidden;
 }
 
-.bars_icon{
-    & span{ 
-        display: block;
-        width: 40px;
-        height: 5px;
-        margin-bottom: 8px;
-        background: var(--herocolor);
-        border-radius: 3px; 
-        transition: 1s;
-    }
-}
-
-.cross_icon{
-    background-color: rgba(168, 168, 168, 0.164);
-    border-radius: 50%;
-    border: 2px solid white;
-    transition: 1s;
-
-    & span{ 
-        display: block;
-        width: 40px;
-        height: 5px;
-        margin-bottom: 8px;
-        background: var(--herocolor);
-        border-radius: 3px; 
-        transform: translateX(20px);
-        transition: 1s;
-    }
-
-    & .bar1{
-        transform: rotate(-230deg) translateY(-20px);
-        background-color: white;
-    }
-
-    & .bar2{
-        margin-left: -35px;
-        transition: 1s;
-        opacity: 0;
-    }
-
-    & .bar3{
-        transform: rotate(230deg) translateY(20px);
-        background-color: white;
-    }
-}
-
 main{
     /*Hamburguer menu*/
     & .burguer_icon{
@@ -85,18 +39,21 @@ main{
     /*Panel de la landing page*/
     & .panel{
         position: absolute;
-        margin-top: 15vh;
+        margin-top: 14vh;
         margin-right: 10vw;
         margin-left: 10vw;
+        height: 70vh;
         background-color: var(--fondolanding);
         border: 5px solid var(--herocolor);
         border-radius: 15px;
         padding: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
 
         & h1{
             font-family: 'Lexend Mega', sans-serif;
             font-weight: normal;
-            font-size: 4.5vw;
+            font-size: 4vw;
             text-align: center;
             padding-bottom: 10px;
             border-bottom: 5px solid var(--herocolor);
@@ -105,9 +62,11 @@ main{
     
         & p{
             font-family: 'Habibi', serif;
-            font-size: 1.7rem;   
+            font-size: 1.95em;   
             color: var(--herocolor);
-            padding: 50px;
+            padding-top: 70px;
+            padding-left: 100px;
+            padding-right: 100px;
             text-align: center;
         }
     }
@@ -125,8 +84,7 @@ main{
             font-size: 1.3rem;
             text-align: center;
             color: var(--textcolor);
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding-top: 12vh;
         }
     }
 
@@ -163,6 +121,7 @@ main{
             & li{
                 list-style: none;
                 text-align: center;
+                margin-top: 1vh;
 
                 & a{
                     text-decoration: none;
@@ -183,6 +142,7 @@ main{
     }
 }
 
+/*Panels*/
 .right_off{
     margin-left: 100%;
 }
@@ -197,4 +157,53 @@ main{
 
 .left_on{
     right: 0%;
+}
+
+/*Button*/
+.bars_icon{
+    & span{ 
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 8px;
+        background: var(--herocolor);
+        border-radius: 3px; 
+        transition: 1s;
+    }
+}
+
+.cross_icon{
+    background-color: rgba(168, 168, 168, 0.164);
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 1s;
+
+    & span{ 
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 8px;
+        background: var(--herocolor);
+        border-radius: 3px; 
+        transform: translateX(20px);
+        transition: 1s;
+    }
+
+    & .bar1{
+        transform: rotate(-230deg) translateY(-26px) translateX(-20px);
+        background-color: white;
+        transform-origin: left;
+    }
+
+    & .bar2{
+        margin-left: -35px;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    & .bar3{
+        transform: rotate(230deg) translateY(-10px) translateX(40px);
+        background-color: white;
+        transform-origin: right;
+    }
 }
