@@ -17,32 +17,69 @@
 }
 
 body{
+    height: 100vh;
     background-image: url('./images/road.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bars_icon{
+    & span{ 
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 8px;
+        background: var(--herocolor);
+        border-radius: 3px; 
+        transition: 1s;
+    }
+}
+
+.cross_icon{
+    background-color: rgba(168, 168, 168, 0.164);
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 1s;
+
+    & span{ 
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 8px;
+        background: var(--herocolor);
+        border-radius: 3px; 
+        transform: translateX(20px);
+        transition: 1s;
+    }
+
+    & .bar1{
+        transform: rotate(-230deg) translateY(-20px);
+        background-color: white;
+    }
+
+    & .bar2{
+        margin-left: -35px;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    & .bar3{
+        transform: rotate(230deg) translateY(20px);
+        background-color: white;
+    }
 }
 
 main{
-
     /*Hamburguer menu*/
     & .burguer_icon{
         margin-top: 5vh;
-        margin-left: 95%;
+        margin-left: 94%;
         display: block;
         cursor: pointer;  
         position: absolute;
-        z-index: 3;
-
-        & span{ 
-            display: block;
-            width: 40px;
-            height: 5px;
-            margin-bottom: 8px;
-            background: var(--herocolor);
-            border-radius: 3px; 
-            transition: 5s;
-        }
+        z-index: 5;
     }
 
     /*Panel de la landing page*/
@@ -77,10 +114,9 @@ main{
 
     & .left_panel{
         width: 40%;
-        height: 100%;
+        height: 100vh;
         background-color: var(--fondopoema);
         position: relative;
-        right: 40%;
         transition: 1s;
         
         & p{
@@ -96,13 +132,15 @@ main{
 
     & .right_panel{
         width: 60%;
-        height: 100%;
+        height: 100vh;
         background-image: url('./images/background.jpg');    
         position: relative;
-        left: 100%;
+        bottom: 100vh;
         transition: 1s;
 
         & .right_names{
+            padding-top: 10vh;
+
             & h2, h3{
                 text-decoration: none;
                 font-family: 'Lexend Mega', sans-serif;
@@ -111,7 +149,7 @@ main{
                 text-align: center;
                 line-height: 5rem;
                 color: var(--textcolor);
-                font-weight: 700;
+                font-weight: 700;    
             }
 
             & h3{
@@ -120,7 +158,12 @@ main{
         }
 
         & .right_elements{
+            margin-top: 5vh;
+            
             & li{
+                list-style: none;
+                text-align: center;
+
                 & a{
                     text-decoration: none;
                     font-family: 'Lexend Mega', sans-serif;
@@ -138,4 +181,20 @@ main{
             }
         }
     }
+}
+
+.right_off{
+    margin-left: 100%;
+}
+
+.right_on{
+    margin-left: 40%;
+}
+
+.left_off{
+    right: 40%;
+}
+
+.left_on{
+    right: 0%;
 }

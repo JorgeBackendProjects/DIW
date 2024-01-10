@@ -16,7 +16,7 @@
     </head>
     <body>
         <main>
-            <div class="burguer_icon">
+            <div class="burguer_icon bars_icon">
                 <span class="bar1"></span>
                 <span class="bar2"></span>
                 <span class="bar3"></span>
@@ -27,7 +27,7 @@
                 <p>'The Road Not Taken' is an ambiguous poem that allows the reader to think about choices in life, whether to go with the mainstream or go it alone. If life is a journey, this poem highlights those times in life when a decision has to be made. Which way will you go?</p>
             </div>
 
-            <div class="left_panel">
+            <div class="left_panel left_off">
                 <p>
                     Two roads diverged in a yellow wood,<br>
                     And sorry I could not travel both<br>
@@ -55,7 +55,7 @@
                 </p>
             </div>
 
-            <div class="right_panel">
+            <div class="right_panel right_off">
                 <div class="right_names">
                     <h2>The Road Not Taken</h2>
                     <h3>By Robert Frost</h3>
@@ -73,11 +73,11 @@
 
     <script>
         $('.burguer_icon').on('click', function() {
-            $(this).toggleClass('icono_cruz icono_barras');
+            $(this).toggleClass('bars_icon cross_icon');
 
-            $(".right_panel").toggleClass('derecha_off derecha_on');
+            $(".right_panel").toggleClass('right_off right_on');
 
-            $(".left_panel").toggleClass('izquierda_off izquierda_on');
+            $(".left_panel").toggleClass('left_off left_on');
         });
     </script>
 </html>
