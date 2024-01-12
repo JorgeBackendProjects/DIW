@@ -1,0 +1,145 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.panel{
+    background-color: grey;
+    width: 90vw;
+    height: 65vh;
+    margin-top: 5vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border-radius: 5px;
+
+    & h1{
+        color: white;
+        text-align: center;
+        padding-top: 3vh;
+        font-size: 3.5vw;
+    }
+    
+    & hr{
+        width: 45vw;
+        height: 5px;
+        background-color: white;
+        color: white;
+        margin-top: 1.5vh;
+        margin-left: 22vw;
+    }
+    
+    .dice_container{
+        margin-top: 7vh;
+
+        & .dice{
+            display: inline-block;
+            border-radius: 10px;
+            width: 140px;
+            height: 140px;
+            background-color: black;
+            margin: 7px;
+        }
+    
+        & .die1{
+            margin-left: 20px;
+
+            & .point{
+    
+            }
+        }
+    
+        & .die2{
+            & .point1{
+    
+            }
+    
+            & .point2{
+    
+            }
+        }
+    
+        & .die3{
+            & .point1{
+    
+            }
+    
+            & .point2{
+    
+            }
+    
+            & .point3{
+    
+            }
+        }
+    
+        & .die4{
+            & .point1{
+    
+            }
+    
+            & .point2{
+    
+            }
+    
+            & .point3{
+    
+            }
+    
+            & .point4{
+    
+            }
+        }
+    
+        & .die5{
+            & .point1{
+    
+            }
+    
+            & .point2{
+    
+            }
+    
+            & .point3{
+    
+            }
+    
+            & .point4{
+    
+            }
+    
+            & .point5{
+    
+            }
+    
+        }
+    
+        & .die6{
+            & .point1{
+    
+            }
+    
+            & .point2{
+    
+            }
+    
+            & .point3{
+    
+            }
+    
+            & .point4{
+    
+            }
+            
+            & .point5{
+    
+            }
+    
+            & .point6{
+    
+            }
+        }
+    }
+}
