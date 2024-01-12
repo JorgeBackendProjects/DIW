@@ -41,6 +41,7 @@ main{
         position: absolute;
         margin-top: 14vh;
         margin-left: 19vw;
+        margin-right: 19vw;
         height: 70vh;
         background-color: var(--fondolanding);
         border: 5px solid var(--herocolor);
@@ -52,7 +53,7 @@ main{
         & h1{
             font-family: 'Lexend Mega', sans-serif;
             font-weight: normal;
-            font-size: 3.5vw;
+            font-size: 3.2vw;
             text-align: center;
             padding-bottom: 10px;
             border-bottom: 5px solid var(--herocolor);
@@ -64,7 +65,7 @@ main{
             font-family: 'Habibi', serif;
             font-size: 1.4em;   
             color: var(--herocolor);
-            top: 26vh;
+            top: 25vh;
             left: 12vw;
             right: 12vw;
             bottom: 60px;
