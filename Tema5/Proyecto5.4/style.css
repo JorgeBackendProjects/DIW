@@ -66,8 +66,8 @@ main{
             font-size: 1.4em;   
             color: var(--herocolor);
             top: 25vh;
-            left: 12vw;
-            right: 12vw;
+            left: 10vw;
+            right: 10vw;
             bottom: 60px;
             text-align: center;
         }
