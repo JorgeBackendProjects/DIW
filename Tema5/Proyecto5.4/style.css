@@ -53,7 +53,7 @@ main{
         & h1{
             font-family: 'Lexend Mega', sans-serif;
             font-weight: normal;
-            font-size: 4vw;
+            font-size: 3.5vw;
             text-align: center;
             padding-bottom: 10px;
             border-bottom: 5px solid var(--herocolor);
@@ -61,12 +61,14 @@ main{
         }
     
         & p{
+            position: absolute;
             font-family: 'Habibi', serif;
-            font-size: 1.95em;   
+            font-size: 1.4vw;   
             color: var(--herocolor);
-            padding-top: 70px;
-            padding-left: 100px;
-            padding-right: 100px;
+            top: 26vh;
+            left: 12vw;
+            right: 12vw;
+            bottom: 60px;
             text-align: center;
         }
     }
@@ -81,10 +83,11 @@ main{
         & p{
             font-family: 'Habibi', serif;
             font-weight: normal;
-            font-size: 1.3rem;
+            font-size: 95%;
             text-align: center;
             color: var(--textcolor);
             padding-top: 12vh;
+            padding-bottom: 12vh;
         }
     }
 
