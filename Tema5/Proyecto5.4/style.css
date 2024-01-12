@@ -40,8 +40,7 @@ main{
     & .panel{
         position: absolute;
         margin-top: 14vh;
-        margin-left: 13.5vw;
-        margin-right: 10vw;
+        margin-left: 19vw;
         height: 70vh;
         background-color: var(--fondolanding);
         border: 5px solid var(--herocolor);
@@ -63,7 +62,7 @@ main{
         & p{
             position: absolute;
             font-family: 'Habibi', serif;
-            font-size: 1.11em;   
+            font-size: 1.4em;   
             color: var(--herocolor);
             top: 26vh;
             left: 12vw;
@@ -83,7 +82,7 @@ main{
         & p{
             font-family: 'Habibi', serif;
             font-weight: normal;
-            font-size: 1em;
+            font-size: 1.3em;
             text-align: center;
             color: var(--textcolor);
             padding-top: 12vh;
