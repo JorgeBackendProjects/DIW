@@ -1,0 +1,237 @@
+/* Jorge Muñoz García 
+
+- Código para los iconos de Bootsptrap:
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+- Código para el icono de los diamantes: 
+
+<i class="bi bi-suit-diamond-fill"></i> 
+
+- Fuente: Literata
+
+- Colores: 
+Fondo de las cartas, texto del contenedor flexible: gainsboro
+Sombra de las cartas: #00000080;
+Color de los diamantes: #900007;
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightslategrey;
+}
+
+.panel{
+    background-color: darkslategrey;
+    width: 85vw;
+    height: auto;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border-radius: 5px;
+    border: 5px solid white;
+    border-radius: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+
+    & h1{
+        color: white;
+        text-align: center;
+        padding-top: 3vh;
+        font-size: 3.5vw;
+    }
+    
+    & hr{
+        width: 70vw;
+        height: 5px;
+        background-color: white;
+        color: white;
+        margin-top: 1.5vh;
+        margin-left: 7vw;
+    }
+
+    & .card_container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+
+        & .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 1%;
+            width: 12.5vw;
+            height: 30vh;
+            border: 3px solid gainsboro;
+            background-color: gainsboro;
+
+            & .principio_carta{
+
+            }
+            
+            & .final_carta{
+                align-content: flex-end;
+            }
+        }
+
+        & .card1{
+            display: flex;
+
+            & .diamante1{
+                align-self: center;
+            }
+        }
+
+        & .card2{
+            display: flex;
+            
+            & .columna1{
+
+            }
+        }
+
+        & .card3{
+            display: flex;
+            
+            & .columna1{
+
+            }
+        }
+
+        & .card4{
+            display: flex;
+            
+            & .columna1{
+
+            }
+
+            & .columna2{
+
+            }
+        }
+
+        & .card5{
+            display: flex;
+            
+            & .columna1{
+
+            }
+
+            & .diamante1{
+
+            }
+
+            & .columna2{
+
+            }
+        }
+
+        & .card6{
+            display: flex;
+            
+            & .columna1{
+
+            }
+
+            & .columna2{
+
+            }
+        }
+
+        & .card7{
+            display: flex;
+
+            & .columna1{
+
+            }
+
+            & .diamante1{
+
+            }
+
+            & .columna3{
+
+            }
+        }
+
+        & .card8{
+            display: flex;
+            
+            & .columna1{
+
+            }
+
+            & .columna2{
+
+            }
+
+            & .columna3{
+
+            }
+        }
+
+        & .card9{
+            display: flex;
+            
+            & .columna1{
+
+            }
+
+            & .diamante1{
+
+            }
+
+            & .columna2{
+
+            }
+        }
+
+        & .card10{
+            display: flex;
+            
+            & .columna1{
+
+            }
+
+            & .columna2{
+
+            }
+
+            & .columna3{
+
+            }
+        }
+
+        & .card_j{
+            display: flex;
+
+            & .image{
+                background-image: url("./images/JD.png");
+
+            }
+        }
+
+        & .card_q{
+            display: flex;
+            
+            & .image{
+                background-image: url("./images/QD.png");
+
+            }
+        }
+
+        & .card_k{
+            display: flex;
+            
+            & .image{
+                background-image: url("./images/KD.png");
+
+            }
+        }
+    }
+}
