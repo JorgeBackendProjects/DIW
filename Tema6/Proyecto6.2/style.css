@@ -79,6 +79,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                align-self: flex-start;
 
                 & p{
                     margin-left: 3px;
@@ -89,64 +90,45 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                align-self: flex-end;
+                
+                & p{
+                    margin-right: 3px;
+                }
+            }
+
+            & .columna1, .columna2, .columna3{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 15px 0;
+
+                    & i{
+                        font-size: 40px;
+                    }
+                }
             }
         }
 
         & .card1{
-            display: flex;
 
             & .diamante1{
                 align-self: center;
             }
         }
 
-        & .card2{
-            display: flex;
-            
-            & .columna1{
-
-            }
-        }
-
-        & .card3{
-            display: flex;
-            
-            
-            & .columna1{
-
-            }
-        }
-
-        & .card4{
-            display: flex;
-            
-            & .columna1{
-
-            }
-
-            & .columna2{
-
-            }
-        }
-
         & .card5{
-            display: flex;
-            
-            & .columna1{
-
-            }
-
             & .diamante1{
-
-            }
-
-            & .columna2{
 
             }
         }
 
         & .card6{
-            display: flex;
             
             & .columna1{
 
@@ -158,14 +140,15 @@ body{
         }
 
         & .card7{
-            display: flex;
-
+            /**/
             & .columna1{
 
             }
 
             & .diamante1{
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             & .columna3{
@@ -174,14 +157,15 @@ body{
         }
 
         & .card8{
-            display: flex;
-            
+            /**/
             & .columna1{
 
             }
 
             & .columna2{
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             & .columna3{
@@ -190,14 +174,15 @@ body{
         }
 
         & .card9{
-            display: flex;
-            
+            /**/
             & .columna1{
 
             }
 
             & .diamante1{
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             & .columna2{
@@ -206,14 +191,15 @@ body{
         }
 
         & .card10{
-            display: flex;
-            
+            /**/
             & .columna1{
 
             }
 
             & .columna2{
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             & .columna3{
@@ -222,7 +208,6 @@ body{
         }
 
         & .card_j{
-            display: flex;
 
             & .image{
                 background-image: url("./images/JD.png");
@@ -231,7 +216,6 @@ body{
         }
 
         & .card_q{
-            display: flex;
             
             & .image{
                 background-image: url("./images/QD.png");
@@ -240,7 +224,6 @@ body{
         }
 
         & .card_k{
-            display: flex;
             
             & .image{
                 background-image: url("./images/KD.png");
