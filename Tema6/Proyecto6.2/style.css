@@ -84,6 +84,8 @@ body{
                 & p{
                     margin-left: 3px;
                 }
+
+                margin: 1%;
             }
             
             & .final_carta{
@@ -115,95 +117,44 @@ body{
             }
         }
 
-        & .card1{
+        & .card1, .card5{
 
             & .diamante1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 align-self: center;
             }
         }
 
-        & .card5{
-            & .diamante1{
 
-            }
-        }
-
-        & .card6{
+        & .card7, .card9{
             
-            & .columna1{
-
-            }
-
-            & .columna2{
-
-            }
-        }
-
-        & .card7{
-            /**/
-            & .columna1{
-
-            }
-
             & .diamante1{
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-
-            & .columna3{
-
-            }
         }
 
-        & .card8{
-            /**/
-            & .columna1{
-
-            }
+        & .card8, .card10{
 
             & .columna2{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
 
-            & .columna3{
+                & div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 45px 0;
 
-            }
-        }
-
-        & .card9{
-            /**/
-            & .columna1{
-
-            }
-
-            & .diamante1{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            & .columna2{
-
-            }
-        }
-
-        & .card10{
-            /**/
-            & .columna1{
-
-            }
-
-            & .columna2{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            & .columna3{
-
+                    & i{
+                        font-size: 40px;
+                    }
+                }
             }
         }
 
