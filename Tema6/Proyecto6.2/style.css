@@ -1,19 +1,6 @@
 /* Jorge Muñoz García 
 
-- Código para los iconos de Bootsptrap:
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-- Código para el icono de los diamantes: 
-
-<i class="bi bi-suit-diamond-fill"></i> 
-
 - Fuente: Literata
-
-- Colores: 
-Fondo de las cartas, texto del contenedor flexible: gainsboro
-Sombra de las cartas: #00000080;
-Color de los diamantes: #900007;
 
 */
 
@@ -31,6 +18,7 @@ body{
     background-color: darkslategrey;
     width: 85vw;
     height: auto;
+    margin-bottom: 2vh;
     margin-left: 6vw;
     margin-right: 6vw;
     border-radius: 5px;
@@ -39,7 +27,7 @@ body{
     font-family: 'Archivo Narrow', sans-serif;
 
     & h1{
-        color: white;
+        color: gainsboro;
         text-align: center;
         padding-top: 3vh;
         font-size: 3.5vw;
@@ -48,8 +36,8 @@ body{
     & hr{
         width: 70vw;
         height: 5px;
-        background-color: white;
-        color: white;
+        background-color: gainsboro;
+        color: gainsboro;
         margin-top: 1.5vh;
         margin-left: 7vw;
     }
@@ -59,9 +47,10 @@ body{
         justify-content: space-evenly;
         flex-wrap: wrap;
         margin-top: 5vh;
+        margin-bottom: 2vh;
 
         & i{
-            color: red;
+            color: #900007;
         }
 
         & .card{
@@ -74,6 +63,7 @@ body{
             border: 3px solid gainsboro;
             border-radius: 10px;
             background-color: gainsboro;
+            box-shadow: 20px 20px 25px #00000080;
 
             & .principio_carta{
                 display: flex;
@@ -82,10 +72,17 @@ body{
                 align-self: flex-start;
 
                 & p{
-                    margin-left: 3px;
+                    margin-left: 5px;
+                    font-weight: bold;
+                    color: #900007;
                 }
 
-                margin: 1%;
+                & i{
+                    font-size: 20px;
+                }
+
+                margin-top: 5px;
+                margin-left: 5px;
             }
             
             & .final_carta{
@@ -95,8 +92,18 @@ body{
                 align-self: flex-end;
                 
                 & p{
-                    margin-right: 3px;
+                    margin-right: 5px;
+                    font-weight: bold;
+                    color: #900007;
+                    transform: rotate(180deg);
                 }
+
+                & i{
+                    font-size: 20px;
+                }
+
+                margin-bottom: 5px;
+                margin-right: 5px;
             }
 
             & .columna1, .columna2, .columna3{
@@ -115,6 +122,10 @@ body{
                     }
                 }
             }
+
+            & .diamante1{
+                font-size: 40px;
+            }
         }
 
         & .card1, .card5{
@@ -127,13 +138,23 @@ body{
             }
         }
 
-
-        & .card7, .card9{
+        & .card7{
             
             & .diamante1{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 105px;
+            }
+        }
+
+        & .card9{
+            
+            & .diamante1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 150px;
             }
         }
 
@@ -158,6 +179,20 @@ body{
             }
         }
 
+        & .card10{
+            & .principio_carta{
+                & i{
+                    margin-left: 4.5px;
+                }
+            }
+
+            & .final_carta{
+                & i{
+                    margin-right: 4.5px;
+                }
+            }
+        }
+
         & .card_j{
             
             & .image{
@@ -165,30 +200,29 @@ body{
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 90%;
-                margin-top: 15px;
+                margin-top: 30px;
             }
         }
 
         & .card_q{
-            
-            
+
             & .image{
                 background-image: url("./images/QD.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 90%;
-                margin-top: 15px;
+                margin-top: 30px;
             }
         }
 
         & .card_k{
-            
+        
             & .image{
                 background-image: url("./images/KD.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 90%;
-                margin-top: 15px;
+                margin-top: 30px;
             }
         }
     }
