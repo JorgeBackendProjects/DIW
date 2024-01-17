@@ -208,18 +208,25 @@ body{
         }
 
         & .card_j{
-
+            
             & .image{
                 background-image: url("./images/JD.png");
-
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin-top: 15px;
             }
         }
 
         & .card_q{
             
+            
             & .image{
                 background-image: url("./images/QD.png");
-
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin-top: 15px;
             }
         }
 
@@ -227,7 +234,10 @@ body{
             
             & .image{
                 background-image: url("./images/KD.png");
-
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin-top: 15px;
             }
         }
     }
