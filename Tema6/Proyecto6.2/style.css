@@ -60,22 +60,35 @@ body{
         flex-wrap: wrap;
         margin-top: 5vh;
 
+        & i{
+            color: red;
+        }
+
         & .card{
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             margin: 1%;
-            width: 12.5vw;
-            height: 30vh;
+            margin-left: 30px;
+            width: 225px;
+            height: 320px;
             border: 3px solid gainsboro;
+            border-radius: 10px;
             background-color: gainsboro;
 
             & .principio_carta{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
 
+                & p{
+                    margin-left: 3px;
+                }
             }
             
             & .final_carta{
-                align-content: flex-end;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
             }
         }
 
@@ -97,6 +110,7 @@ body{
 
         & .card3{
             display: flex;
+            
             
             & .columna1{
 
