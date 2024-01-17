@@ -3,6 +3,7 @@
 - Fuente: Literata
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200&display=swap');
 
 *{
     box-sizing: border-box;
@@ -22,7 +23,7 @@ body{
     margin-left: 6vw;
     margin-right: 6vw;
     border-radius: 5px;
-    border: 5px solid white;
+    border: 5px solid gainsboro;
     border-radius: 20px;
     font-family: 'Archivo Narrow', sans-serif;
 
@@ -31,6 +32,7 @@ body{
         text-align: center;
         padding-top: 3vh;
         font-size: 3.5vw;
+        font-family: 'Literata', serif;
     }
     
     & hr{
@@ -75,6 +77,7 @@ body{
                     margin-left: 5px;
                     font-weight: bold;
                     color: #900007;
+                    font-family: 'Literata', serif;
                 }
 
                 & i{
@@ -96,6 +99,7 @@ body{
                     font-weight: bold;
                     color: #900007;
                     transform: rotate(180deg);
+                    font-family: 'Literata', serif;
                 }
 
                 & i{
@@ -128,6 +132,7 @@ body{
             }
         }
 
+        /*Individual cards styles*/
         & .card1, .card5{
 
             & .diamante1{
@@ -182,13 +187,13 @@ body{
         & .card10{
             & .principio_carta{
                 & i{
-                    margin-left: 4.5px;
+                    margin-left: 3px;
                 }
             }
 
             & .final_carta{
                 & i{
-                    margin-right: 4.5px;
+                    margin-right: 3px;
                 }
             }
         }
@@ -201,6 +206,24 @@ body{
                 background-repeat: no-repeat;
                 width: 90%;
                 margin-top: 30px;
+                
+                & .diamond1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    font-size: 40px;
+                }
+
+                & .diamond2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 150px;
+                    margin-left: 9px;
+                    font-size: 40px;
+                }
             }
         }
 
@@ -212,6 +235,24 @@ body{
                 background-repeat: no-repeat;
                 width: 90%;
                 margin-top: 30px;
+                
+                & .diamond1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    font-size: 40px;
+                }
+
+                & .diamond2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 150px;
+                    margin-left: 9px;
+                    font-size: 40px;
+                }
             }
         }
 
@@ -223,6 +264,23 @@ body{
                 background-repeat: no-repeat;
                 width: 90%;
                 margin-top: 30px;
+
+                & .diamond1{
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                    font-size: 40px;
+                }
+
+                & .diamond2{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-right: 10px;
+                    margin-top: 140px;
+                    font-size: 40px;
+                }
             }
         }
     }
