@@ -1,0 +1,252 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+  }
+  
+  /*Colores*/
+  :root{
+  
+    --textoboton: #f5f5f5;
+    --textobotonhover:#220b36;
+  
+    --fondoboton1: #74445D;
+    --fondoboton2: #543172;
+    --fondoboton3: #90275C;
+    --fondoboton4: #5A0C26;
+    --fondobotonhover: #d3a0cc;
+  
+    --fondocuerpo: #111111;
+    --fondoprincipal:#e4e4e4cc; 
+    --fondoventanasmodal: #e8e8e8;
+  
+  
+    --fondomodal: #570b46e6;
+    
+  
+    --colorcruznormal: #444444;
+    --colorcruzhover: #88637A;
+  }
+  
+  /*Fondo del documento y fuente*/
+  body{
+    font-family: 'Chivo',sans-serif;
+    background-color: #111111;
+    background-image: url("./pattern.svg");
+    background-size: 100%;
+    overflow-y: hidden;
+  }
+  
+  /*Contenedor principal del documento centrado con márgenes*/
+  .contenedor{
+    position: relative;
+    width: 70vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 14vw;
+    border-radius: 15px;
+
+    background-color: #e4e4e4cc;
+
+
+    & h1{
+        font-size: 3.2em;
+        padding-top: 5.5vh;
+        margin-left: 5.7vw;
+    }
+
+    /*Imágenes del contenedor, se intenta
+    ocultar las imágenes 1 y 3 con z-index*/
+    & .imagenes{
+        margin-top: 3vh;
+        margin-left: 5vw;
+
+        & .i1{
+            width: 12.5vw;
+            margin-left: 10vw;
+            margin-bottom: 1.7vh;
+            transform: rotate(-25deg);
+        } 
+
+        & .i2{
+            width: 15.5vw;
+            margin-top: 1vh;
+            z-index: 10;
+        }
+
+        & .i3{
+            width: 12.5vw;
+            margin-right: 10vw;
+            margin-bottom: 1.7vh;
+            transform: rotate(25deg);
+        }
+    }
+
+    & div{
+        & p{
+            font-size: 1.25em;
+            text-align: justify;
+            padding-top: 5vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+        & nav{
+            margin-top: 3vw;
+            margin-left: 4.7vw;
+
+            & label{
+                font-size: 1.35em;
+                font-weight: bold;
+                width: 3vw;
+                height: 1vh;
+                padding: 0.6vw;
+                margin-left: 0.5vw;
+                border-radius: 7px;
+                color: var(--textoboton);
+                cursor: pointer;
+                transition: 0.7s;
+            }
+
+            & label:hover{
+                background-color: var(--fondobotonhover);
+                color: var(--textobotonhover);
+            }
+
+            & .boton1{
+                background-color: var(--fondoboton1);
+                margin-left: 5vw;
+            }
+            
+            & .boton2{
+                background-color: var(--fondoboton2);
+
+            }
+
+            & .boton3{
+                background-color: var(--fondoboton3);
+                
+            }
+
+            & .boton4{
+                background-color: var(--fondoboton4);
+                
+            }
+        }
+    }
+  }
+
+  /*MODALES*/
+  .modal{
+    width: 50vw;
+    height: 70vh;
+    margin-left: 23vw;
+    margin-top: 10vh;
+    border-radius: 6px;
+    background-color: var(--fondoventanasmodal);
+
+    & .modalfondo{
+        background-color: var(--fondomodal);
+        width: 100%;
+        height: 100%;
+        margin-bottom: 100vh;
+    }
+
+    & .modalinterior{
+        bottom: 100vh;
+
+        & .modalcierre{
+            position: relative;
+            margin-top: 3vh;
+            margin-left: 47vw;
+            cursor: pointer;
+        }
+        
+        & .modalcierre:after{
+            content: "\2A2F";
+        }
+
+        & h2{
+            position: absolute;
+            margin-left: 19.5vw;
+            font-size: 2em;
+        }
+
+        & p{
+            position: relative;
+            margin-bottom: 10vh;
+
+            & img{
+                width: 12.5vw;
+                margin-top: 7vh;
+                margin-left: 2vw;
+            }
+        }
+    }
+  }
+
+    .modalder{
+        & .modalinterior{
+            & h2{
+                position: absolute;
+                margin-left: 6vw;
+                font-size: 2em;
+            }
+        }
+    }
+
+    #modalizq{
+        & .modalinterior{
+            & h2{
+                position: absolute;
+                margin-left: 19.5vw;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .modal p{
+        user-select: none;
+    }
+    
+    .modalfondo {
+        cursor: pointer;
+    }
+  
+    .modalonoff{
+        opacity: 0;
+    }
+
+    /*Subir los modales que están abajo*/
+    #modal1:checked{
+        .modal{
+            transition: 2s;
+            margin-bottom: 70vh;
+        }
+    }
+
+    #modal2:checked{
+        .modal{
+            transition: 2s;
+            margin-bottom: 100vh;
+        }
+    }
+    
+    #modal3:checked{
+        .modal{
+            transition: 2s;
+            margin-bottom: 130vh;
+        }
+    }
+
+    #modal4:checked{
+        .modal{
+            transition: 2s;
+            margin-bottom: 160vh;
+        }
+    }
+  
+  
