@@ -1,0 +1,78 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/background.svg");
+}
+
+section{
+    & .contenedor{
+        width: 90vw;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(85, 23, 143, 0.623);
+
+        & h1{
+            font-size: 2em;
+            padding-top: 2vh;
+            margin-left: 25vw;
+            margin-right: 25vw;
+        }
+
+        & .caja{
+            display: inline-block;
+            width: 25vw;
+            margin-top: 2.5vh;
+            margin-left: 1vw;
+            background-color: rgba(114, 44, 180, 0.623);
+
+            & .contenido{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            & img{
+                width: 15vw;
+                margin-top: 3vh;
+                margin-left: 5vw;
+                border: 3px solid black;
+                border-radius: 50%;
+            }
+
+            & .h2{
+                
+            }
+
+            & .job{
+
+            }
+
+            & .languages{
+
+            }
+
+            & .socialmedia{
+
+            }
+        }
+
+        & .caja3{
+            
+        }
+
+        & .caja4{
+            
+        }
+    }
+}
+
+p, h2, h1{
+    color: white;
+}
