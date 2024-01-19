@@ -48,9 +48,7 @@
     margin-top: 5vh;
     margin-left: 14vw;
     border-radius: 15px;
-
     background-color: #e4e4e4cc;
-
 
     & h1{
         font-size: 3.2em;
@@ -61,6 +59,7 @@
     /*Imágenes del contenedor, se intenta
     ocultar las imágenes 1 y 3 con z-index*/
     & .imagenes{
+        position: relative;
         margin-top: 3vh;
         margin-left: 5vw;
 
@@ -74,7 +73,7 @@
         & .i2{
             width: 15.5vw;
             margin-top: 1vh;
-            z-index: 10;
+            z-index: 1;
         }
 
         & .i3{
@@ -96,7 +95,8 @@
 
         & nav{
             margin-top: 3vw;
-            margin-left: 4.7vw;
+            margin-left: 4vw;
+            margin-right: 4vw;
 
             & label{
                 font-size: 1.35em;
@@ -141,32 +141,46 @@
 
   /*MODALES*/
   .modal{
-    width: 50vw;
-    height: 70vh;
-    margin-left: 23vw;
-    margin-top: 10vh;
+    position: absolute;
+    visibility: hidden;
+    width: 80vw;
+    height: 80vh;
+    top: 10vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 30vh;
     border-radius: 6px;
     background-color: var(--fondoventanasmodal);
+    z-index: 2;
 
     & .modalfondo{
         background-color: var(--fondomodal);
-        width: 100%;
-        height: 100%;
-        margin-bottom: 100vh;
+        background-size: 100% 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     & .modalinterior{
-        bottom: 100vh;
+        transition: all 1s ease;
+        position: absolute;
 
         & .modalcierre{
-            position: relative;
-            margin-top: 3vh;
-            margin-left: 47vw;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
             cursor: pointer;
+            z-index: 3;
         }
         
         & .modalcierre:after{
             content: "\2A2F";
+            font-size: 2em;
+            right: 4px;
+            top: 5px;
         }
 
         & h2{
@@ -189,6 +203,14 @@
   }
 
     .modalder{
+        & p{
+            float: right;
+
+            & img{
+                float: right;
+            }
+        }
+
         & .modalinterior{
             & h2{
                 position: absolute;
@@ -199,6 +221,14 @@
     }
 
     #modalizq{
+        & p{
+            float: left;
+
+            & img{
+                float: left;
+            }
+        }
+
         & .modalinterior{
             & h2{
                 position: absolute;
@@ -217,8 +247,18 @@
     }
   
     .modalonoff{
-        opacity: 0;
+        display: none;
     }
+
+    .modalonoff:checked + .modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modalonoff:checked + .modal .modalinterior{
+        top: 0;
+    }
+
 
     /*Subir los modales que están abajo*/
     #modal1:checked{
