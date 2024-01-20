@@ -13,9 +13,7 @@ body{
 section{
     & .contenedor{
         width: 90vw;
-        height: 100vh;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         background-color: rgba(85, 23, 143, 0.623);
 
         & h1{
@@ -25,50 +23,82 @@ section{
             margin-right: 25vw;
         }
 
-        & .caja{
-            display: inline-block;
-            width: 25vw;
-            margin-top: 2.5vh;
-            margin-left: 1vw;
-            background-color: rgba(114, 44, 180, 0.623);
+        & .cajas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 95vw;
+            margin: 0 auto;
 
-            & .contenido{
+            .parejas{
                 display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
+            }
+            
+            & .caja{
+                position: relative;
+                margin: .8rem;
+                padding-top: .2rem;
+                border-radius: .5rem;
+                width: 100%;
+                padding-bottom: 1rem;
+                transition: all .5s ease;
+                background-color: rgba(114, 44, 180, 0.623);
+    
+                & .contenido{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    margin: 5px;
+                }
+    
+                & img{
+                    width: 15vw;
+                    margin-top: 3vh;
+                    margin-left: 5vw;
+                    border: 3px solid black;
+                    border-radius: 50%;
+                }
+    
+                & .h2{
+                    
+                }
+    
+                & .job{
+    
+                }
+    
+                & .languages{
+    
+                }
+    
+                & .socialmedia{
+    
+                }
             }
 
-            & img{
-                width: 15vw;
-                margin-top: 3vh;
-                margin-left: 5vw;
-                border: 3px solid black;
-                border-radius: 50%;
+            & .caja1{
+            
             }
-
-            & .h2{
+    
+            & .caja2{
                 
             }
 
-            & .job{
-
-            }
-
-            & .languages{
-
-            }
-
-            & .socialmedia{
-
-            }
-        }
-
-        & .caja3{
+            & .caja3{
             
-        }
+            }
+    
+            & .caja4{
+                
+            }
 
-        & .caja4{
+            & .caja5{
             
+            }
+    
+            & .caja6{
+                
+            }
         }
     }
 }
