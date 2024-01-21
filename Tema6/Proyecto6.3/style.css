@@ -15,6 +15,8 @@ section{
         width: 90vw;
         margin: 0 auto;
         background-color: rgba(85, 23, 143, 0.623);
+        color: white;
+        text-align: center;
 
         & h1{
             font-size: 2em;
@@ -28,21 +30,22 @@ section{
             flex-wrap: wrap;
             justify-content: center;
             width: 95vw;
-            margin: 0 auto;
+            margin-left: -60px;
 
             .parejas{
                 display: flex;
+                flex-wrap: wrap;
             }
             
             & .caja{
                 position: relative;
-                margin: .8rem;
-                padding-top: .2rem;
-                border-radius: .5rem;
-                width: 100%;
-                padding-bottom: 1rem;
+                width: 30vw;
+                height: 60vh;
+                margin: 20px;
+                margin-top: 5vh;
+                border-radius: 10px;
+                
                 transition: all .5s ease;
-                background-color: rgba(114, 44, 180, 0.623);
     
                 & .contenido{
                     display: flex;
@@ -52,57 +55,66 @@ section{
                 }
     
                 & img{
-                    width: 15vw;
+                    width: 12vw;
                     margin-top: 3vh;
-                    margin-left: 5vw;
+                    margin-left: 8vw;
                     border: 3px solid black;
                     border-radius: 50%;
                 }
     
-                & .h2{
-                    
+                /*Name*/
+                & h2{
+                    font-size: 2.2em;
+                    padding-top: 10px;
                 }
-    
-                & .job{
-    
+
+                /*Job*/
+                & h3{
+                    font-size: 1.6em;
+                    font-weight: 100;
+                    padding-top: 20px;
                 }
-    
-                & .languages{
-    
+
+                /*Languages*/
+                & p{
+                    text-align: justify;
+                    font-size: 1.2em;
+                    padding-top: 30px;
+                    padding-left: 90px;
+                    padding-right: 90px;
                 }
-    
+
+                /*Social media*/
                 & .socialmedia{
-    
+                    visibility: hidden;
                 }
             }
 
-            & .caja1{
-            
-            }
-    
-            & .caja2{
-                
+            & .caja1, .caja2{
+                background-color: rgba(114, 44, 180, 0.623);
             }
 
             & .caja3{
-            
+                background-color: rgba(214, 51, 51, 0.623);
+                width: 18%;
+
+                & img{
+                    margin-left: 4vw;   
+                }
             }
     
             & .caja4{
+                background-color: rgba(44, 64, 180, 0.623);   
+                width: 18%;  
                 
+                & img{
+                    margin-left: 5vw;   
+                }           
             }
 
-            & .caja5{
-            
-            }
-    
-            & .caja6{
-                
+            & .caja5, .caja6{
+                background-color: rgba(214, 203, 40, 0.623);
             }
         }
     }
-}
-
-p, h2, h1{
-    color: white;
 }
