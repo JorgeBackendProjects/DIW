@@ -11,12 +11,15 @@ body{
 }
 
 section{
-    & .contenedor{
-        width: 90vw;
+        width: 95vw;
         margin: 0 auto;
         background-color: rgba(85, 23, 143, 0.623);
+
+    & .contenedor{
         color: white;
         text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
 
         & h1{
             font-size: 2em;
@@ -29,22 +32,22 @@ section{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            justify-items: center;
             width: 95vw;
-            margin-left: -60px;
 
-            .parejas{
+            & .parejas{
                 display: flex;
                 flex-wrap: wrap;
             }
             
             & .caja{
                 position: relative;
-                width: 30vw;
+                width: 28vw;
                 height: 60vh;
-                margin: 20px;
+                margin: 10px;
                 margin-top: 5vh;
                 border-radius: 10px;
-                
                 transition: all .5s ease;
     
                 & .contenido{
@@ -57,7 +60,7 @@ section{
                 & img{
                     width: 12vw;
                     margin-top: 3vh;
-                    margin-left: 8vw;
+                    margin-left: 8.5vw;
                     border: 3px solid black;
                     border-radius: 50%;
                 }
@@ -78,10 +81,10 @@ section{
                 /*Languages*/
                 & p{
                     text-align: justify;
-                    font-size: 1.2em;
+                    font-size: 1.3em;
                     padding-top: 30px;
-                    padding-left: 90px;
-                    padding-right: 90px;
+                    padding-left: 70px;
+                    padding-right: 70px;
                 }
 
                 /*Social media*/
@@ -96,20 +99,30 @@ section{
 
             & .caja3{
                 background-color: rgba(214, 51, 51, 0.623);
-                width: 18%;
-
+                width: 20vw;
+                min-width: 400px;
+                
                 & img{
-                    margin-left: 4vw;   
+                    margin-right: -4vw;
+                }           
+
+                & h2{
+                    padding-top: 15px;
                 }
             }
     
             & .caja4{
                 background-color: rgba(44, 64, 180, 0.623);   
-                width: 18%;  
+                width: 20vw;
+                min-width: 400px;
                 
                 & img{
-                    margin-left: 5vw;   
+                    margin-right: 2vw;
                 }           
+
+                & h2{
+                    padding-top: 15px;
+                }
             }
 
             & .caja5, .caja6{
