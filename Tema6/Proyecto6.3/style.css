@@ -8,12 +8,13 @@
 
 body{
     background-image: url("./images/background.svg");
+    background-color: yellowgreen;
 }
 
 section{
         width: 95vw;
         margin: 0 auto;
-        background-color: rgba(85, 23, 143, 0.623);
+        background-color: rgba(29, 8, 49, 0.623);
 
     & .contenedor{
         color: white;
@@ -48,7 +49,9 @@ section{
                 margin: 10px;
                 margin-top: 5vh;
                 border-radius: 10px;
-                transition: all .5s ease;
+                min-width: 30%;
+                transition: all .0.3s ease;
+                min-width: 350px;
     
                 & .contenido{
                     display: flex;
@@ -59,21 +62,22 @@ section{
     
                 & img{
                     width: 12vw;
-                    margin-top: 3vh;
-                    margin-left: 8.5vw;
+                    margin: auto auto;
+                    margin-top: 30px;
                     border: 3px solid black;
                     border-radius: 50%;
                 }
     
                 /*Name*/
                 & h2{
-                    font-size: 2.2em;
+                    font-size: 50px;
                     padding-top: 10px;
+                    font-size: 2vw;
                 }
 
                 /*Job*/
                 & h3{
-                    font-size: 1.6em;
+                    font-size: 30px;
                     font-weight: 100;
                     padding-top: 20px;
                 }
@@ -81,16 +85,45 @@ section{
                 /*Languages*/
                 & p{
                     text-align: justify;
-                    font-size: 1.3em;
+                    font-size: 18px;
                     padding-top: 30px;
                     padding-left: 70px;
                     padding-right: 70px;
                 }
 
-                /*Social media*/
-                & .socialmedia{
-                    visibility: hidden;
+                /*Contact*/
+                & .contact{
+                    & .socialmedia{
+                        visibility: hidden;
+                    }
                 }
+            }
+
+            & .caja:hover{
+                border: 5px solid white;
+
+                & h2{
+                    margin-right: 40px;
+                    margin-left: 40px;
+                    border-bottom: 3px solid white;
+                    transition: 1s;
+                }
+
+                & .socialmedia{
+                    visibility: visible;
+
+                    & i{
+                        margin-top: 30px;
+                        font-size: 35px;
+                        transition: 1s;
+                    }
+
+                    & i:hover{
+                        color: greenyellow;
+                        cursor: pointer;
+                    }
+                }
+
             }
 
             & .caja1, .caja2{
@@ -100,10 +133,11 @@ section{
             & .caja3{
                 background-color: rgba(214, 51, 51, 0.623);
                 width: 20vw;
-                min-width: 400px;
+                min-width: 450px;
                 
                 & img{
-                    margin-right: -4vw;
+                    margin: auto auto;
+                    margin-top: 30px;
                 }           
 
                 & h2{
@@ -114,10 +148,11 @@ section{
             & .caja4{
                 background-color: rgba(44, 64, 180, 0.623);   
                 width: 20vw;
-                min-width: 400px;
+                min-width: 450px;
                 
                 & img{
-                    margin-right: 2vw;
+                    margin: auto auto;
+                    margin-top: 30px;
                 }           
 
                 & h2{
