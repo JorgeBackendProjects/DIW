@@ -43,7 +43,7 @@
 
     & img{
         float: left;
-        width: 11%;
+        width: 10%;
         margin-top: 7vh;
         margin-left: 1vw;
     }
@@ -67,10 +67,10 @@ nav{
         margin-right: 0.5vw;
         list-style: none;
 
-        & li{
+        & a{
             width: 16.3%;
             height: 5.3vh;
-            padding-top: 0.8vh;
+            padding-top: 0.5vh;
             font-size: 1.6vw;
             font-weight: bold;
             text-align: center;
@@ -78,101 +78,122 @@ nav{
             border: 2px solid black;
             background-color: blueviolet;
             color: white;
+            text-decoration: none;
             transition: 1s;
         }
 
-        & li:hover{
+        & a:hover{
+            padding-top: 0.4vh;
+            font-size: 1.8vw;
             background-color: white;
             color: blueviolet;
         }
     }
 }
 
-.seccion_izquierda{
-    margin-top: 70px;
+main{
+    display: flex;
+    width: 100%;
 
-    & .titulo_seccion{
+    & .seccion_izquierda{
+        width: 150vw;
 
-    }
-
-    & div{
-        
-        border: 5px solid black;
-        
-        & p{
-            color: rgb(160, 91, 91);
+        & .titulo_seccion{
 
         }
-
-        & .titulo{
-            text-align: center;
-            color: rgb(121, 61, 61);
-        }
-    }
-
-    & .izquierda{
-        float: left;
-    }
-
-    & .derecha{
-        float: right;
-    }
-}
-
-.seccion_central{
-    & .titulo_seccion{
-        
-    }
-
-    & div{
-        margin: 10px;
-        border: 5px solid black;
-
-        & img{
-            width: 10vw;
-            margin: 10px;
-        }
-
-        & p{
-            & strong{
-
-            }
-        }
-    }
-}
-
-.seccion_derecha{
-    & .titulo_seccion{
-        
-    }
-
-    & div{
-        margin: 5px;
-        border: 3px solid black;
 
         & div{
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            
+            & p{
+                color: rgb(160, 91, 91);
+
+            }
+
+            & .titulo{
+                text-align: center;
+                color: rgb(121, 61, 61);
+            }
+        }
+
+        & .izquierda{
+            float: left;
+        }
+
+        & .derecha{
+            float: right;
+        }
+    }
+
+    & .seccion_central{
+        & .titulo_seccion{
+            
+        }
+
+        & div{
+            margin: 10px;
+            border: 5px solid black;
+
             & img{
-                width: 50px;
+                width: 8vw;
+                margin: 10px;
             }
 
             & p{
+                & strong{
 
-            }
-
-            & .title{
-
-            }
-
-            & a{
-
+                }
             }
         }
-        
-        & .fila1{}
+    }
 
-        & .fila2{}
+    & .seccion_derecha{
+        & .titulo_seccion{
+            
+        }
 
-        & .fila3{}
+        & div{
+            margin: 5px;
+            
+            & div{
+                border: 3px solid black;
+
+                & img{
+                    width: 50px;
+                }
+
+                & p{
+
+                }
+
+                & .title{
+
+                }
+
+                & a{
+
+                }
+            }
+            
+            & .fila1{}
+
+            & .fila2{}
+
+            & .fila3{}
+        }
     }
 }
 
+footer{
+    width: 100%;
+    height: 6vh;
+    background-color: burlywood;
+
+    & p{
+        padding-top: 1.5vh;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
