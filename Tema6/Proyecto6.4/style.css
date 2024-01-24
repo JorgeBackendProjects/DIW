@@ -63,14 +63,14 @@ nav{
         display: flex;
         justify-content: space-around;
         margin-top: 1vh;
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
+        flex-direction: row;
         list-style: none;
 
         & a{
-            width: 16.3%;
+            width: 100%;
             height: 5.3vh;
             padding-top: 0.5vh;
+            margin: 2px;
             font-size: 1.6vw;
             font-weight: bold;
             text-align: center;
@@ -89,6 +89,12 @@ nav{
             color: blueviolet;
         }
     }
+
+    @media screen and (max-width: 1000px) {
+        & ul {
+            flex-direction: column;
+        }
+    }
 }
 
 main{
@@ -96,45 +102,67 @@ main{
     width: 100%;
 
     & .seccion_izquierda{
-        width: 150vw;
+        display: flex;
+        flex-direction: column;
+        width: 200vw;
 
         & .titulo_seccion{
-
+            font-size: 1.4vw;
+            padding-top: 1vh;
+            padding-left: 1vh;
+            padding-bottom: 1vh;
         }
 
         & div{
+            width: 16vw;
+            margin: 10px;
             border: 2px solid black;
             border-radius: 5px;
-            margin: 5px;
+            box-shadow: 5px 5px 5px black;
             
             & p{
+                text-align: justify;
+                font-size: 1vw;
+                font-weight: bold;
+                padding: 15px;
                 color: rgb(160, 91, 91);
 
             }
 
             & .titulo{
+                width: 95%;
+                margin-top: 1vh;
+                margin-left: 0.4vw;
+                margin-right: 0.4vw;
+                background-color: #ffcc00;
+                font-size: 1.3vw;
+                border-radius: 5px;
                 text-align: center;
                 color: rgb(121, 61, 61);
             }
         }
 
         & .izquierda{
-            float: left;
+            margin-left: 1vh;
         }
 
         & .derecha{
-            float: right;
+            align-self: flex-end;
         }
     }
 
     & .seccion_central{
         & .titulo_seccion{
-            
+            font-size: 1.4vw;
+            padding-top: 1vh;
+            padding-left: 1vh;
+            padding-bottom: 0.5vh;
         }
 
         & div{
             margin: 10px;
-            border: 5px solid black;
+            border: 3px solid black;
+            border-radius: 5px;
 
             & img{
                 width: 8vw;
@@ -151,7 +179,10 @@ main{
 
     & .seccion_derecha{
         & .titulo_seccion{
-            
+            font-size: 1.4vw;
+            padding-top: 1vh;
+            padding-left: 1vh;
+            padding-bottom: 0.7vh;
         }
 
         & div{
@@ -159,6 +190,7 @@ main{
             
             & div{
                 border: 3px solid black;
+                border-radius: 5px;
 
                 & img{
                     width: 50px;
@@ -190,6 +222,7 @@ footer{
     width: 100%;
     height: 6vh;
     background-color: burlywood;
+    margin-top: 2vh;
 
     & p{
         padding-top: 1.5vh;
