@@ -100,11 +100,13 @@ nav{
 main{
     display: flex;
     width: 100%;
+    overflow-x: hidden;
 
     & .seccion_izquierda{
         display: flex;
         flex-direction: column;
         width: 200vw;
+        margin-top: 1vh;
 
         & .titulo_seccion{
             font-size: 1.4vw;
@@ -147,13 +149,16 @@ main{
         }
 
         & .derecha{
-            
             align-self: flex-end;
-            margin-left: 6.5vw;
+            margin-left: 7vw;
         }
     }
 
     & .seccion_central{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+
         & .titulo_seccion{
             font-size: 1.4vw;
             padding-top: 1vh;
@@ -166,6 +171,7 @@ main{
             margin: 10px;
             border: 3px solid black;
             border-radius: 5px;
+            margin-left: 1vw;
 
             & img{
                 float: left;
@@ -191,6 +197,9 @@ main{
     }
 
     & .seccion_derecha{
+        margin-top: 1vh;
+        margin-left: 0.6vw;
+
         & .titulo_seccion{
             font-size: 1.4vw;
             padding-top: 1vh;
@@ -199,34 +208,55 @@ main{
         }
 
         & div{
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
             margin: 5px;
             
+            
             & div{
+                display: flex;
+                
+                width: 15vw;
+                height: auto;
                 border: 3px solid black;
                 border-radius: 5px;
 
                 & img{
-                    width: 50px;
+                    width: 100%;
                 }
 
                 & p{
-
+                    font-size: 1vw;
+                    text-align: justify;
+                    margin-top: 10px;
+                    margin-left: 15px;
+                    margin-right: 15px;
                 }
 
                 & .title{
-                    
+                    font-size: 1.3vw;
+                    text-align: center;
                 }
 
                 & a{
-
+                    width: 350px;
+                    height: 35px;
+                    padding: 5px;
+                    margin-top: 1vh;
+                    margin-left: 0.4vw;
+                    margin-right: 0.4vw;
+                    margin-bottom: 1vh;
+                    text-align: center;
+                    color: white;
+                    background-color: brown;
+                    border: 2px solid brown;
+                    border-radius: 2px;
+                    text-decoration: none;
+                    transition: 0.5s;
                 }
             }
-            
-            & .fila1{}
-
-            & .fila2{}
-
-            & .fila3{}
         }
     }
 }
