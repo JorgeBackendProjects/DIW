@@ -45,8 +45,8 @@ p, a{
         }
 
         & i:hover{
-            color: #ffcc00;
-            box-shadow: 0 0 15px #ffcc00;
+            color: brown;
+            box-shadow: 25px brown;
             cursor: pointer;
         }
     }
@@ -199,7 +199,7 @@ main{
             margin-left: 1vw;
             scroll-snap-align: start;
             scroll-margin-top: 75px;
-            background: linear-gradient(135deg, #7470c434 50%, transparent 0),linear-gradient(-135deg, #7470c434 50%, transparent 0);
+            background: linear-gradient(45deg, #f6e9f5 0%, #f6e9f5 5%,transparent 5%, transparent 10%, #f6e9f5 10%, #f6e9f5 15%,transparent 15%,transparent 20%, #f6e9f5 20%, #f6e9f5 25%,transparent 25%,transparent 30%, #f6e9f5 30%, #f6e9f5 35%,transparent 35%,transparent 40%, #f6e9f5 40%, #f6e9f5 45%,transparent 45%,transparent 50%, #f6e9f5 50%, #f6e9f5 55%,transparent 55%,transparent 60%, #f6e9f5 60%, #f6e9f5 65%,transparent 65%,transparent 70%, #f6e9f5 70%, #f6e9f5 75%,transparent 70%,transparent 80%, #f6e9f5 80%, #f6e9f5 85%,transparent 85%,transparent 90%, #f6e9f5 90%, #f6e9f5 95%,transparent 95%), linear-gradient(135deg, #f6e9f5 0%, #f6e9f5 5%,transparent 5%, transparent 10%, #f6e9f5 10%, #f6e9f5 15%,transparent 15%,transparent 20%, #f6e9f5 20%, #f6e9f5 25%,transparent 25%,transparent 30%, #f6e9f5 30%, #f6e9f5 35%,transparent 35%,transparent 40%, #f6e9f5 40%, #f6e9f5 45%,transparent 45%,transparent 50%, #f6e9f5 50%, #f6e9f5 55%,transparent 55%,transparent 60%, #f6e9f5 60%, #f6e9f5 65%,transparent 65%,transparent 70%, #f6e9f5 70%, #f6e9f5 75%,transparent 70%,transparent 80%, #f6e9f5 80%, #f6e9f5 85%,transparent 85%,transparent 90%, #f6e9f5 90%, #f6e9f5 95%,transparent 95%);
             background-size: 2em 2em;
             background-color: #ffffff;
 
@@ -254,6 +254,7 @@ main{
                 border: 3px solid black;
                 border-radius: 5px;
                 background-color: white;
+                box-shadow: 2px 2px 5px black;
                 transition: 1s;
 
                 & img{
@@ -293,8 +294,7 @@ main{
                 }
 
                 & a:hover{
-                    color: white;
-                    background-color: brown;
+                    transform: scale(1.03);
                 }
             }
 
