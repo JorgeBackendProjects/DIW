@@ -22,6 +22,12 @@ body{
 }
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
     & nav{
         background-color: #5e1357;
 
@@ -75,7 +81,8 @@ main{
             flex-direction: column;
             align-items: center;
             position: relative;
-            top: 7%;
+            margin-top: 15vh;
+            top: 15vh;
             left: 10%;
             background-color: rgba(133, 74, 141, 0.726);
             border-radius: 1rem;
@@ -102,45 +109,46 @@ main{
         }
     }
 
-    & lienzoinicio{
+    & .lienzoinicio{
         background-image: url('./images/foto1.jpg');
         display: block;
     }
 
-    & lienzosmr{
+    & .lienzosmr{
         background-image: url('./images/foto2.jpg');
     }
 
-    & lienzoasir{
+    & .lienzoasir{
         background-image: url('./images/foto3.jpg');
     }
 
-    & lienzodaw{
+    & .lienzodaw{
         background-image: url('./images/foto4.jpg');
     }
 
-    & lienzodam{
+    & .lienzodam{
         background-image: url('./images/foto5.jpg');
     }
 
-    & lienzocib{
+    & .lienzocib{
         background-image: url('./images/foto6.jpg');
     }
 
-    & lienzovid{
+    & .lienzovid{
         background-image: url('./images/foto7.jpg');
     }
 }
 
 footer{
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    z-index: 1;
     text-align: center;
     font-size: 1.5em;
     background-color: #5e1357;
     color: #f5f5f5;
-    margin-top: 5vh;
-    bottom: 0;
     padding: 10px;
 }
 

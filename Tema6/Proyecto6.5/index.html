@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Project 6.5</title>
     </head>
     <body>
@@ -209,6 +210,10 @@
                     $(this).parents().find('.lienzovid').addClass('visible');
                 });
             });
+
+            $('html, body').animate({
+                scrollTop: $('#inicio').offset().top
+            }, 0);
         </script>
     </body>
 </html>
