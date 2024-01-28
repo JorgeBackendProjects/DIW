@@ -1,5 +1,7 @@
 /*Jorge Muñoz García*/
 
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 /*
     Tipografía: 'Electrolize'
     Colores: 
@@ -12,10 +14,134 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Electrolize', sans-serif;
 }
 
-.contenido{
-    display: none;
+body{
+    overflow-y: hidden;
+}
+
+header{
+    & nav{
+        background-color: #5e1357;
+
+        & ul{
+            display: flex;
+            text-align: center;
+            list-style: none;
+
+            & li{
+                border-right: 1px solid white;
+                color: #f5f5f5;
+                padding: 25px 20px;
+                transition: 1s;
+
+                & a{
+                    font-size: 1.6em;
+                    color: #f5f5f5;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                }
+            }
+
+            & .inicio{
+                width: 39%;
+                text-align: left;
+            }
+
+            & li:hover{
+                background-color: #854a8d;
+            }
+        }
+    }
+}
+
+main{
+    position: relative;
+
+    & section{
+        display: block;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+
+        & div{
+            width: 80%;
+            height: 75%;
+            color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 7%;
+            left: 10%;
+            background-color: rgba(133, 74, 141, 0.726);
+            border-radius: 1rem;
+            padding: 1rem;
+
+            & h1{
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 3vh;
+            }
+
+            & img{
+                width: 50%;
+                border: 7px solid white;
+                border-radius: 10px;
+                margin: auto;
+            }
+
+            & p{
+                text-align: justify;
+                font-size: 1.2em;
+                margin-top: 2vh;
+            }
+        }
+    }
+
+    & lienzoinicio{
+        background-image: url('./images/foto1.jpg');
+        display: block;
+    }
+
+    & lienzosmr{
+        background-image: url('./images/foto2.jpg');
+    }
+
+    & lienzoasir{
+        background-image: url('./images/foto3.jpg');
+    }
+
+    & lienzodaw{
+        background-image: url('./images/foto4.jpg');
+    }
+
+    & lienzodam{
+        background-image: url('./images/foto5.jpg');
+    }
+
+    & lienzocib{
+        background-image: url('./images/foto6.jpg');
+    }
+
+    & lienzovid{
+        background-image: url('./images/foto7.jpg');
+    }
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #5e1357;
+    color: #f5f5f5;
+    margin-top: 5vh;
+    bottom: 0;
+    padding: 10px;
 }
 
 .visible{
