@@ -1,0 +1,27 @@
+/*Jorge Muñoz García*/
+
+/*
+    Tipografía: 'Electrolize'
+    Colores: 
+    - Texto y líneas verticales entre los ítems del menú: #f5f5f5
+    - Fondo del menú: #5e1357
+    - Fondo del menú con hover: #854a8d
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenido{
+    display: none;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
