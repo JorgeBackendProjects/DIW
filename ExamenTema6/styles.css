@@ -1,0 +1,188 @@
+/*Jorge Muñoz García*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/groovepaper.png");
+    background-size: 100% 100%;
+}
+
+main{
+    display: flex;
+
+    & .texto{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 650px;
+        margin-left: 4vw;
+        margin-right: 4vw;
+
+        & h1{
+            font-family: "Roboto", sans-serif;
+            font-size: 2.4em;
+            margin-top: 12px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        & p{
+            font-family: "Raleway", sans-serif;
+            font-size: 1.4em;
+            margin-top: 2vh;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        & a{
+
+            & img{
+                display: flex;
+                width: 200px;
+                margin-top: 2vh;
+                margin-left: 12vw;
+                margin-right: 12vw;
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    & .flex-container{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border: 10px solid grey;
+        width: 600px;
+        height: 600px;
+        margin-top: 30px;
+        margin-right: 6vw;
+
+        & div{
+            display: inline-block;
+        }
+
+        & .fila1, .fila2{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        & .fila1{
+            height: 230px;
+        }
+
+        & .fila2{
+            height: 150px;
+        }
+
+        & .caja1{
+            flex-wrap: wrap;
+            background-color: red;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black;
+            flex-basis: 45%;
+        }
+
+        & .caja2{
+            flex-wrap: wrap;
+            background-color: lightgrey;
+            border-left: 5px solid black;
+            border-bottom: 5px solid black;
+            flex-basis: 55%;
+        }
+
+        & .caja3{
+            flex-wrap: wrap;
+            background-color: lightgrey;
+            border-top: 5px solid black;
+            border-right: 5px solid black;
+            border-bottom: 5px solid black;
+            flex-basis: 45%;
+        }
+
+        & .caja4{
+            flex-wrap: wrap;
+            background-color: lightgrey;
+            border-top: 5px solid black;
+            border-left: 5px solid black;
+            border-bottom: 5px solid black;
+            flex-basis: 55%;
+        }
+
+        /*PARTE DE ABAJO*/
+        & .cajasfinales1{
+            display: flex;
+            flex-basis: 45%;
+
+            & .caja5{
+                flex-wrap: wrap;
+                background-color: rgb(235, 212, 3);
+                border-top: 5px solid black;
+                border-right: 5px solid black;
+                flex-basis: 20%;
+                height: 200px;
+            }
+    
+            & .caja6{
+                flex-wrap: wrap;
+                background-color: lightgrey;
+                border-top: 5px solid black;
+                border-left: 5px solid black;
+                border-right: 5px solid black;
+                flex-basis: 80%;
+                height: 200px;
+            }
+        }
+
+        & .cajasfinales2{
+            display: flex;
+            flex-basis: 55%;
+            
+            & .caja7{
+                flex-wrap: wrap;
+                flex-direction: column;
+                background-color: blue;
+                border-top: 5px solid black;
+                border-left: 5px solid black;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+                flex-basis: 55%;
+                height: 120px;
+
+                & .cajita71{
+                    background-color: lightgrey;
+                    border-top: 5px solid black;
+                    border-left: 5px solid black;
+
+                    height: 100px;
+                }
+            }
+    
+            & .caja8{
+                flex-direction: column;
+                background-color: lightgrey;
+                border-top: 5px solid black;
+                border-left: 5px solid black;
+                flex-basis: 45%;
+                align-items: stretch;
+                height: 120px;
+                
+            }
+    
+            & .caja9{ 
+                background-color: lightgrey;
+                border-top: 5px solid black;
+                border-left: 5px solid black;
+                                
+            }
+        }
+    }
+}
