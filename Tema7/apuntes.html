@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <!--
+            Para el elemento contenedor de grid:
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr o repeat(3, 1fr) 2fr;
+            grid-template-rows: 100px, 100px, 100px; Numero de filas
+
+            /*
+                Una vez especificadas las columnas y filas se pueden crear áreas:
+    
+                grid-template-areas: "area1 area1 area2 area2 area2"
+                "area1 area1 area2 area2 area2 area2"
+                ". . . area3 area3"
+                ". . . area3 area3";
+            
+                Funciona por filas, debe usarse el intro y los espacios 
+                libres en la cuadricula se indican con puntos ".".
+            
+                Si un area no se usa y se añade un elemento al contenedor,
+                coloca el elemento en el orden predeterminado, sin importar
+                que haya áreas. Si las áreas están usandose y se añade otro
+                se coloca en el orden predetermiando.
+
+                Para asignar un área a un elemento se usa grid-area: nombreArea;
+            */
+       --> 
+    </body>
+</html>

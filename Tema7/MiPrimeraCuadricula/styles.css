@@ -1,0 +1,29 @@
+.grid{
+    display: grid;
+    width: 80%;
+    height: 200px;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    text-align: center;
+    background-color: aquamarine;
+
+    /*
+        grid-template-areas: "area1 area1 area2 area2 area2"
+        "area1 area1 area2 area2 area2 area2"
+        ". . . area3 area3"
+        ". . . area3 area3";
+    
+        Funciona por filas, debe usarse el intro y los espacios 
+        libres en la cuadricula se indican con puntos ".".
+    
+        Si un area no se usa y se añade un elemento al contenedor,
+        coloca el elemento en el orden predeterminado, sin importar
+        que haya áreas. Si las áreas están usandose y se añade otro
+        se coloca en el orden predetermiando.
+    */
+
+    & div{
+        border: 2px solid black;
+        padding-top: 5%;
+    }
+}
