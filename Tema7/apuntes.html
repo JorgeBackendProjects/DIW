@@ -6,30 +6,86 @@
         <title>Document</title>
     </head>
     <body>
-       <!--
-            Para el elemento contenedor de grid:
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 2fr o repeat(3, 1fr) 2fr;
-            grid-template-rows: 100px, 100px, 100px; Numero de filas
+<!--
+Para el elemento contenedor de grid:
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr o repeat(3, 1fr) 2fr;
+        grid-template-rows: 100px, 100px, 100px; Numero de filas
 
-            /*
-                Una vez especificadas las columnas y filas se pueden crear áreas:
-    
-                grid-template-areas: "area1 area1 area2 area2 area2"
-                "area1 area1 area2 area2 area2 area2"
-                ". . . area3 area3"
-                ". . . area3 area3";
-            
-                Funciona por filas, debe usarse el intro y los espacios 
-                libres en la cuadricula se indican con puntos ".".
-            
-                Si un area no se usa y se añade un elemento al contenedor,
-                coloca el elemento en el orden predeterminado, sin importar
-                que haya áreas. Si las áreas están usandose y se añade otro
-                se coloca en el orden predetermiando.
 
-                Para asignar un área a un elemento se usa grid-area: nombreArea;
-            */
-       --> 
+    Una vez especificadas las columnas y filas se pueden crear áreas:
+
+        grid-template-areas: "area1 area1 area2 area2 area2"
+        "area1 area1 area2 area2 area2 area2"
+        ". . . area3 area3"
+        ". . . area3 area3";
+
+        Funciona por filas, debe usarse el intro y los espacios 
+        libres en la cuadricula se indican con puntos ".".
+
+        Si un area no se usa y se añade un elemento al contenedor,
+        coloca el elemento en el orden predeterminado, sin importar
+        que haya áreas. Si las áreas están usandose y se añade otro
+        se coloca en el orden predetermiando.
+
+        Para asignar un área a un elemento se usa grid-area: nombreArea;
+
+    Alinear: justify horizontal y align vertical
+
+    Se usa para usar ambas propiedades, primero en vertical y luego en horizontal, dos valores. 
+    place-items: center space-around;
+
+    CUADRICULA IMPLÍCITA:
+        Recibir una dimensión mínima y una máxima, pero no el número de filas o columnas que tiene:
+            auto-fill o auto-fit y minmax(mínimo, máximo); Se puede usar con repeat():
+            Esto se refiere a un elemento, con repeat admite tantos elementos como se añadan en el contenedor.
+            grid-template-columns:repeat(auto-fill, minmax(100px,1fr));
+            Se suele usar solo en las columnas: minmax tiene sentido cuando las columnas o las filas son implícitas.
+            Si se usa auto-fill y sobra hueco se deja libre, si se usa auto-fit se estiran los elementos para ocupar todo el espacio.
+            Con grid-auto-flow si no caben los elementos se crean espacios ya que no pueden desordenarse, si se usa el valor "roe dense" se colocan si hay espacios atrás donde quepan, lo mismo pasa con column dense, pero ordenados de arriba a abajo.
+
+        Si vamos a meter un elemento en una parte que no es explícita:
+            
+            Para darle tamaño automático a columnas o filas que no estén determinadas explícitamente, esto permite darle otros tamaños: 
+                grid-auto-colums: repeat(auto-fit, minmax(200px, 3fr));
+            
+            
+            Con grid-auto-flow indica como se colocan los elementos fuera de la cuadrícula explícita. 
+            Si su valor es column añade el elemento en una nueva columna, en caso contrario y por defecto lo añade en una nueva fila.
+
+            Si se usa de manera explícita con columns en vez de introducir los elementos de izquierda a derecha en filas, los introduce de arriba a abajo.
+
+COLOCAR ELEMENTOS EN CUALQUIER POSICIÓN SIN USAR grid-templates-areas:
+    Indica en que columna queremos que empiecen a colocarse los elementos del contenedor grid.
+    Las filas y columnas empiezan en 1.
+
+    Suponiendo un cuadro de 4x4:
+        grid-column-start: 3; 
+        grid-column-end: 2;
+        grid-row-end: 4;
+    Se coloca un elemento en la ultima columna a partir de la fila 2 hasta la última fila.
+        grid-column: 2/3;
+        grid-row: 3/4;
+        
+    Con span se indica que el elemento usará más de una fila o una columna.
+    Suponiendo un cuadro de 5x5:
+        grid-column-start: 2; 
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+
+        o
+
+        grid-column: 2/span 3;
+        grid-row: 1/span 2;
+
+    GRID-AREA:
+        grid-area: 3/1/5/2; Significa: grid-column: 1/2; y grid-row: 3/5; 
+        que es lo mismo que: 
+            grid-row-start: 3;
+            grid-column-start: 1; 
+            grid-row-end: 5;
+            grid-column-end: 2;
+--> 
     </body>
 </html>
