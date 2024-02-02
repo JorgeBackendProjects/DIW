@@ -18,13 +18,24 @@ main{
     border-radius: 7px;
 
     & h1{
-        font-size: 3em;
+        margin-top: 20px;
+        font-size: 4.4em;
         text-align: center;
         color: #6d3764;
     }
 
     & .semanal{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 95%;
+        margin: 20px auto;
+        border: 1px #6d3764;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px black;
+
         & div{
+            font-size: 3.3em;
+            text-align: center;
             color: white;
             background-color: #6d3764;
         }
