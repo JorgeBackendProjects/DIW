@@ -42,12 +42,12 @@ Para el elemento contenedor de grid:
             grid-template-columns:repeat(auto-fill, minmax(100px,1fr));
             Se suele usar solo en las columnas: minmax tiene sentido cuando las columnas o las filas son implícitas.
             Si se usa auto-fill y sobra hueco se deja libre, si se usa auto-fit se estiran los elementos para ocupar todo el espacio.
-            Con grid-auto-flow si no caben los elementos se crean espacios ya que no pueden desordenarse, si se usa el valor "roe dense" se colocan si hay espacios atrás donde quepan, lo mismo pasa con column dense, pero ordenados de arriba a abajo.
+            Con grid-auto-flow si no caben los elementos se crean espacios ya que no pueden desordenarse, si se usa el valor "row dense" se colocan si hay espacios atrás donde quepan, lo mismo pasa con column dense, pero ordenados de arriba a abajo.
 
         Si vamos a meter un elemento en una parte que no es explícita:
             
             Para darle tamaño automático a columnas o filas que no estén determinadas explícitamente, esto permite darle otros tamaños: 
-                grid-auto-colums: repeat(auto-fit, minmax(200px, 3fr));
+                grid-auto-columns: repeat(auto-fit, minmax(200px, 3fr));
             
             
             Con grid-auto-flow indica como se colocan los elementos fuera de la cuadrícula explícita. 
