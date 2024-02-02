@@ -1,0 +1,42 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url();
+}
+
+main{
+    width: 55vw;
+    background-color: #e5e5e5;
+    margin: 15vh auto;
+    border: 5px solid #6d3764;
+    border-radius: 7px;
+
+    & h1{
+        font-size: 3em;
+        text-align: center;
+        color: #6d3764;
+    }
+
+    & .semanal{
+        & div{
+            color: white;
+            background-color: #6d3764;
+        }
+    }
+
+    & .mensual{
+        & .sabado_domingo{
+            background-color: #e7ae9c;
+        }
+        
+        & .santa_blanca{
+            background-color: #788bff;
+        }
+    }
+}
