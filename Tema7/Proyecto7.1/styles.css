@@ -30,6 +30,7 @@ main{
         font-size: 4.2vw;
         text-align: center;
         color: #6d3764;
+        cursor: default;
     }
 
     /*Le creamos al section 7 columnas con la misma unidad relativa.*/
@@ -46,6 +47,7 @@ main{
             text-align: center;
             color: white;
             background-color: #6d3764;
+            cursor: default;
         }
     }
 
@@ -70,14 +72,27 @@ main{
             border-radius: 8px;
             background-color: #e7ae9c;
             box-shadow: 4px 4px 4px black;
+            cursor: default;
+        }
+
+        & div:hover{
+            background-color: #d19380;
         }
 
         & .sabado_domingo{
             background-color: #4ebc7b;
         }
+
+        & .sabado_domingo:hover{
+            background-color: #459b6a;
+        }
         
         & .santa_blanca{
             background-color: #788bff;
+        }
+
+        & .santa_blanca:hover{
+            background-color: #5b6fd5;
         }
     }
 }
