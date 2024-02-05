@@ -122,6 +122,7 @@ main{
 
     }
 
+    /*Asignaturas lunes*/
     & .dos_filas_diw_lunes{
         grid-column-start: 3;
         grid-row: 2/4;
@@ -143,16 +144,91 @@ main{
         grid-column-start: 3;
     }
 
-    & .dos_filas_daw_miercoles{
+    /*Asignaturas martes*/
+    & .eiem_martes{
         grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    & .dwes_martes{
+        grid-column-start: 4;
+        grid-row-start: 3;
+    }
+
+    & .dos_filas_daw_martes{
+        grid-column-start: 4;
+        grid-row: 5/7;
+    }
+
+    & .dwec_martes{
+        grid-column-start: 4;
+        grid-row-start: 7;
+    }
+
+    /*Asignaturas miércoles*/
+    & .dos_filas_daw_miercoles{
+        grid-column-start: 5;
+        grid-row: 2/4;
     }
 
     & .dos_filas_dwec_miercoles{
-        grid-column-start: 4;
+        grid-column-start: 5;
+        grid-row: 4/6;
     }
 
     & .dos_filas_diw_miercoles{
-        grid-column-start: 4;
+        grid-column-start: 5;
+        grid-row: 6/8;
+    }
+
+    /*Asignaturas jueves*/
+    & .dwec_jueves{
+        grid-column-start: 6;
+        grid-row-start: 2;
+    }
+
+    & .diw_jueves{
+        grid-column-start: 6;
+        grid-row-start: 3;
+    }
+
+    & .dos_columnas_diw_jueves{
+        grid-column: 6/8;
+        grid-row-start: 4;
+    }
+
+    & .dos_filas_dwes_jueves{
+        grid-column-start: 6;
+        grid-row: 5/7;
+    }
+
+    & .eiem_jueves{
+        grid-column-start: 6;
+        grid-row-start: 7;
+    }
+
+    /*Asignaturas viernes*/
+    & .dos_filas_dwes_viernes{
+        grid-column-start: 7;
+        grid-row: 2/4;
+    }
+
+    & .diw_viernes{
+        grid-column-start: 7;
+        grid-row-start: 5;
+    }
+
+    & .dos_filas_dwec_viernes{
+        grid-column-start: 7;
+        grid-row: 6/8;
+    }
+
+    /*Footer*/
+    & .footer{
+        grid-column: 1/8;
+        grid-row-start: 8;
+
+        background-color: beige;
     }
 }
 
