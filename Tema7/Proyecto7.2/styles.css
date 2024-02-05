@@ -1,0 +1,98 @@
+/*Jorge Muñoz García*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/background.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+}
+
+main{
+    width: 50vw;
+    height: 650px;
+    background-color: #e5e5e5;
+    margin: 80px auto;
+    border: 8px solid #6d3764;
+    border-radius: 10px;
+    background-image: url("./images/calendar-background.jpg");
+    background-size: 100% 100%;
+
+    & h1{
+        margin-top: 20px;
+        font-size: 4.2vw;
+        text-align: center;
+        color: #6d3764;
+        cursor: default;
+    }
+
+    /*Le creamos al section 7 columnas con la misma unidad relativa.*/
+    & .semanal{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 93%;
+        margin: 20px auto;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px black;
+
+        & div{
+            font-size: 3vw;
+            text-align: center;
+            color: white;
+            background-color: #6d3764;
+            cursor: default;
+        }
+    }
+
+    /*Le creamos al section 7 columnas con la misma unidad relativa.*/
+    & .mensual{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        gap: 20px;
+        width: 93%;
+        margin: 10px auto;
+
+        /*Le indicamos al primer elemento que se posicione a partir de la columna 5*/
+        & .dia1{
+            grid-column: 5;
+        }
+
+        & div{
+            text-align: center;
+            font-weight: bold;
+            height: 50px;
+            font-size: 2.2vw;
+            border-radius: 8px;
+            background-color: #e7ae9c;
+            box-shadow: 4px 4px 4px black;
+            cursor: default;
+        }
+
+        & div:hover{
+            background-color: #d19380;
+        }
+
+        & .sabado_domingo{
+            background-color: #4ebc7b;
+        }
+
+        & .sabado_domingo:hover{
+            background-color: #459b6a;
+        }
+        
+        & .santa_blanca{
+            background-color: #788bff;
+        }
+
+        & .santa_blanca:hover{
+            background-color: #5b6fd5;
+        }
+    }
+}
