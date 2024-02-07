@@ -9,11 +9,14 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.904);
+    background-image: url("./images/body.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 header{
-    background-color: lightcyan;
+    background-image: url("./images/header-background.jpg");
+    background-size: 100% 105%;
 
     & h1{
         padding-top: 20px;
@@ -21,48 +24,61 @@ header{
         text-align: center;
         font-size: 2.5em;
         font-family: "Protest Riot", sans-serif;
+        color: white;
     }
 
     & p{
-        padding-left: 20px;
-        padding-right: 20px;
+        text-align: center;
+        font-size: 1.5em;
         padding-bottom: 20px;
         line-height: 35px;
+        color: white;
     }
 }
 
 main{
     width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.76);
     
     & .contenedor-grid{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 30px;
 
-        padding-top: 20px;
-        margin-left: 6vw;
-        padding-left: 30px;
-        margin-right: 6vw;
-        padding-right: 30px;
+        width: 87%;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-bottom: 20px;
 
-        background-color: lightgoldenrodyellow;
+        background-image: url("./images/body.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
         
         & div{
-            height: 240px;
+            display: grid;
+            height: 320px;
             border-radius: 15px;
+            overflow: hidden;
+
+            & p{
+                background-color: rgba(255, 255, 255, 0.5);
+                padding: 10px;
+                height: 45px;
+                font-weight: bold;
+            }
 
             & .lugar{
-                float: left;
-                margin-top: 5px;
-                margin-left: 5px;
-                background-color: rgba(255, 255, 255, 0.651);
+                justify-content: start;
+                font-size: 1.4em;
             }
 
             & .pais{
-                margin-top: 50px;
-                margin-left: 50px;
-                background-color: rgba(255, 255, 255, 0.651);
+                align-self: end;
+                text-align: right;
+                font-size: 1.4em;
             }
         }
 
@@ -114,5 +130,6 @@ footer{
     padding-bottom: 20px;
     text-align: center;
     font-size: 1.6em;
+    background-color: rgba(0, 0, 0, 0.76);
     color: white;
 }
