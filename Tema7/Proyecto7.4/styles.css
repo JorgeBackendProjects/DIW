@@ -1,0 +1,149 @@
+/*Jorge Muñoz García*/
+
+/*
+Fuentes: 
+- Título y enlaces: Fahkwang
+- Textos: Syne
+
+Colores: 
+- Principal: #dba018
+- Secundarios:  #67135e, #da627d
+- Fondo: #222222
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/background-body.svg");
+    background-size: cover;
+}
+
+header{
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+
+    & a{
+        text-decoration: none;
+        font-size: 2.2em;
+        font-family: "Protest Riot", sans-serif;
+        color: white;
+
+        & img{
+            width: 5vw;
+        }
+    }
+
+    & p{
+        text-align: center;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 35px;
+        font-family: "Protest Riot", sans-serif;
+        color: white;
+    }
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    & .contenedor-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+
+        width: 100%;
+        margin: 0 auto;
+        
+        & div{
+            display: grid;
+            height: 320px;
+            overflow: hidden;
+
+            & p{
+                background-color: rgba(255, 255, 255, 0.5);
+                padding: 10px;
+                height: 45px;
+                font-weight: bold;
+                font-family: 'Protest Revolution', sans-serif;
+            }
+        }
+
+        & div:not(.informacion):hover{
+            
+            & p{
+                opacity: 0;
+            }
+        }
+
+        & .informacion{
+
+            & h1{}
+
+            & p{}
+
+            & a{}
+
+            & a:hover{}
+        }
+
+        /*Colocamos las imágenes a los div*/
+        & .caja1{background-image: url("./images/f1.jpg"); background-size: 100% 100%;}
+
+        & .caja2{background-image: url("./images/f2.jpg"); background-size: 100% 100%;}
+
+        & .caja3{background-image: url("./images/f3.jpg"); background-size: 100% 100%;}
+
+        & .caja4{background-image: url("./images/f4.jpg"); background-size: 100% 100%;}
+
+        & .caja5{background-image: url("./images/f5.jpg"); background-size: 100% 100%;}
+
+        & .caja6{background-image: url("./images/f6.jpg"); background-size: 100% 100%;}
+
+        & .caja7{background-image: url("./images/f7.jpg"); background-size: 100% 100%;}
+
+        & .caja8{background-image: url("./images/f8.jpg"); background-size: 100% 100%;}
+
+        & .caja9{background-image: url("./images/f9.jpg"); background-size: 100% 100%;}
+
+        & .caja10{background-image: url("./images/f10.jpg"); background-size: 100% 100%;}
+
+        & .caja11{background-image: url("./images/f11.jpg"); background-size: 100% 100%;}
+
+        & .caja12{background-image: url("./images/f12.jpg"); background-size: 100% 100%;}
+
+        & .caja13{background-image: url("./images/f13.jpg"); background-size: 100% 100%;}
+
+        & .caja14{background-image: url("./images/f14.jpg"); background-size: 100% 100%;}
+
+        & .caja15{background-image: url("./images/f15.jpg"); background-size: 100% 100%;}
+
+        & .caja16{background-image: url("./images/f16.jpg"); background-size: 100% 100%;}
+
+        & .caja17{background-image: url("./images/f17.jpg"); background-size: 100% 100%;}
+
+        & .caja18{background-image: url("./images/f18.jpg"); background-size: 100% 100%;}
+
+        & .caja19{background-image: url("./images/f19.jpg"); background-size: 100% 100%;}
+
+        & .caja20{background-image: url("./images/f20.jpg"); background-size: 100% 100%;}
+    }
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
