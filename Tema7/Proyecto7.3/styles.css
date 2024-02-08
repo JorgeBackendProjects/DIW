@@ -91,7 +91,7 @@ main{
         }
 
         & div:hover{
-            transform: scale(10px);
+            scale: 1.1;
 
             & p{
                 opacity: 0;
