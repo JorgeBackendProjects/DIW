@@ -42,7 +42,8 @@ header{
         }
 
         & h1{
-            font-size: 2.5em;
+            font-size: 2.2vw;
+            margin-left: 0.5vw;
             font-family: "Fahkwang", sans-serif;
             color: var(--color-principal);
         }
