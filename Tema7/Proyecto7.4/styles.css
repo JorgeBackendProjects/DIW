@@ -33,7 +33,7 @@ header{
     & a{
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 5fr 3fr;
+        grid-template-columns: 1fr 10fr 1fr;
         align-items: center;
         text-decoration: none;
         
@@ -42,7 +42,7 @@ header{
         }
 
         & h1{
-            font-size: 2.2vw;
+            font-size: 2.5em;
             margin-left: 0.5vw;
             font-family: "Fahkwang", sans-serif;
             color: var(--color-principal);
@@ -61,12 +61,10 @@ main{
         display: grid;
         overflow: hidden;
         transition: 1s;
-        place-items: center;
 
         & a{
-            width: 60%;
+            width: 70%;
             margin: 0 auto;
-            /*transform: translateY(-200%);*/
             font-size: 1.5em;    
             text-align: center;
             background-color: var(--color-principal);
@@ -81,14 +79,91 @@ main{
     & div:not(.informacion){
         filter: saturate(0%);
         transition: 1s;
+
+        & a{
+            opacity: 80%;
+        }
+    }
+
+    & div:not(.informacion):is(.caja2):hover{
+        
+        & a{
+            transform: translateY(450%);
+        }
+    }
+    
+    & div:not(.informacion):is(.caja3):hover{
+        
+        & a{
+            transform: translateY(100%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja4):hover{
+        
+        & a{
+            transform: translateY(200%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja5):hover{
+        
+        & a{
+            transform: translateY(250%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja6):hover{
+        
+        & a{
+            transform: translateY(250%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja7):hover{
+        
+        & a{
+            transform: translateY(500%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja10):hover{
+        
+        & a{
+            transform: translateY(300%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja11):hover{
+        
+        & a{
+            transform: translateY(220%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja12):hover{
+        
+        & a{
+            transform: translateY(150%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja13):hover{
+        
+        & a{
+            transform: translateY(150%);
+        }
+    }
+
+    & div:not(.informacion):is(.caja14):hover{
+        
+        & a{
+            transform: translateY(200%);
+        }
     }
 
     & div:not(.informacion):hover{
         filter: saturate(100%);
-
-        & a{
-            transform: translateY(275%);
-        }
     }
 
     & .informacion{
@@ -98,13 +173,13 @@ main{
             margin-top: 50px;
             padding-left: 8.5%;
             padding-right: 8.5%;
-            font-size: 2.5em;
+            font-size: 2.1em;
             color: var(--color-secundario1);
         }
 
         & p{
             text-align: justify;
-            font-size: 1.6em;
+            font-size: 1.42em;
             margin-top: 35px;
             padding-left: 9%;
             padding-right: 9.5%;
@@ -115,13 +190,14 @@ main{
         & ul{
             margin: 0 auto;
             margin-top: 20px;
+            list-style-type: square;
 
             & li{
                 margin-top: 10px;
-                margin-left: 14%;
-                margin-right: 7%;
-                line-height: 30px;
-                font-size: 1.5em;
+                margin-left: 11%;
+                margin-right: 9%;
+                line-height: 20px;
+                font-size: 1.37em;
                 font-weight: bold;
                 color: var(--color-secundario1);
             }
@@ -134,7 +210,7 @@ main{
             margin-top: 30px;
             margin-bottom: 50px;
             text-decoration: none;
-            font-size: 1.4em;
+            font-size: 1.5em;
             text-align: center;
             border: 3px solid var(--color-secundario2);
             background-color: var(--color-secundario1);
@@ -182,6 +258,12 @@ main{
         background-image: url("./images/f1.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 10%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja3{
@@ -190,6 +272,12 @@ main{
         background-image: url("./images/f2.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 30%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja4{
@@ -198,6 +286,12 @@ main{
         background-image: url("./images/f3.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 20%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja5{
@@ -206,6 +300,12 @@ main{
         background-image: url("./images/f4.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 15%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja6{
@@ -214,6 +314,12 @@ main{
         background-image: url("./images/f5.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 15%;
+            padding-top: 0.7%;
+            transform: translateY(-500%);
+        }
     }
 
     & .caja7{
@@ -222,6 +328,12 @@ main{
         background-image: url("./images/f6.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 9%;
+            padding-top: 0.7%;
+            transform: translateY(-150%);
+        }
     }
 
     & .caja10{
@@ -230,6 +342,12 @@ main{
         background-image: url("./images/f7.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 15%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja11{
@@ -238,6 +356,12 @@ main{
         background-image: url("./images/f8.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 20%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja12{
@@ -246,6 +370,12 @@ main{
         background-image: url("./images/f9.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 27%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja13{
@@ -254,6 +384,12 @@ main{
         background-image: url("./images/f10.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 27%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 
     & .caja14{
@@ -262,6 +398,12 @@ main{
         background-image: url("./images/f11.jpg"); 
         background-size: cover;
         background-position: center;
+
+        & a{
+            height: 20%;
+            padding-top: 0.7%;
+            transform: translateY(-100%);
+        }
     }
 }
 
@@ -270,6 +412,8 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.5em;
+    font-family: "Fahkwang", sans-serif;
+    font-weight: bold;
     color: var(--color-principal);
 }
