@@ -61,15 +61,26 @@ main{
     & div{
         display: grid;
         overflow: hidden;
+        transition: 1s;
+        place-items: center;
 
         & a{
-            
+            width: 60%;
+            margin: 0 auto;
+            margin-top: -400%;
+            font-size: 1.5em;    
+            text-align: center;
+            background-color: var(--color-principal);
+            color: var(--color-secundario1);
+            border: 5px solid var(--color-secundario1);
+            text-decoration: none;
+            transition: 0.8s;
         }
     }
 
     & div:not(.informacion):hover{
         & a{
-            opacity: 0;
+            transform: translateY(75%);
         }
     }
 
@@ -111,22 +122,23 @@ main{
 
         & a{
             width: 82%;
-            height: 40px;
             padding-top: 0.5vh;
             margin: 0 auto;
             margin-top: 30px;
             margin-bottom: 50px;
             text-decoration: none;
-            font-size: 1.25vw;
+            font-size: 1.3em;
             text-align: center;
             border: 3px solid var(--color-secundario2);
             background-color: var(--color-secundario1);
             color: var(--color-principal);
+            transition: 0.5s;
         }
 
         & a:hover{
             background-color: var(--color-secundario2);
-            color: var(--color-principal);
+            border-color: #67135e;
+            color: white;
         }
     }
 
