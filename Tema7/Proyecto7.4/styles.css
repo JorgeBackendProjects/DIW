@@ -27,13 +27,13 @@ body{
 
 header{
     width: 90%;
-    margin: 14px 6.5%;
+    margin: 10px 6%;
     align-items: center;
     
     & a{
         width: 100%;
         display: grid;
-        grid-template-columns: 0.05fr 2fr;
+        grid-template-columns: 1fr 5fr 3fr;
         align-items: center;
         text-decoration: none;
         
@@ -43,8 +43,6 @@ header{
 
         & h1{
             font-size: 2.5em;
-            padding-right: 53%;
-            text-align: center;
             font-family: "Fahkwang", sans-serif;
             color: var(--color-principal);
         }
@@ -67,20 +65,28 @@ main{
         & a{
             width: 60%;
             margin: 0 auto;
-            margin-top: -400%;
+            /*transform: translateY(-200%);*/
             font-size: 1.5em;    
             text-align: center;
             background-color: var(--color-principal);
             color: var(--color-secundario1);
             border: 5px solid var(--color-secundario1);
             text-decoration: none;
-            transition: 0.8s;
+            transition: 1s;
         }
     }
 
+
+    & div:not(.informacion){
+        filter: saturate(0%);
+        transition: 1s;
+    }
+
     & div:not(.informacion):hover{
+        filter: saturate(100%);
+
         & a{
-            transform: translateY(75%);
+            transform: translateY(275%);
         }
     }
 
@@ -122,12 +128,12 @@ main{
 
         & a{
             width: 82%;
-            padding-top: 0.5vh;
+            padding-top: 0.3vh;
             margin: 0 auto;
             margin-top: 30px;
             margin-bottom: 50px;
             text-decoration: none;
-            font-size: 1.3em;
+            font-size: 1.4em;
             text-align: center;
             border: 3px solid var(--color-secundario2);
             background-color: var(--color-secundario1);
@@ -146,7 +152,6 @@ main{
     & .caja1{
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
-        
     }
 
     & .caja8{
