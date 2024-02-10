@@ -41,8 +41,8 @@ header{
 }
 
 main{
-    width: 80%;
-    height: 135vh;
+    width: 90%;
+    height: 140vh;
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 50px;
@@ -97,19 +97,34 @@ main{
             height: 100%;
         }
 
-        & p{
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            text-align: center;
-            font-size: 100%;
-            background: linear-gradient(to bottom, #3498db, #ff66a3, #8e44ad);
-            color: white;
+        & div{
+            display: grid;
+            position: absolute;
+            width: 95%;
+            height: 25%;
+            margin: 0 auto;
+            bottom: 3%;
+            left: 2.5%;
             opacity: 0;
             transition: 1s;
+            border-radius: 5px;
+            background: linear-gradient(to bottom, #412eba, #a73386, #aa402e);
+            color: white;
+            place-items: center;
+            animation: sombreado 1s infinite alternate;
+
+            & h3{
+                opacity: 0;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 2vw;
+                letter-spacing: 7px;
+                transform: translateY(-32%);
+                text-shadow: 5px 2px 5px #ff66a3;
+            }
         }
     }
-
+    
     & div label .back{
         display: grid;
         position: absolute;
@@ -131,19 +146,23 @@ main{
             margin-left: 3%;
             margin-right: 3%;
             padding: 10px;
-            font-size: 0.85em;
+            font-size: 0.85vw;
             text-align: center;
             border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.644);
+            background-color: rgba(227, 248, 252, 0.548);
         }
     }
 
     & div:hover .front{
-        & p{
+        & div{
             opacity: 1;
+
+            & h3{
+                opacity: 1;
+                text-align: center;
+            }
         }
     }
-
 
     /*Estilos grid para el posicionamiento de las cajas*/
     & .caja1{
@@ -154,6 +173,14 @@ main{
         & label{ 
             & .front{
                 background: radial-gradient(circle, #8336b5, #54134e);
+
+                & div{
+                    height: 17%;
+
+                    & h3{
+                        font-size: 2.6vw;
+                    }
+                }
             }
         }
     }
@@ -190,6 +217,14 @@ main{
         & label{ 
             & .front{
                 background: radial-gradient(circle, #8336b5, #54134e);
+
+                & div{
+                    height: 17%;
+
+                    & h3{
+                        font-size: 2.6vw;
+                    }
+                }
             }
         }
     }
@@ -250,6 +285,14 @@ main{
         & label{ 
             & .front{
                 background: radial-gradient(circle, #8336b5, #54134e);
+                
+                & div{
+                    height: 15%;
+
+                    & h3{
+                        font-size: 2.7vw;
+                    }
+                }
             }
         }
     }
@@ -290,4 +333,15 @@ main{
         }
     }
 
+}
+
+/*Animaciones*/
+@keyframes sombreado {
+    to {
+        box-shadow: 0 0 5px 2px white;
+    }
+
+    from {
+        box-shadow: 0 0 5px 6px white;
+    }
 }
