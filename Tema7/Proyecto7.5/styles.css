@@ -1,0 +1,172 @@
+/*Jorge Muñoz García*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/nebula.png");
+    background-size: cover;
+}
+
+main{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    /*Estilos partes frontales y traseras de las cajas*/
+    & div .front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-size:  100% 100%;
+        transform: rotateY(0deg);
+        transition: 1s; 
+    }
+
+    & div .back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-image: url("./images/pokeball.png");
+        background-size: 100% 100%;
+        transform: rotateY(180deg);
+        transition: 1s;
+    }
+
+    & div:hover .front{
+        transform: rotateY(180deg);
+    }
+
+    & div:hover .back{
+        transform: rotateY(0deg);
+    }
+
+    /*Estilos grid para el posicionamiento de las cajas*/
+    & .caja1{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/kyogre.png");
+        }
+    }
+
+    & .caja2{
+        grid-column-start: 3;
+        grid-row-start: 1;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/machamp.png");
+        }
+    }
+
+    & .caja3{
+        grid-column: 4 / span 2;
+        grid-row-start: 1;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/milotic.png");
+        }
+    }
+
+    & .caja4{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/lugia.png");
+        }
+    }
+
+    & .caja5{
+        grid-column: 3 / span 2;
+        grid-row: 2 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/haxorus.png");
+        }
+    }
+
+    & .caja6{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/ditto.png");
+        }
+    }
+
+    & .caja7{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/garchomp.png");
+        }
+    }
+
+    & .caja8{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/zoroark.png");
+        }
+    }
+
+    & .caja9{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/moltres.png");
+        }
+    }
+
+    & .caja10{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/gliscor.png");
+        }
+    }
+
+    & .caja11{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/aegislash.png");
+        }
+    }
+
+    & .caja12{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        position: relative;
+    
+        & .front{
+            background-image: url("./images/staraptor.png");
+        }
+    }
+
+}
