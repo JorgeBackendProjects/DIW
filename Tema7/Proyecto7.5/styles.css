@@ -1,5 +1,15 @@
 /*Jorge Muñoz García*/
 
+@font-face{
+    font-family: "Pokemon_solid";
+    src: url("./fonts/Pokemon\ Solid.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: "Pokemon_classic";
+    src: url("./fonts/Pokemon\ Classic.ttf") format('truetype');
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,23 +18,67 @@
 
 body{
     background-image: url("./images/nebula.png");
-    background-size: cover;
+    background-size: 100% 100%;
+}
+
+header{
+    font-family: "Pokemon_solid";
+    letter-spacing: 6px;
+    line-height: 60px;
+    transform: translateY(10px);
+
+    & h1{
+        text-align: center;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    & p{
+        text-align: center;
+        color: white;
+        font-size: 1.8em;
+    }
 }
 
 main{
-    width: 75%;
-    height: 125vh;
+    width: 80%;
+    height: 130vh;
     margin: 0 auto;
+    margin-top: 70px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 40px;
 
+    /*Checkboxs para comprobar el estado y girar el div.*/
     & div{
-        border: 1px solid black;
-        border-radius: 10px;
-    }
+        transition: 1s;
 
+        & input{
+            display: none;
+        }
+
+        & input:checked + label{
+            & .front{
+                transform: rotateY(180deg);
+            }
+
+            & .back{
+                transform: rotateY(0deg);
+            }
+        }
+
+        & label{ 
+            & .front{
+                transform: rotateY(0deg);
+            }
+            
+            & .back{
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    
     /*Estilos partes frontales y traseras de las cajas*/
     & div .front{
         position: absolute;
@@ -32,47 +86,71 @@ main{
         height: 100%;
         backface-visibility: hidden;
         background-size:  100% 100%;
+        border: 3px solid black;
+        border-radius: 10px;
         transform: rotateY(0deg);
         transition: 1s; 
+        font-family: "Pokemon_solid";
 
         & p{
             position: fixed;
             width: 100%;
             bottom: 0;
             text-align: center;
-            font-size: 2.5em;
+            font-size: 100%;
             background: linear-gradient(to bottom, #3498db, #ff66a3, #8e44ad);
             color: white;
+            opacity: 0;
+            transition: 1s;
         }
     }
 
     & div .back{
+        display: grid;
         position: absolute;
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
         background-image: url("./images/pokeball.png");
         background-size: 100% 100%;
+        border: 3px solid black;
+        border-radius: 10px;
         transform: rotateY(180deg);
         transition: 1s;
+        align-items: center;
+        font-weight: bold;
+        font-family: "Pokemon_classic";
+
+        & p{
+            margin: 0 auto;
+            margin-left: 3%;
+            margin-right: 3%;
+            padding: 10px;
+            font-size: 0.85em;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.644);
+        }
     }
 
     & div:hover .front{
-        transform: rotateY(180deg);
+        & p{
+            opacity: 1;
+        }
     }
 
-    & div:hover .back{
-        transform: rotateY(0deg);
-    }
 
     /*Estilos grid para el posicionamiento de las cajas*/
     & .caja1{
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
         position: relative;
-    
-        & .front{
-            background-image: url("./images/kyogre.png");
+
+        & label{ 
+            & .front{
+                background-color: #8e44ad;
+                background-image: url("./images/kyogre.png");
+            }
         }
     }
 
@@ -81,8 +159,11 @@ main{
         grid-row-start: 1;
         position: relative;
     
-        & .front{
-            background-image: url("./images/machamp.png");
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/machamp.png");
+            }
         }
     }
 
@@ -91,8 +172,14 @@ main{
         grid-row-start: 1;
         position: relative;
     
-        & .front{
-            background-image: url("./images/milotic.png");
+        & label{ 
+            & .front{
+                background-image: url("./images/milotic.png");
+            }
+
+            & .back{
+                background-image: url("./images/pokeball2.png");
+            }
         }
     }
 
@@ -101,8 +188,11 @@ main{
         grid-row: 2 / span 2;
         position: relative;
     
-        & .front{
-            background-image: url("./images/lugia.png");
+        & label{ 
+            & .front{
+                background-color: #8e44ad;
+                background-image: url("./images/lugia.png");
+            }
         }
     }
 
@@ -110,9 +200,12 @@ main{
         grid-column-start: 5;
         grid-row-start: 2;
         position: relative;
-    
-        & .front{
-            background-image: url("./images/haxorus.png");
+
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/haxorus.png");
+            }
         }
     }
 
@@ -121,8 +214,11 @@ main{
         grid-row-start: 2;
         position: relative;
     
-        & .front{
-            background-image: url("./images/ditto.png");
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/ditto.png");
+            }
         }
     }
 
@@ -130,9 +226,12 @@ main{
         grid-column-start: 5;
         grid-row-start: 3;
         position: relative;
-    
-        & .front{
-            background-image: url("./images/garchomp.png");
+
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/garchomp.png");
+            }
         }
     }
 
@@ -140,9 +239,12 @@ main{
         grid-column-start: 3;
         grid-row-start: 4;
         position: relative;
-    
-        & .front{
-            background-image: url("./images/zoroark.png");
+
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/zoroark.png");
+            }
         }
     }
 
@@ -150,9 +252,12 @@ main{
         grid-column: 4 / span 2;
         grid-row: 4 / span 2;
         position: relative;
-    
-        & .front{
-            background-image: url("./images/moltres.png");
+
+        & label{ 
+            & .front{
+                background-color: #8e44ad;
+                background-image: url("./images/moltres.png");
+            }
         }
     }
 
@@ -161,8 +266,11 @@ main{
         grid-row-start: 4;
         position: relative;
     
-        & .front{
-            background-image: url("./images/gliscor.png");
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/gliscor.png");
+            }
         }
     }
 
@@ -171,8 +279,11 @@ main{
         grid-row-start: 5;
         position: relative;
     
-        & .front{
-            background-image: url("./images/aegislash.png");
+        & label{ 
+            & .front{
+                background-color: #3498db;
+                background-image: url("./images/aegislash.png");
+            }
         }
     }
 
@@ -181,8 +292,14 @@ main{
         grid-row-start: 5;
         position: relative;
     
-        & .front{
-            background-image: url("./images/staraptor.png");
+        & label{ 
+            & .front{
+                background-image: url("./images/staraptor.png");
+            }
+
+            & .back{
+                background-image: url("./images/pokeball2.png");
+            }
         }
     }
 
