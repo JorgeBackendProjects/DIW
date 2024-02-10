@@ -18,7 +18,7 @@
 
 body{
     background-image: url("./images/nebula.png");
-    background-size: 100% 100%;
+    background-size: 100% 100% cover;
 }
 
 header{
@@ -42,13 +42,13 @@ header{
 
 main{
     width: 80%;
-    height: 130vh;
+    height: 135vh;
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 40px;
+    gap: 20px;
 
     /*Checkboxs para comprobar el estado y girar el div.*/
     & div{
@@ -80,7 +80,7 @@ main{
     }
     
     /*Estilos partes frontales y traseras de las cajas*/
-    & div .front{
+    & div label .front{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -91,6 +91,11 @@ main{
         transform: rotateY(0deg);
         transition: 1s; 
         font-family: "Pokemon_solid";
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
 
         & p{
             position: fixed;
@@ -105,7 +110,7 @@ main{
         }
     }
 
-    & div .back{
+    & div label .back{
         display: grid;
         position: absolute;
         width: 100%;
@@ -148,8 +153,7 @@ main{
 
         & label{ 
             & .front{
-                background-color: #8e44ad;
-                background-image: url("./images/kyogre.png");
+                background: radial-gradient(circle, #8336b5, #54134e);
             }
         }
     }
@@ -161,8 +165,7 @@ main{
     
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/machamp.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -173,10 +176,6 @@ main{
         position: relative;
     
         & label{ 
-            & .front{
-                background-image: url("./images/milotic.png");
-            }
-
             & .back{
                 background-image: url("./images/pokeball2.png");
             }
@@ -190,8 +189,7 @@ main{
     
         & label{ 
             & .front{
-                background-color: #8e44ad;
-                background-image: url("./images/lugia.png");
+                background: radial-gradient(circle, #8336b5, #54134e);
             }
         }
     }
@@ -203,8 +201,7 @@ main{
 
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/haxorus.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -216,8 +213,7 @@ main{
     
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/ditto.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -229,8 +225,7 @@ main{
 
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/garchomp.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -242,8 +237,7 @@ main{
 
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/zoroark.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -255,8 +249,7 @@ main{
 
         & label{ 
             & .front{
-                background-color: #8e44ad;
-                background-image: url("./images/moltres.png");
+                background: radial-gradient(circle, #8336b5, #54134e);
             }
         }
     }
@@ -268,8 +261,7 @@ main{
     
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/gliscor.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -281,8 +273,7 @@ main{
     
         & label{ 
             & .front{
-                background-color: #3498db;
-                background-image: url("./images/aegislash.png");
+                background: radial-gradient(circle, #689a9e, #073991);
             }
         }
     }
@@ -293,10 +284,6 @@ main{
         position: relative;
     
         & label{ 
-            & .front{
-                background-image: url("./images/staraptor.png");
-            }
-
             & .back{
                 background-image: url("./images/pokeball2.png");
             }
