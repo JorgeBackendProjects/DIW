@@ -25,7 +25,7 @@ header{
     font-family: "Pokemon_solid";
     letter-spacing: 6px;
     line-height: 60px;
-    transform: translateY(10px);
+    transform: translateY(20%);
 
     & h1{
         text-align: center;
