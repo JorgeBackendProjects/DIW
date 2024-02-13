@@ -440,6 +440,7 @@ footer{
         & div:not(.informacion){
             display: flex;
             align-items: center;
+            filter: saturate(1);
 
             & a{
                 font-size: 92%;
@@ -472,7 +473,7 @@ footer{
             }
 
             & a{
-                font-size: 80%;
+                font-size: 90%;
                 height: 33%;
                 margin-top: 4%;
                 padding-top: 1.2%;
