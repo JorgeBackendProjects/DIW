@@ -401,7 +401,7 @@ main{
         place-items: center;
 
         & div{
-            width: 100%;
+            width: 80vw;
             height: 100%;
             margin: 0 auto;
             grid-column-start: 1;
@@ -422,15 +422,15 @@ main{
                         
                         & h3{
                             opacity: 1;
-                            padding-top: 9%;
-                            font-size: 3.4vw;
+                            padding-top: 26.5%;
+                            font-size: 4vw;
                             transform: translate(0px);
                         }
                     }
                 }
 
                 & .back{
-                    width: 0 auto;
+                    width: 100%;
 
                     & p{
                         font-size: 2vw;
@@ -443,10 +443,11 @@ main{
             & label{
                 & .front{
                     & div{
-                        height: 12%;
+                        height: 12.5%;
                         
                         & h3{
-                            font-size: 2em;
+                            padding-top: 16.5%;
+                            font-size: 4vw;
                         }
                     }
                 }
@@ -467,6 +468,20 @@ main{
         & .caja3{
             grid-column-start: 1;
             grid-row: 11 / span 5;
+
+            & label{
+                & .front{
+                    & div{
+                        height: 12.5%;
+                        
+                        & h3{
+                            padding-top: 5%;
+                            font-size: 4vw;
+                        }
+                    }
+                }
+
+            }
         }
 
         & .caja4{
@@ -512,6 +527,20 @@ main{
         & .caja12{
             grid-column-start: 1;
             grid-row: 56 / span 5;
+
+            & label{
+                & .front{
+                    & div{
+                        height: 12.5%;
+                        
+                        & h3{
+                            padding-top: 4%;
+                            font-size: 4vw;
+                        }
+                    }
+                }
+
+            }
         }
     }
 }
