@@ -25,7 +25,7 @@ header{
     font-family: "Pokemon_solid";
     letter-spacing: 6px;
     line-height: 60px;
-    transform: translateY(20%);
+    transform: translateY(10px);
 
     & h1{
         text-align: center;
@@ -53,7 +53,6 @@ main{
     /*Checkboxs para comprobar el estado y girar el div.*/
     & div{
         transition: 1s;
-        cursor: pointer;
 
         & input{
             display: none;
@@ -99,7 +98,7 @@ main{
         }
 
         & div{
-            display: flex;
+            display: grid;
             position: absolute;
             width: 95%;
             height: 25%;
@@ -109,26 +108,19 @@ main{
             opacity: 0;
             transition: 1s;
             border-radius: 5px;
+            background: linear-gradient(to bottom, #412eba, #a73386, #aa402e);
             color: white;
-            align-items: center;
-            justify-items: center;
-            background-color: #ff66a3;
-            overflow: hidden;
+            place-items: center;
             animation: sombreado 1s infinite alternate;
 
             & h3{
-                width: 100%;
-                height: 100%;
+                opacity: 0;
                 margin: 0 auto;
-                padding-top: 1%;
                 text-align: center;
-                font-size: 1.8vw;
+                font-size: 2vw;
                 letter-spacing: 7px;
-                border-radius: 5px;
-                background: linear-gradient(to bottom, #412eba, #a73386, #aa402e);
+                transform: translateY(-32%);
                 text-shadow: 5px 2px 5px #ff66a3;
-                transform: translateX(-100%);
-                transition-duration: 1.5s;
             }
         }
     }
@@ -166,8 +158,8 @@ main{
             opacity: 1;
 
             & h3{
+                opacity: 1;
                 text-align: center;
-                transform: translateX(0%);
             }
         }
     }
@@ -299,10 +291,10 @@ main{
                 background: radial-gradient(circle, #8336b5, #54134e);
                 
                 & div{
-                    height: 17%;
+                    height: 15%;
 
                     & h3{
-                        font-size: 2.6vw;
+                        font-size: 2.7vw;
                     }
                 }
             }
@@ -342,7 +334,7 @@ main{
             & .front{
                 overflow: hidden;
             }
-
+            
             & .back{
                 background-image: url("./images/pokeball2.png");
             }
@@ -359,5 +351,112 @@ main{
 
     from {
         box-shadow: 0 0 5px 6px white;
+    }
+}
+
+/*Responsive*/
+@media screen and (max-width: 650px){
+    header{
+        letter-spacing: 2px;
+
+        & h1{
+            font-size: 1.5em;
+        }
+
+        & p{
+            font-size: 0.8em;
+        }
+    }
+
+    main{
+        height: 400vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        place-items: center;
+
+        & div{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            grid-column-start: 1;
+            grid-row: auto;
+
+            & label{
+                & .front{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    
+                    & img{
+                        width: auto;
+                    }
+                }
+
+                & .back{
+                    width: auto;
+                }
+            }
+        }
+
+        & .caja1{
+            grid-column-start: 1;
+            grid-row: 1 / span 5;
+        }
+
+        & .caja2{
+            grid-column-start: 1;
+            grid-row: 6 / span 5;
+        }
+
+        & .caja3{
+            grid-column-start: 1;
+            grid-row: 11 / span 5;
+        }
+
+        & .caja4{
+            grid-column-start: 1;
+            grid-row: 16 / span 5;
+        }
+
+        & .caja5{
+            grid-column-start: 1;
+            grid-row: 21 / span 5;
+        }
+
+        & .caja6{
+            grid-column-start: 1;
+            grid-row: 26 / span 5;
+        }
+
+        & .caja7{
+            grid-column-start: 1;
+            grid-row: 31 / span 5;
+        }
+
+        & .caja8{
+            grid-column-start: 1;
+            grid-row: 36 / span 5;
+        }
+
+        & .caja9{
+            grid-column-start: 1;
+            grid-row: 41 / span 5;
+        }
+
+        & .caja10{
+            grid-column-start: 1;
+            grid-row: 46 / span 5;
+        }
+
+        & .caja11{
+            grid-column-start: 1;
+            grid-row: 51 / span 5;
+        }
+
+        & .caja12{
+            grid-column-start: 1;
+            grid-row: 56 / span 5;
+        }
     }
 }
