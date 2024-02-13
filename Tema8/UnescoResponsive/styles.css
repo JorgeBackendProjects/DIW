@@ -430,18 +430,35 @@ footer{
 
         & div{
             margin-top: 1%;
-            height: 55vh;
+            height: 45vh;
+
+            & a{
+                font-size: 80%;
+            }
+        }
+
+        & div:not(.informacion){
+            display: flex;
+            align-items: center;
+
+            & a{
+                font-size: 92%;
+                margin: 0 auto;
+                transform: translateY(-10%);
+                height: 10%;
+                padding-top: 1%;
+            }
         }
 
         & .informacion{
             & h1{
                 margin-top: 25px;
-                font-size: 150%;
+                font-size: 100%;
             }
     
             & p{
                 margin-top: 5%;
-                font-size: 100%;
+                font-size: 80%;
             }
     
             & ul{
@@ -450,12 +467,12 @@ footer{
                 & li{
                     margin-left: 11%;
                     margin-right: 9%;
-                    font-size: 100%;
+                    font-size: 80%;
                 }
             }
 
             & a{
-                font-size: 100%;
+                font-size: 80%;
                 height: 33%;
                 margin-top: 4%;
                 padding-top: 1.2%;
@@ -470,77 +487,36 @@ footer{
         & .caja2{
             grid-column-start: 1;
             grid-row: 3 / span 2;
-
-            & a{
-                height: 10%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja3{
             grid-column-start: 1;
             grid-row: 5 / span 2;
-
-            & a{
-                height: 30%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja4{
             grid-column-start: 1;
             grid-row: 7 / span 2;
-
-            & a{
-                height: 20%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja5{
             grid-column-start: 1;
             grid-row: 9 / span 2;
-
-            & a{
-                height: 15%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja6{
             grid-column-start: 1;
             grid-row: 11 / span 2;
-
-            & a{
-                height: 15%;
-                padding-top: 0.7%;
-                transform: translateY(-500%);
-            }
         }
 
         & .caja7{
             grid-column-start: 1;
             grid-row: 13 / span 2;
-
-            & a{
-                height: 9%;
-                padding-top: 0.7%;
-                transform: translateY(-150%);
-            }
         }
 
         & .caja8{
             grid-column-start: 1;
             grid-row: 15 / span 2;
-
-            & h1{
-                padding-left: 8.7%;
-                padding-right: 9%;
-            }
         }
 
         & .caja9{
@@ -555,56 +531,26 @@ footer{
         & .caja10{
             grid-column-start: 1;
             grid-row: 19 / span 2;
-
-            & a{
-                height: 15%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja11{
             grid-column-start: 1;
             grid-row: 21 / span 2;
-
-            & a{
-                height: 20%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja12{
             grid-column-start: 1;
             grid-row: 23 / span 2;
-
-            & a{
-                height: 27%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja13{
             grid-column-start: 1;
             grid-row: 25 / span 2;
-
-            & a{
-                height: 27%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
 
         & .caja14{
             grid-column-start: 1;
             grid-row: 27 / span 2;
-
-            & a{
-                height: 20%;
-                padding-top: 0.7%;
-                transform: translateY(-100%);
-            }
         }
     }
 
