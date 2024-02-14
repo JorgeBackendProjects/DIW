@@ -163,7 +163,7 @@ main{
     }
 
     & .caja:hover{
-        border: 5px solid white;
+        border: 3px solid white;
     
         & h2{
             margin-right: 40px;
@@ -197,7 +197,7 @@ main{
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1250px) {
     .parejita{
         width: 95%;
 
@@ -254,14 +254,22 @@ main{
 
     .caja4{
         & .contenido{
+            & p{
+                transform: translateY(-200%);
+            }
+
             & .contact{
-                transform: translateY(-210%);
+                
             }
         }
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
+    h1{
+        font-size: 6vw;
+    }
+
     main{
         display: grid;
         grid-template-columns: 1fr;
@@ -272,17 +280,65 @@ main{
             margin: 0 auto;
             margin-left: 3%;
             margin-top: 0.5%;
-    
-            & .contact{
-                & .socialmedia{
-                    visibility: visible;
+
+            & .contenido{
+                margin: 0 auto;
+                
+                & img{
+                    margin-top: 1%;
+                    width: 25%;
+                }
+
+                & h2{
+                    font-size: 2em;
+                }
+
+                & h3{
+                    font-size: 1.2em;
+                }
+
+                & p{
+                    margin-top: 12%;
+                    font-size: 1.1em;
+                }
+
+                & .contact{
+                    margin-top: -8%;
+                    
+                    & .socialmedia{
+                        visibility: visible;
+
+                        & i{
+                            font-size: 2em;
+                        }
+                    }
                 }
             }
         }
 
+        /*OTRO RESPONSIVE MÁS?? 600PX*/
         & .caja4{
             margin-top: 1%;
             margin-bottom: 1%;
+
+            & .contenido{
+                & p{
+                    margin-top: 9%;
+                    font-size: 1.1em;
+                }
+
+                & .contact{
+                    margin-top: -11%;
+                    
+                    & .socialmedia{
+                        visibility: visible;
+
+                        & i{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -295,9 +351,39 @@ main{
             width: 100%;
             height: 400px;
 
-            & .contact{
-                & .socialmedia{
-                    visibility: visible;
+            & .contenido{
+                margin: 0 auto;
+
+                & img{
+                    margin-top: 1%;
+                    width: 25%;
+                }
+
+                & h2{
+                    font-size: 2em;
+                    transform: translateY(-20%);
+                }
+
+                & h3{
+                    font-size: 1.2em;
+                    transform: translateY(-50%);
+                }
+
+                & p{
+                    font-size: 1.1em;
+                    margin-top: -8%;
+                }
+
+                & .contact{
+                    margin-top: -1.25%;
+                    
+                    & .socialmedia{
+                        visibility: visible;
+
+                        & i{
+                            font-size: 2em;
+                        }
+                    }
                 }
             }
         }
@@ -312,15 +398,41 @@ main{
             width: 100%;
             height: 400px;
 
-            & .contact{
-                & .socialmedia{
-                    visibility: visible;
+            & .contenido{
+                margin: 0 auto;
+
+                & img{
+                    margin-top: 1%;
+                    width: 25%;
+                }
+
+                & h2{
+                    font-size: 2em;
+                    transform: translateY(-20%);
+                }
+
+                & h3{
+                    font-size: 1.2em;
+                    transform: translateY(-50%);
+                }
+
+                & p{
+                    font-size: 1.1em;
+                    margin-top: -8%;
+                }
+
+                & .contact{
+                    margin-top: -1.25%;
+                    
+                    & .socialmedia{
+                        visibility: visible;
+
+                        & i{
+                            font-size: 2em;
+                        }
+                    }
                 }
             }
         }
     }
-
-    
-
-    
 }
