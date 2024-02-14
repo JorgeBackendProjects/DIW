@@ -66,7 +66,7 @@ main{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 23vw;
+
         background-color: rgba(214, 51, 51, 0.623);
     
         & img{
@@ -85,12 +85,11 @@ main{
         justify-items: center;
         margin: 0.4vw;
         border-radius: 10px;
-        transition: all .0.3s ease;
+        transition: 1s ease-in-out;
 
         & .contenido{
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             margin: 5px;
         }
 
@@ -158,8 +157,12 @@ main{
             }
         }
     } 
+}
 
-
+@media screen and (max-width: 2000px) {
+    .caja3, .caja4{
+        width: 23vw;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -172,7 +175,7 @@ main{
     }
     
     .caja3, .caja4{
-        flex-basis: 94%;
+        flex-basis: 94.5%;
     }
 }
 
@@ -180,7 +183,28 @@ main{
     main{
         display: grid;
         grid-template-columns: 1fr;
+
+        & .caja3, .caja4{
+            width: 95%;
+            height: 400px;
+            margin: 0 auto;
+            margin-left: 3%;
+            margin-top: 0.5%;
+    
+            & .contact{
+                & .socialmedia{
+                    visibility: visible;
+                }
+            }
+        }
+
+        & .caja4{
+            margin-top: 1%;
+            margin-bottom: 0.5%;
+        }
     }
+
+    
 
     .parejita:nth-of-type(1){
         flex-direction: column;
@@ -189,26 +213,14 @@ main{
 
         & div{
             width: 100%;
+            height: 400px;
+
+            & .contact{
+                & .socialmedia{
+                    visibility: visible;
+                }
+            }
         }
-    }
-
-    div{
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        width: 100%;
-        margin: 0 auto;
-
-        & .contenido{
-            width: 100%;
-        }
-    }
-
-    .caja3{
-        grid-row-start: 2;   
-    } 
-    
-    .caja4{
-        grid-row-start: 3;
     }
 
     .parejita:nth-of-type(2){
@@ -218,6 +230,17 @@ main{
         
         & div{
             width: 100%;
+            height: 400px;
+
+            & .contact{
+                & .socialmedia{
+                    visibility: visible;
+                }
+            }
         }
     }
+
+    
+
+    
 }
