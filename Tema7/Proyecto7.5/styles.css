@@ -102,7 +102,7 @@ main{
             display: flex;
             position: absolute;
             width: 95%;
-            height: 25%;
+            height: 40px;
             margin: 0 auto;
             bottom: 3%;
             left: 2.5%;
@@ -110,7 +110,7 @@ main{
             transition: 1s;
             border-radius: 5px;
             color: white;
-            align-items: center;
+            justify-items: center;
             background-color: #ff66a3;
             overflow: hidden;
             animation: sombreado 1s infinite alternate;
@@ -120,9 +120,9 @@ main{
                 width: 100%;
                 height: 100%;
                 margin: 0 auto;
-                padding-bottom: 45%;
+                padding-top: 1%;
                 text-align: center;
-                font-size: 1.8vw;
+                font-size: 1.5vw;
                 letter-spacing: 7px;
                 border-radius: 5px;
                 background: linear-gradient(to bottom, #412eba, #a73386, #aa402e);
@@ -183,10 +183,9 @@ main{
                 background: radial-gradient(circle, #8336b5, #54134e);
 
                 & div{
-                    height: 17%;
+                    height: 60px;
 
                     & h3{
-                        padding-bottom: 35%;
                         font-size: 2.6vw;
                     }
                 }
@@ -214,12 +213,6 @@ main{
         & label{ 
             & .front{
                 overflow: hidden;
-                
-                & div{
-                    & h3{
-                        padding-bottom: 22%;
-                    }
-                }
             }
             
             & .back{
@@ -238,10 +231,10 @@ main{
                 background: radial-gradient(circle, #8336b5, #54134e);
 
                 & div{
-                    height: 17%;
+                    height: 60px;
 
                     & h3{
-                        padding-bottom: 35%;
+
                         font-size: 2.6vw;
                     }
                 }
@@ -307,10 +300,9 @@ main{
                 background: radial-gradient(circle, #8336b5, #54134e);
                 
                 & div{
-                    height: 17%;
+                    height: 60px;
 
                     & h3{
-                        padding-bottom: 35%;
                         font-size: 2.6vw;
                     }
                 }
@@ -350,12 +342,6 @@ main{
         & label{ 
             & .front{
                 overflow: hidden;
-
-                & div{
-                    & h3{
-                        padding-bottom: 22%;
-                    }
-                }
             }
             
             & .back{
