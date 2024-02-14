@@ -11,32 +11,39 @@ body{
     background-color: yellowgreen;
 }
 
-main{
-    display: flex;
-    width: 95%;
+& h1{
+    width: 90%;
     margin: 0 auto;
+    font-size: 2em;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     text-align: center;
     background-color: rgba(29, 8, 49, 0.623);
     color: white;
+}
 
-    & h1{
-        position: relative;
-        margin: 0 auto;
-        font-size: 2em;
-        padding-top: 2.5vh;
-        text-align: center;
+main{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(29, 8, 49, 0.623);
+    color: white;
+
+    & .caja3{
+        bottom: 0;
     }
-
-    /*Usar Flex-basis para hacer saltar elementos*/
 
     & .parejita{
         display: flex;
         flex-direction: row;
-        margin-left: 2%;
-        margin-right: 2%;
+        justify-content: flex-start;
 
         & .caja{
-            width: 425px;
+            width: 30vw;
         }
 
         & .caja1{
@@ -60,12 +67,11 @@ main{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 350px;
+        width: 23vw;
         background-color: rgba(214, 51, 51, 0.623);
     
         & img{
             margin: 0 auto;
-            margin-top: 30px;
         }           
 
         & h2{
@@ -74,10 +80,11 @@ main{
     }
 
     & .caja{
+        height: 60vh;
         justify-content: center;
         align-items: center;
         justify-items: center;
-        margin: 10px;
+        margin: 0.4vw;
         border-radius: 10px;
         transition: all .0.3s ease;
 
@@ -90,7 +97,7 @@ main{
 
         & img{
             width: 12vw;
-            margin: auto auto;
+            margin: 0 auto;
             margin-top: 30px;
             border: 3px solid black;
             border-radius: 50%;
@@ -154,6 +161,12 @@ main{
     } 
 
 
+}
+
+@media screen and (max-width: 768px) {
+    .caja3, .caja4 {
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (max-width: 1100px){
