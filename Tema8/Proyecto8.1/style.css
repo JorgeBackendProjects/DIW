@@ -14,10 +14,11 @@ body{
 & h1{
     width: 90%;
     margin: 0 auto;
-    font-size: 2em;
+    font-size: 3em;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
     text-align: center;
+    letter-spacing: 3px;
     background-color: rgba(29, 8, 49, 0.623);
     color: white;
 }
@@ -33,7 +34,27 @@ main{
     color: white;
 
     & .caja3{
-        bottom: 0;
+        & .contenido{
+            & .contact{
+                & .socialmedia{
+                    & i{
+                        margin-top: 20%;
+                    }
+                }
+            }
+        }
+    }
+
+    & .caja4{
+        & .contenido{
+            & .contact{
+                & .socialmedia{
+                    & i{
+                        margin-top: 8%;
+                    }
+                }
+            }
+        }
     }
 
     & .parejita{
@@ -66,25 +87,26 @@ main{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
         background-color: rgba(214, 51, 51, 0.623);
     
-        & img{
-            margin: 0 auto;
-        }           
-
         & h2{
-            padding-top: 15px;
+            margin-top: 5%;
         }
+
+        & h3{
+            margin-top: 3%;
+        }
+
+        & p{
+            margin-top: 5%;
+        }
+
+        
     }
 
     & .caja{
-        height: 60vh;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        margin: 0.4vw;
-        border-radius: 10px;
+        height: 70vh;
+        margin: 0.7vw;
         transition: 1s ease-in-out;
 
         & .contenido{
@@ -94,7 +116,7 @@ main{
         }
 
         & img{
-            width: 12vw;
+            width: 50%;
             margin: 0 auto;
             margin-top: 30px;
             border: 3px solid black;
@@ -103,31 +125,39 @@ main{
 
         /*Name*/
         & h2{
-            font-size: 50px;
-            padding-top: 10px;
-            font-size: 2vw;
+            font-size: 2.3em;
+            padding-top: 3%;
+            letter-spacing: 2px;
         }
 
         /*Job*/
         & h3{
-            font-size: 30px;
+            font-size: 1.7em;
             font-weight: 100;
-            padding-top: 20px;
+            padding-top: 4%;
+            letter-spacing: 2px;
         }
 
         /*Languages*/
         & p{
             text-align: justify;
-            font-size: 18px;
-            padding-top: 30px;
-            padding-left: 70px;
-            padding-right: 70px;
+            font-size: 1.5em;
+            font-weight: 100;
+            padding-top: 7%;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         /*Contact*/
         & .contact{
+            display: none;
+
             & .socialmedia{
                 visibility: hidden;
+                
+                & i{
+                    margin-top: 5%;
+                }
             }
         }
     }
@@ -139,21 +169,23 @@ main{
             margin-right: 40px;
             margin-left: 40px;
             border-bottom: 3px solid white;
-            transition: 1s;
         }
     
-        & .socialmedia{
-            visibility: visible;
-    
-            & i{
-                margin-top: 30px;
-                font-size: 35px;
-                transition: 1s;
-            }
-    
-            & i:hover{
-                color: greenyellow;
-                cursor: pointer;
+        & .contact{
+            display: block;
+
+            & .socialmedia{
+                visibility: visible;
+        
+                & i{
+                    font-size: 35px;
+                    transition: 1s;
+                }
+        
+                & i:hover{
+                    color: greenyellow;
+                    cursor: pointer;
+                }
             }
         }
     } 
@@ -161,7 +193,7 @@ main{
 
 @media screen and (max-width: 2000px) {
     .caja3, .caja4{
-        width: 23vw;
+        width: 20vw;
     }
 }
 
@@ -171,15 +203,65 @@ main{
 
         & .caja{
             flex-basis: 100%;
+
+            & .contenido{
+                & img{
+                    width: 40%;
+                }
+                
+                & h2{
+                    font-size: 2.5vw;
+                }
+    
+                & h3{
+                    font-size: 1.8vw;
+                }
+    
+                & p{
+                    font-size: 1.6vw;
+                }
+            }
         }
     }
     
     .caja3, .caja4{
         flex-basis: 94.5%;
+
+        & .contenido{
+            & img{
+                width: 25%;
+            }
+            
+            & h2{
+                transform: translateY(-90%);
+            }
+
+            & h3{
+                transform: translateY(-170%);
+            }
+
+            & p{
+                font-size: 1.6vw;
+                transform: translateY(-220%);
+                text-align: center;
+            }
+
+            & .contact{
+                transform: translateY(-150%);
+            }
+        }
+    }
+
+    .caja4{
+        & .contenido{
+            & .contact{
+                transform: translateY(-210%);
+            }
+        }
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     main{
         display: grid;
         grid-template-columns: 1fr;
@@ -200,11 +282,9 @@ main{
 
         & .caja4{
             margin-top: 1%;
-            margin-bottom: 0.5%;
+            margin-bottom: 1%;
         }
     }
-
-    
 
     .parejita:nth-of-type(1){
         flex-direction: column;
