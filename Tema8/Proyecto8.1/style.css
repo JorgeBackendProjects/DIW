@@ -286,6 +286,16 @@ main{
         display: grid;
         grid-template-columns: 1fr;
 
+        & .caja{
+            pointer-events: none;
+
+            & h2{
+                margin-right: 40px;
+                margin-left: 40px;
+                border-bottom: 3px solid white;
+            }
+        }
+
         & .caja3, .caja4{
             width: 95%;
             height: 400px;
@@ -439,6 +449,16 @@ main{
 
 @media screen and (max-width: 630px){
     main{
+        & .caja{
+            pointer-events: none;
+
+            & h2{
+                margin-right: 40px;
+                margin-left: 40px;
+                border-bottom: 3px solid white;
+            }
+        }
+
         & .caja3, .caja4{
             & .contenido{
                 & h3{
