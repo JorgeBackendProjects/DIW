@@ -1,0 +1,416 @@
+/*Jorge Muñoz García*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: beige;
+}
+
+h2, .titulo_seccion{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+p, a{
+    font-family: 'Dosis', sans-serif;
+}
+
+.fijo{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: burlywood;
+
+    & p{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    & .social_media{
+        text-align: center;
+
+        & i{
+            font-size: 25px;
+            margin-bottom: 8px;
+            border-radius: 150%;
+            transition: 1s;
+        }
+
+        & i:hover{
+            color: brown;
+            box-shadow: 25px brown;
+            cursor: pointer;
+        }
+    }
+}
+
+.header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    & img{
+        float: left;
+        width: 10%;
+        margin-top: 10vh;
+        margin-left: 1vw;
+    }
+
+    & h2{
+        float: inline-start;
+        font-size: 2.7vw;
+        padding-top: 7vh;
+        padding-left: 20vw;
+    }
+}
+
+nav{
+    width: 100%;
+
+    & ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1vh;
+        flex-direction: row;
+        list-style: none;
+
+        & a{
+            width: 100%;
+            height: 5.3vh;
+            padding-top: 1vh;
+            margin: 2px;
+            font-size: 1.6vw;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid black;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+            transition: 1s;
+        }
+
+        & a:hover{
+            font-size: 1.8vw;
+            background-color: white;
+            color: brown;
+        }
+    }
+}
+
+main{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    & .seccion_izquierda{
+        display: flex;
+        flex-direction: column;
+        width: 200vw;
+        margin-top: 1vh;
+
+        & .titulo_seccion{
+            font-size: 1.4vw;
+            padding-top: 1vh;
+            margin-left: 1vw;
+            padding-bottom: 1vh;
+            font-weight: bold;
+            color: brown;
+        }
+
+        & div{
+            width: 17.5vw;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px black;
+            
+            & p{
+                text-align: justify;
+                font-size: 1.1vw;
+                font-weight: bold;
+                padding: 15px;
+                color: black;
+
+            }
+
+            & .titulo{
+                width: 95%;
+                margin-top: 1vh;
+                margin-left: 0.4vw;
+                margin-right: 0.4vw;
+                background-color: brown;
+                font-size: 1.3vw;
+                border-radius: 5px;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        & .izquierda{
+            margin-left: 1vw;
+            background-color: #FFD2AD;
+        }
+
+        & .derecha{
+            align-self: flex-end;
+            margin-left: 7vw;
+            background-color: #FFC078;
+        }
+    }
+
+    & .seccion_central{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        scroll-behavior: smooth;
+
+        & .titulo_seccion{
+            font-size: 1.4vw;
+            padding-top: 1vh;
+            padding-left: 1.8vh;
+            padding-bottom: 0.5vh;
+            font-weight: bold;
+            color: brown;
+        }
+
+        & div{
+            width: 39vw;
+            margin: 10px;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin-left: 1vw;
+            scroll-snap-align: start;
+            scroll-margin-top: 75px;
+            background: linear-gradient(45deg, #f6e9f5 0%, #f6e9f5 5%,transparent 5%, transparent 10%, #f6e9f5 10%, #f6e9f5 15%,transparent 15%,transparent 20%, #f6e9f5 20%, #f6e9f5 25%,transparent 25%,transparent 30%, #f6e9f5 30%, #f6e9f5 35%,transparent 35%,transparent 40%, #f6e9f5 40%, #f6e9f5 45%,transparent 45%,transparent 50%, #f6e9f5 50%, #f6e9f5 55%,transparent 55%,transparent 60%, #f6e9f5 60%, #f6e9f5 65%,transparent 65%,transparent 70%, #f6e9f5 70%, #f6e9f5 75%,transparent 70%,transparent 80%, #f6e9f5 80%, #f6e9f5 85%,transparent 85%,transparent 90%, #f6e9f5 90%, #f6e9f5 95%,transparent 95%), linear-gradient(135deg, #f6e9f5 0%, #f6e9f5 5%,transparent 5%, transparent 10%, #f6e9f5 10%, #f6e9f5 15%,transparent 15%,transparent 20%, #f6e9f5 20%, #f6e9f5 25%,transparent 25%,transparent 30%, #f6e9f5 30%, #f6e9f5 35%,transparent 35%,transparent 40%, #f6e9f5 40%, #f6e9f5 45%,transparent 45%,transparent 50%, #f6e9f5 50%, #f6e9f5 55%,transparent 55%,transparent 60%, #f6e9f5 60%, #f6e9f5 65%,transparent 65%,transparent 70%, #f6e9f5 70%, #f6e9f5 75%,transparent 70%,transparent 80%, #f6e9f5 80%, #f6e9f5 85%,transparent 85%,transparent 90%, #f6e9f5 90%, #f6e9f5 95%,transparent 95%);
+            background-size: 2em 2em;
+            background-color: #ffffff;
+
+            & img{
+                float: left;
+                width: 7vw;
+                margin: 10px;
+            }
+
+            & p{
+                font-size: 1.3vw;
+                word-spacing: 5px;
+                line-height: 35px;
+                text-align: justify;
+                padding-top: 1.5vh;
+                padding-left: 0.8vw;
+                padding-right: 0.8vw;
+                padding-bottom: 1.5vh;
+
+                & strong{
+                    color: brown;
+                }
+            }
+        }
+    }
+
+    & .seccion_derecha{
+        margin-top: 1vh;
+        width: 35%;
+
+        & .titulo_seccion{
+            font-size: 1.4vw;
+            padding-top: 1vh;
+            padding-left: 1.2vh;
+            padding-bottom: 0.7vh;
+            font-weight: bold;
+            color: brown;
+        }
+
+        & div{
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            margin-top: 0.4vh;
+            margin-bottom: 1vh;
+            
+            & div{
+                display: flex;
+                width: 14.5vw;
+                height: auto;
+                margin-left: 10px;
+                border: 3px solid black;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: 2px 2px 5px black;
+                transition: 1s;
+
+                & img{
+                    width: 100%;
+                }
+
+                & p{
+                    font-size: 1vw;
+                    text-align: justify;
+                    margin-top: 10px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+
+                & .title{
+                    font-size: 1.3vw;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: brown;
+                }
+
+                & a{
+                    width: 350px;
+                    height: 35px;
+                    padding: 5px;
+                    margin-top: 0.5vh;
+                    margin-left: 0.4vw;
+                    margin-right: 0.4vw;
+                    margin-bottom: 1.2vh;
+                    text-align: center;
+                    color: white;
+                    background-color: brown;
+                    border: 2px solid brown;
+                    border-radius: 2px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+
+                & a:hover{
+                    transform: scale(1.03);
+                }
+            }
+
+            & div:hover{
+                transform: scale(1.02);
+                filter: grayscale(10);
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 6vh;
+    background-color: burlywood;
+    margin-top: 2vh;
+
+    & p{
+        padding-top: 1.5vh;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .header{
+        & h2{
+            font-size: 4vw;
+
+            margin-right: 10vw;
+            text-align: center;
+        }
+    }
+
+    nav{
+        & ul{
+            flex-direction: column;
+
+            & a{
+                font-size: 2.5vw;
+            }
+        }
+    }
+
+    main{
+        & .seccion_izquierda{
+            & .titulo_seccion{
+                font-size: 3vw;
+            }
+
+            & div{
+                width: 90%;
+                & .titulo{
+                    font-size: 2vw;
+                    padding: 10px;
+                }
+                
+                & p{
+                    font-size: 1.7vw;
+                }
+            }
+
+            & .derecha{
+                align-self: start;
+                margin-left: 5%;
+            }
+
+            & .izquierda{
+                margin-left: 5%;
+            }
+        }
+
+        & .seccion_central{
+
+            & .titulo_seccion{
+                font-size: 3vw;
+            }
+
+            & div{
+                & p{
+                    font-size: 2vw;
+                }
+            }
+        }
+
+        & .seccion_derecha{
+            & .titulo_seccion{
+                font-size: 3vw;
+            }
+
+            & div{
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+                margin-right: 3vw;
+
+                & div{
+                    width: 100%;
+
+                    & .title{
+                        font-size: 2.7vw;
+                    }
+
+                    & p{
+                        position: relative;
+                        font-size: 2vw;
+                        margin: 0 auto;
+                        padding-top: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+
+                    & a{
+                        position: relative;
+                        width: 70%;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
