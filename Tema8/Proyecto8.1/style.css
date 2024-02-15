@@ -1,5 +1,7 @@
 /*Jorge Muñoz García*/
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Teko:wght@300..700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +23,15 @@ body{
     letter-spacing: 3px;
     background-color: rgba(29, 8, 49, 0.623);
     color: white;
+    font-family: "Teko", sans-serif;
+}
+
+h2{
+    font-family: "Teko", sans-serif;
+}
+
+h3, p{
+    font-family: "Fredoka", sans-serif;
 }
 
 main{
@@ -86,7 +97,6 @@ main{
     & .caja3, .caja4{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         background-color: rgba(214, 51, 51, 0.623);
     
         & h2{
@@ -100,8 +110,6 @@ main{
         & p{
             margin-top: 5%;
         }
-
-        
     }
 
     & .caja{
@@ -294,15 +302,17 @@ main{
                 }
 
                 & h3{
+                    margin-top: 1.5%;
                     font-size: 1.2em;
                 }
 
                 & p{
-                    margin-top: 12%;
+                    margin-top: 14%;
                     font-size: 1.1em;
                 }
 
                 & .contact{
+                    display: block;
                     margin-top: -8%;
                     
                     & .socialmedia{
@@ -316,19 +326,19 @@ main{
             }
         }
 
-        /*OTRO RESPONSIVE MÁS?? 600PX*/
         & .caja4{
             margin-top: 1%;
             margin-bottom: 1%;
 
             & .contenido{
                 & p{
-                    margin-top: 9%;
+                    margin-top: 12%;
                     font-size: 1.1em;
                 }
 
                 & .contact{
-                    margin-top: -11%;
+                    display: block;
+                    margin-top: -12%;
                     
                     & .socialmedia{
                         visibility: visible;
@@ -375,6 +385,7 @@ main{
                 }
 
                 & .contact{
+                    display: block;
                     margin-top: -1.25%;
                     
                     & .socialmedia{
@@ -422,6 +433,7 @@ main{
                 }
 
                 & .contact{
+                    display: block;
                     margin-top: -1.25%;
                     
                     & .socialmedia{
@@ -431,6 +443,59 @@ main{
                             font-size: 2em;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px){
+    main{
+        & .caja3, .caja4{
+            & .contenido{
+                & h2{
+                    margin-top: 4vh;
+                }
+
+                & h3{
+                    margin-top: 3.5%;
+                }
+
+                & p{
+                    margin-top: 28%;
+                }
+
+                & .contact{
+                    margin-top: -20%;
+                }
+            }
+        }
+
+        & .caja3{
+            & .contenido{
+                & p{
+                    margin-top: 35%;
+                }
+
+                & .contact{
+                    margin-top: -20%;
+                }
+            }
+        }
+
+        & .parejita{
+            & .contenido{
+
+                & h3{
+                    margin-top: 1%;
+                }
+
+                & p{
+                    padding-top: 12%;
+                }
+
+                & .contact{
+                    padding-top: 5%;
                 }
             }
         }
