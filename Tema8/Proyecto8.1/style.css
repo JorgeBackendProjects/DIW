@@ -133,23 +133,23 @@ main{
 
         /*Name*/
         & h2{
-            font-size: 2.3em;
+            font-size: 2vw;
             padding-top: 3%;
             letter-spacing: 2px;
         }
 
         /*Job*/
         & h3{
-            font-size: 1.7em;
+            font-size: 1.4vw;
             font-weight: 100;
-            padding-top: 4%;
+            padding-top: 1%;
             letter-spacing: 2px;
         }
 
         /*Languages*/
         & p{
             text-align: justify;
-            font-size: 1.5em;
+            font-size: 1.1vw;
             font-weight: 100;
             padding-top: 7%;
             padding-left: 50px;
@@ -226,12 +226,20 @@ main{
                 }
     
                 & p{
-                    font-size: 1.6vw;
+                    font-size: 1.5vw;
                 }
             }
         }
     }
     
+    .parejita:nth-of-type(1){
+        & .contenido{
+            & .contact{
+                margin-top: -2%;
+            }
+        }
+    }
+
     .caja3, .caja4{
         flex-basis: 94.5%;
 
@@ -241,29 +249,29 @@ main{
             }
             
             & h2{
-                transform: translateY(-90%);
+                margin-top: -1%;
             }
 
             & h3{
-                transform: translateY(-170%);
+                margin-top: -1%;
             }
 
             & p{
-                font-size: 1.6vw;
-                transform: translateY(-220%);
+                font-size: 1.5vw;
+                margin-top: -5%;
                 text-align: center;
             }
 
             & .contact{
-                transform: translateY(-150%);
+                margin-top: -17%;
             }
         }
     }
 
     .caja4{
         & .contenido{
-            & p{
-                transform: translateY(-200%);
+            & .contact{
+                margin-top: -6%;
             }
         }
     }
@@ -294,22 +302,20 @@ main{
                 }
 
                 & h2{
-                    font-size: 2em;
+                    font-size: 200%;
                 }
 
                 & h3{
-                    margin-top: 1.5%;
-                    font-size: 1.2em;
+                    font-size: 130%;
                 }
 
                 & p{
-                    margin-top: 14%;
-                    font-size: 1.1em;
+                    font-size: 100%;
                 }
 
                 & .contact{
                     display: block;
-                    margin-top: -8%;
+                    margin-top: -16%;
                     
                     & .socialmedia{
                         visibility: visible;
@@ -327,22 +333,8 @@ main{
             margin-bottom: 1%;
 
             & .contenido{
-                & p{
-                    margin-top: 12%;
-                    font-size: 1.1em;
-                }
-
                 & .contact{
-                    display: block;
-                    margin-top: -12%;
-                    
-                    & .socialmedia{
-                        visibility: visible;
-
-                        & i{
-                            font-size: 2em;
-                        }
-                    }
+                    margin-top: -4%;
                 }
             }
         }
@@ -447,38 +439,6 @@ main{
 
 @media screen and (max-width: 630px){
     main{
-        & .caja3, .caja4{
-            & .contenido{
-                & h2{
-                    margin-top: 4vh;
-                }
-
-                & h3{
-                    margin-top: 3.5%;
-                }
-
-                & p{
-                    margin-top: 28%;
-                }
-
-                & .contact{
-                    margin-top: -20%;
-                }
-            }
-        }
-
-        & .caja3{
-            & .contenido{
-                & p{
-                    margin-top: 35%;
-                }
-
-                & .contact{
-                    margin-top: -20%;
-                }
-            }
-        }
-
         & .parejita{
             & .contenido{
 
