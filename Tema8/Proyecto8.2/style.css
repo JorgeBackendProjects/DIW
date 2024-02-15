@@ -96,6 +96,7 @@ nav{
             background-color: brown;
             color: white;
             text-decoration: none;
+            letter-spacing: 2px;
             font-family: 'Josefin Sans', sans-serif;
             transition: 1s;
         }
@@ -314,7 +315,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1250px){
     .header{
         & h2{
             font-size: 4vw;
@@ -416,7 +417,30 @@ footer{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
+    .header{
+        & img{
+            width: 20%;
+        }
+
+        & h2{
+            margin-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 10%;
+            font-size: 1.7em;
+        }
+    }
+
+    nav{
+        & ul{
+            & a{
+                height: 4vh;
+                font-size: 1.5em;
+                padding-bottom: 4.5%;
+            }
+        }
+    }
+
     main{
         flex-wrap: wrap;
 
@@ -424,16 +448,59 @@ footer{
             width: 100%;
             order: 3;
 
+            & .titulo_seccion{
+                margin-top: 2%;
+                margin-left: 3%;
+                margin-bottom: 1%;
+                font-size: 1.8em;
+            }
+
+            & div{
+                width: 88%;
+    
+                & .titulo{
+                    margin: 0 auto;
+                    margin-top: 1%;
+                    font-size: 1.35em;
+                }
+
+                & p{
+                    font-size: 1.2em;
+                }
+            }
+
+            & .izquierda{
+                margin-left: 2%;
+            }
+
+            & .derecha{
+                align-self: flex-end;
+                margin-right: 2%;
+            }
         }
 
         & .seccion_central{
             width: 100%;
             order: 1;
 
+            & .titulo_seccion{
+                margin-top: 2%;
+                margin-bottom: 1%;
+                font-size: 1.8em;
+            }
+
             & div{
-                width: 90%;
+                width: 95%;
                 margin: 0 auto;
                 margin-top: 1.5%;
+
+                & img{
+                    width: 24%;
+                }
+
+                & p{
+                    font-size: 1.3em;
+                }
             }
         }
 
@@ -442,12 +509,34 @@ footer{
             order: 2;
 
             & .titulo_seccion{
-                margin-left: 5%;
+                margin-top: 2%;
+                margin-left: 1.5%;
+                margin-bottom: 1%;
+                font-size: 1.8em;
+                margin-bottom: -1vh;
             }
 
             & div{
+                width: 90vw;
                 margin: 0 auto;
+                margin-right: 5.5vw;
                 margin-top: 2%;
+
+                & div{
+                    & .title{
+                        font-size: 1.7em;
+                    }
+
+                    & p{
+                        font-size: 1.3em;
+                    }
+
+                    & a{
+                        width: 95%;
+                        font-size: 1.2em;
+                        padding-bottom: 5%;
+                    }
+                }
             }
         }
     }
