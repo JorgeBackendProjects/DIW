@@ -265,10 +265,6 @@ main{
             & p{
                 transform: translateY(-200%);
             }
-
-            & .contact{
-                
-            }
         }
     }
 }
