@@ -101,8 +101,7 @@ nav{
         }
 
         & a:hover{
-            font-size: 1.8vw;
-            background-color: white;
+            background-color: rgb(247, 247, 209);
             color: brown;
         }
     }
@@ -289,13 +288,14 @@ main{
                 }
 
                 & a:hover{
-                    transform: scale(1.03);
+                    transform: scale(1.05);
+                    filter: saturate(1);
                 }
             }
 
             & div:hover{
                 transform: scale(1.02);
-                filter: grayscale(10);
+                filter: saturate(0);
             }
         }
     }
@@ -329,7 +329,7 @@ footer{
             flex-direction: column;
 
             & a{
-                font-size: 2.5vw;
+                font-size: 3vw;
             }
         }
     }
@@ -342,13 +342,14 @@ footer{
 
             & div{
                 width: 90%;
+                
                 & .titulo{
                     font-size: 2vw;
                     padding: 10px;
                 }
                 
                 & p{
-                    font-size: 1.7vw;
+                    font-size: 2vw;
                 }
             }
 
@@ -410,6 +411,43 @@ footer{
                         margin-bottom: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    main{
+        flex-wrap: wrap;
+
+        & .seccion_izquierda{
+            width: 100%;
+            order: 3;
+
+        }
+
+        & .seccion_central{
+            width: 100%;
+            order: 1;
+
+            & div{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 1.5%;
+            }
+        }
+
+        & .seccion_derecha{
+            width: 100%;
+            order: 2;
+
+            & .titulo_seccion{
+                margin-left: 5%;
+            }
+
+            & div{
+                margin: 0 auto;
+                margin-top: 2%;
             }
         }
     }
