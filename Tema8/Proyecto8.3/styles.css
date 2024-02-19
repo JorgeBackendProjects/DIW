@@ -75,84 +75,15 @@ main{
         transition: 1s;
 
         & a{
+            position: relative;
+            top: -40%;
             opacity: 80%;
         }
     }
 
-    & div:not(.informacion):is(.caja2):hover{
-        
+    & div:not(.informacion):hover{
         & a{
-            transform: translateY(450%);
-        }
-    }
-    
-    & div:not(.informacion):is(.caja3):hover{
-        
-        & a{
-            transform: translateY(100%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja4):hover{
-        
-        & a{
-            transform: translateY(200%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja5):hover{
-        
-        & a{
-            transform: translateY(250%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja6):hover{
-        
-        & a{
-            transform: translateY(250%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja7):hover{
-        
-        & a{
-            transform: translateY(500%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja10):hover{
-        
-        & a{
-            transform: translateY(300%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja11):hover{
-        
-        & a{
-            transform: translateY(220%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja12):hover{
-        
-        & a{
-            transform: translateY(150%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja13):hover{
-        
-        & a{
-            transform: translateY(150%);
-        }
-    }
-
-    & div:not(.informacion):is(.caja14):hover{
-        
-        & a{
-            transform: translateY(200%);
+            top: 40%;
         }
     }
 
@@ -256,7 +187,6 @@ main{
         & a{
             height: 10%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -270,7 +200,6 @@ main{
         & a{
             height: 30%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -284,7 +213,6 @@ main{
         & a{
             height: 27%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -298,7 +226,6 @@ main{
         & a{
             height: 17%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -312,7 +239,6 @@ main{
         & a{
             height: 15%;
             padding-top: 0.7%;
-            transform: translateY(-500%);
         }
     }
 
@@ -326,7 +252,6 @@ main{
         & a{
             height: 9%;
             padding-top: 0.7%;
-            transform: translateY(-150%);
         }
     }
 
@@ -340,7 +265,6 @@ main{
         & a{
             height: 15%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -354,7 +278,6 @@ main{
         & a{
             height: 20%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -368,7 +291,6 @@ main{
         & a{
             height: 27%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -382,7 +304,6 @@ main{
         & a{
             height: 30%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 
@@ -396,7 +317,6 @@ main{
         & a{
             height: 20%;
             padding-top: 0.7%;
-            transform: translateY(-100%);
         }
     }
 }
@@ -413,7 +333,7 @@ footer{
 
 /*---------------------Primer responsive---------------------*/
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1100px){
     header{
         & a{
             & img{
@@ -430,10 +350,12 @@ footer{
         grid-template-columns: 1fr 1fr;
 
         & div{
-            height: 60vh;
+            height: 50vh;
 
             & a{
-                font-size: 80%;
+                width: 80%;
+                height: 10%;
+                font-size: 1.2em;
             }
         }
 
@@ -452,7 +374,7 @@ footer{
                 margin-top: 5px;
     
                 & li{
-                    margin-left: 11%;
+                    margin-left: 2%;
                     margin-right: 9%;
                     font-size: 80%;
                 }
@@ -474,29 +396,48 @@ footer{
         & .caja2{
             grid-column: 2 / span 1;
             grid-row: 1 / span 1;
+
+            & a{
+                height: 10%;
+                font-size: 2.1vw;
+            }
         }
 
         & .caja3{
             grid-column: 1 / span 1;
             grid-row: 2 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja4{
             grid-column: 2 / span 1;
             grid-row: 2 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja5{
             grid-column: 1 / span 1;
             grid-row: 3 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja6{
             grid-column: 1 / span 1;
             grid-row: 5 / span 1;
-        }
 
-        
+            & a{
+                height: 10%;
+            }
+        }
 
         & .caja8{
             grid-column: 2 / span 1;
@@ -515,31 +456,55 @@ footer{
         & .caja10{
             grid-column: 2 / span 1;
             grid-row: 5 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja11{
             grid-column: 2 / span 1;
             grid-row: 6 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja12{
             grid-column: 1 / span 1;
             grid-row: 8 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja13{
             grid-column: 2 / span 1;
             grid-row: 8 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja7{
             grid-column: 1 / span 2;
             grid-row: 7 / span 1;
+
+            & a{
+                height: 10%;
+            }
         }
 
         & .caja14{
             grid-column: 1 / span 2;
             grid-row: 9 / span 1;
+
+            & a{
+                height: 9.5%;
+            }
         }
     }
 
@@ -579,12 +544,11 @@ footer{
             filter: saturate(1);
 
             & a{
+                position: initial;
                 font-size: 92%;
                 margin: 0 auto;
-                transform: translateY(-10%);
                 height: 12%;
                 padding-top: 1%;
-                pointer-events: none;
             }
         }
 
