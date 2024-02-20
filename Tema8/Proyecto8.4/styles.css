@@ -102,7 +102,7 @@ main{
             display: flex;
             position: absolute;
             width: 95%;
-            height: 25%;
+            height: 40px;
             margin: 0 auto;
             bottom: 3%;
             left: 2.5%;
@@ -378,7 +378,7 @@ main{
 }
 
 /*Responsive*/
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 950px){
     header{
         letter-spacing: 7px;
 
@@ -396,14 +396,13 @@ main{
         height: 600vh;
         margin: 0 auto;
         margin-top: 50px;
-        margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
 
         & div{
-            width: 80vw;
-            height: 100%;
+            width: 60vw;
+            height: 60vh;
             margin: 0 auto;
             grid-column-start: 1;
 
@@ -423,7 +422,7 @@ main{
                         
                         & h3{
                             opacity: 1;
-                            padding-top: 26.5%;
+                            padding-top: 20%;
                             font-size: 4vw;
                             transform: translate(0px);
                         }
@@ -451,7 +450,7 @@ main{
                         height: 12.5%;
                         
                         & h3{
-                            padding-top: 16.5%;
+                            padding-top: 9.5%;
                             font-size: 4vw;
                         }
                     }
@@ -476,11 +475,18 @@ main{
 
             & label{
                 & .front{
+                    background: radial-gradient(circle, #d14dbc, #39b644, #efd02f);
+
+                    & img{
+                        content: url('./images/milotic-sq.png');
+                    }
+
                     & div{
                         height: 12.5%;
                         
                         & h3{
-                            padding-top: 5%;
+                            padding-top: 1%;
+                            padding-bottom: 24.5%;
                             font-size: 4vw;
                         }
                     }
@@ -535,12 +541,182 @@ main{
 
             & label{
                 & .front{
+                    background: radial-gradient(circle, #d14dbc, #39b644, #efd02f);
+                    
+                    & img{
+                        content: url('./images/staraptor-sq.png');
+                    }
+
                     & div{
                         height: 12.5%;
                         
                         & h3{
-                            padding-top: 4%;
+                            padding-top: 1%;
+                            padding-bottom: 26%;
                             font-size: 4vw;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/*Segundo responsive*/
+@media screen and (max-width: 775px){
+    main{
+        width: 90%;
+        height: 600vh;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+
+        & div{
+            width: 85vw;
+            height: 60vh;
+            margin: 0 auto;
+            grid-column-start: 1;
+
+            & label{
+                & .front{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    
+                    & img{
+                        width: 0 auto;
+                    }
+
+                    & div{
+                        opacity: 1;
+                        height: 12%;
+                        
+                        & h3{
+                            opacity: 1;
+                            padding-top: 23%;
+                            font-size: 5vw;
+                            transform: translate(0px);
+                        }
+                    }
+                }
+
+                & .back{
+                    width: 100%;
+
+                    & p{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+
+        & .caja1, .caja4, .caja9{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #ee4fbb, #f7956f, #f8d12d, #49b842);
+
+                    & div{
+                        height: 12.5%;
+                        
+                        & h3{
+                            padding-top: 12%;
+                            font-size: 5vw;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        & .caja2{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #f7d12e, #fdc13f, #ed41cb, #ed41cb);
+                }
+            }
+        }
+
+        & .caja3{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #d14dbc, #39b644, #efd02f);
+
+                    & div{
+                        height: 12.5%;
+                        
+                        & h3{
+                            padding-top: 1%;
+                            padding-bottom: 22%;
+                            font-size: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .caja5{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #fdc13f, #ed41cb);
+                }
+            }
+        }
+
+        & .caja6{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #fdc13f, #ed41cb);
+                }
+            }
+        }
+
+        & .caja7{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #fdc13f, #ed41cb);
+                }
+            }
+        }
+
+        & .caja8{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #fdc13f, #ed41cb);
+                }
+            }
+        }
+
+        & .caja10{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #fdc13f, #ed41cb);
+                }
+            }
+        }
+
+        & .caja11{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #95bd37, #fdc13f, #ed41cb);
+                }
+            }
+        }
+
+        & .caja12{
+            & label{
+                & .front{
+                    background: radial-gradient(circle, #d14dbc, #39b644, #efd02f);
+
+                    & div{
+                        height: 12.5%;
+                        
+                        & h3{
+                            padding-top: 1%;
+                            padding-bottom: 22%;
+                            font-size: 5vw;
                         }
                     }
                 }
