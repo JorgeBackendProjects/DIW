@@ -1,0 +1,167 @@
+/*Jorge Muñoz García*/
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Electrolize', sans-serif;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    & .boton_hamburguesa{
+        display: none;
+
+        & span{
+
+        }
+    }
+
+    & nav{
+        background-color: #5e1357;
+
+        & ul{
+            display: flex;
+            text-align: center;
+            list-style: none;
+            width: 100%;
+
+            & li{
+                border-right: 1px solid white;
+                color: #f5f5f5;
+                padding: 25px 20px;
+                transition: 1s;
+
+                & a{
+                    font-size: 1.6em;
+                    color: #f5f5f5;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                }
+            }
+
+            & .inicio{
+                width: 39%;
+                text-align: left;
+            }
+
+            & li:hover{
+                background-color: #854a8d;
+            }
+        }
+    }
+}
+
+main{
+    position: relative;
+
+    & section{
+        display: none;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        scroll-margin-top: 6rem;
+
+        & div{
+            width: 80%;
+            height: 75%;
+            color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-top: 15vh;
+            left: 10%;
+            background-color: rgba(0, 0, 0, 0.753);
+            border-radius: 1rem;
+            padding: 1rem;
+
+            & h1{
+                text-align: center;
+                font-size: 2.6em;
+                margin-bottom: 3vh;
+            }
+
+            & img{
+                width: 50%;
+                border: 7px solid white;
+                border-radius: 10px;
+                margin: 0 auto;
+            }
+
+            & p{
+                text-align: justify;
+                font-size: 1.2em;
+                margin-top: 2vh;
+            }
+
+            & a{
+                visibility: hidden;
+            }
+        }
+    }
+
+    & .lienzoinicio{
+        background-image: url('./images/foto1.jpg');
+        display: block;
+    }
+
+    & .lienzosmr{
+        background-image: url('./images/foto2.jpg');
+    }
+
+    & .lienzoasir{
+        background-image: url('./images/foto3.jpg');
+    }
+
+    & .lienzodaw{
+        background-image: url('./images/foto4.jpg');
+    }
+
+    & .lienzodam{
+        background-image: url('./images/foto5.jpg');
+    }
+
+    & .lienzocib{
+        background-image: url('./images/foto6.jpg');
+    }
+
+    & .lienzovid{
+        background-image: url('./images/foto7.jpg');
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #5e1357;
+    color: #f5f5f5;
+    padding: 10px;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.invisible{
+    visibility: hidden;
+}
