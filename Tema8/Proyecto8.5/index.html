@@ -15,7 +15,7 @@
                 <span class="barra3"></span>
             </div>
 
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li class="inicio"><a href="#inicio" class="boton_inicio">Inicio</a></li>
                     <li><a href="#smr" class="boton_smr">SMR</a></li>
@@ -226,6 +226,24 @@
             $('html, body').animate({
                 scrollTop: $('#inicio').offset().top
             }, 0);
+
+            $('.boton_hamburguesa').on('click', function () {
+                $(this).toggleClass('icono_cruz');
+                $('.menu').toggleClass('menu_visible');
+                $('nav').removeClass('menu_oculto');
+            });
+
+            $('nav').on('click', function () {
+                $(this).addClass('menu_oculto');
+                $('.menu').removeClass('menu_visible');
+                $('.boton_hamburguesa').removeClass('icono_cruz');
+            });
+
+            $('section').on('click', function () {
+                $(this).toggleClass('menu_oculto');
+                $('.menu').removeClass('menu_visible');
+                $('.boton_hamburguesa').removeClass('icono_cruz');
+            });
         </script>
     </body>
 </html>

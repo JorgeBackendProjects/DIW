@@ -14,22 +14,28 @@ body{
 }
 
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-
     & .boton_hamburguesa{
         display: none;
 
         & span{
-
+            display: block;
+            width: 40px;
+            height: 5px;
+            margin-bottom: 8px;
+            background: white;
+            border-radius: 3px;
+            position: relative;
+            transition: 1s;
         }
     }
 
     & nav{
         background-color: #5e1357;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
 
         & ul{
             display: flex;
@@ -74,7 +80,7 @@ main{
         background-size: cover;
         width: 100%;
         height: 100vh;
-        scroll-margin-top: 6rem;
+        scroll-margin-top: 6em;
 
         & div{
             width: 80%;
@@ -87,8 +93,8 @@ main{
             margin-top: 15vh;
             left: 10%;
             background-color: rgba(0, 0, 0, 0.753);
-            border-radius: 1rem;
-            padding: 1rem;
+            border-radius: 1em;
+            padding: 1em;
 
             & h1{
                 text-align: center;
@@ -164,4 +170,87 @@ footer{
 
 .invisible{
     visibility: hidden;
+}
+
+.icono_cruz{
+    & span{
+        transform: translateY(100px);
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 8px;
+        background: white;
+        border-radius: 3px;
+        transition: 1s;
+    }
+
+    & .barra1{
+        transform: rotate(45deg);
+        transform-origin: left;
+        top: -2px;
+    }
+
+    & .barra2{
+        background-color: white;
+        opacity: 0;
+    }
+
+    & .barra3{
+        background-color: white;
+        transform: rotate(-45deg);
+        transform-origin: left;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    header{
+        & .boton_hamburguesa{
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            right: 2%;
+            top: 5%;
+            z-index: 2;
+        }
+
+        & nav{
+            position: absolute;
+            width: 100%;
+            top: -60%;
+            z-index: 1;
+            transition: 2s;
+
+            & ul{
+                margin-top: 1vh;
+                flex-direction: column;
+
+                & .inicio{
+                    width: 100%;
+                    order: 2;
+                    text-align: center;
+                    border-top: 2px solid white;
+                }
+
+                & li{
+                    border: none;
+                    width: 100%;
+                    padding: 10px;
+                    & a{
+                        display: block;
+                        width: 100%;
+                        font-size: 1.8em;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_visible {
+        top: 0%;
+    }
+
+    .menu_oculto {
+        top: -100%;
+    }
 }
