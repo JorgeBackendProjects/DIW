@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Project 6.5</title>
+        <title>Project 8.5</title>
     </head>
     <body>
         <header>           
@@ -34,6 +34,7 @@
                     <h1>C.I.F.P. Nº1, Ceuta</h1>
                     <img src="./images/logo.jpg"/>
                     <p>¿Te apasiona la Informática? Si es así, te invitamos a descubrir los Ciclos Formativos que ofertamos en nuestro Centro. Sin duda podrás encontrar el que más se adapte a tus intereses y comenzar a prepararte para un brillante futuro profesional. Haz clic en el menú de arriba para saber más.</p>
+                    <a href="#inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -223,9 +224,10 @@
                 });
             });
 
+            /*
             $('html, body').animate({
                 scrollTop: $('#inicio').offset().top
-            }, 0);
+            }, 0);*/
 
             $('.boton_hamburguesa').on('click', function () {
                 $(this).toggleClass('icono_cruz');
