@@ -34,7 +34,6 @@
                     <h1>C.I.F.P. Nº1, Ceuta</h1>
                     <img src="./images/logo.jpg"/>
                     <p>¿Te apasiona la Informática? Si es así, te invitamos a descubrir los Ciclos Formativos que ofertamos en nuestro Centro. Sin duda podrás encontrar el que más se adapte a tus intereses y comenzar a prepararte para un brillante futuro profesional. Pulsa en el menú de arriba para saber más.</p>
-                    <a href="#inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -43,7 +42,7 @@
                     <h1>Sistemas Microinformáticos y Redes</h1>
                     <img src="./images/foto8.jpg"/>
                     <p>El Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes sirve para formar a profesionales expertos en redes informáticas. Podrás por ejemplo diagnosticar disfunciones en sistemas microinformáticos y redes mediante pruebas funcionales. También instalar, configurar y mantener servicios multiusuario, aplicaciones y dispositivos compartidos en un entorno de red local.</p>
-                    <a href="#inicio">Volver al inicio</a>
+                    <a href="#inicio" class="boton_inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -52,7 +51,7 @@
                     <h1>Administración de Sistemas Informáticos en Red</h1>
                     <img src="./images/foto9.jpg"/>
                     <p>El Ciclo Formativo de Grado Superior en Administración de Sistemas Informáticos en Red es muy completo; podrás trabajar como administrador de sistemas, responsable de Informática, técnico en servicios de Internet, técnico de telecomunicaciones, técnico de mensajería electrónica, técnico en teleasistencia, personal de apoyo y soporte técnico, técnico en administración de base de datos, técnico de redes, técnico en entornos web y supervisor de sistemas.</p>
-                    <a href="#inicio">Volver al inicio</a>
+                    <a href="#inicio" class="boton_inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -61,7 +60,7 @@
                     <h1>Desarrollo de Aplicaciones Web</h1>
                     <img src="./images/foto10.jpg"/>
                     <p>El Ciclo Formativo Superior en Desarrollo de Aplicaciones Web es la formación que estás buscando si quieres convertirte en programador o desarrollador web. Por ejemplo, un técnico en Desarrollo de Aplicaciones Web puede acabar trabajando como diseñador web, técnico en SEO, especialista en analítica web o desarrollador front end, back end o full stack. Esta es una de las especialidades que prepara a los alumnos para trabajar en las profesiones más nuevas. Hay múltiples salidas laborales.</p>
-                    <a href="#inicio">Volver al inicio</a>
+                    <a href="#inicio" class="boton_inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -70,7 +69,7 @@
                     <h1>Desarrollo de Aplicaciones Multiplataforma</h1>
                     <img src="./images/foto11.jpg"/>
                     <p>En el Ciclo Formativo Superior en Desarrollo de Aplicaciones Multiplataforma se aprende a programar todo tipo de aplicaciones. Los alumnos se forman para ser capaces de dar respuesta a cualquier necesidad, ya sea en PC o móvil. El mundo digital avanza deprisa, las plataformas se optimizan y aparecen nuevos dispositivos. Gracias a la versatilidad del Ciclo, los técnicos pueden trabajar en diferentes campos y plataformas y ofrecer soluciones realmente innovadoras.</p>
-                    <a href="#inicio">Volver al inicio</a>
+                    <a href="#inicio" class="boton_inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -79,7 +78,7 @@
                     <h1>Curso de Ciberseguridad</h1>
                     <img src="./images/foto12.jpg"/>
                     <p>El Curso de Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información, al que podrás acceder después de finalizar cualquier Ciclo de Grado Superior de la Familia Profesional de Informática, es una reciente novedad en nuestro Centro. En él aprenderás todas las tecnologías relacionadas con la Ciberseguridad, como el análisis forense, el hacking ético o el bastionado de sistemas. La ciberseguridad es un sector en alza, por lo que este curso es un gran complemento para tu formación.</p>
-                    <a href="#inicio">Volver al inicio</a>
+                    <a href="#inicio" class="boton_inicio">Volver al inicio</a>
                 </div>
             </section>
 
@@ -88,7 +87,7 @@
                     <h1>Curso de Videojuegos</h1>
                     <img src="./images/foto13.jpg"/>
                     <p>El Curso de Especialización en Desarrollo de videojuegos y realidad virtual, en el que puedes entrar después de acabar uno de los Ciclos Formativos de Grado Superior, te enseñará adesarrollar videojuegos para diferentes dispositivos, utilizando herramientas de última generación que permitan actuar en todas las fases de su desarrollo, así como aplicaciones interactivas de realidad virtual y aumentada.</p>
-                    <a href="#inicio">Volver al inicio</a>
+                    <a href="#inicio" class="boton_inicio">Volver al inicio</a>
                 </div>
             </section>
         </main>
@@ -224,18 +223,13 @@
                 });
             });
 
-            /*
-            $('html, body').animate({
-                scrollTop: $('#inicio').offset().top
-            }, 0);*/
-
             $('.boton_hamburguesa').on('click', function () {
                 $(this).toggleClass('icono_cruz');
                 $('.menu').toggleClass('menu_visible');
                 $('nav').removeClass('menu_oculto');
             });
 
-            $('nav').on('click', function () {
+            $('nav li a').on('click', function () {
                 $(this).addClass('menu_oculto');
                 $('.menu').removeClass('menu_visible');
                 $('.boton_hamburguesa').removeClass('icono_cruz');

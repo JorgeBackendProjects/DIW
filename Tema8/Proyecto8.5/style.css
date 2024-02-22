@@ -25,7 +25,7 @@ header{
             background: white;
             border-radius: 3px;
             position: relative;
-            transition: 1s;
+            transition: 0.5s;
         }
     }
 
@@ -117,7 +117,15 @@ main{
             }
 
             & a{
-                color: red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20vw;
+                height: 40px;
+                background-color: #5e1357;
+                color: white;
+                border-radius: 5px;
+                text-decoration: none;
             }
         }
     }
@@ -173,10 +181,22 @@ footer{
 
 .visible{
     visibility: visible;
+
+    & .contenido{
+        & a{
+            visibility: hidden;
+        }
+    }
 }
 
 .invisible{
     visibility: hidden;
+
+    & .contenido{
+        & a{
+            visibility: hidden;
+        }
+    }
 }
 
 .icono_cruz{
@@ -210,7 +230,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1220px){
     header{
         & .boton_hamburguesa{
             display: block;
@@ -226,7 +246,7 @@ footer{
             width: 100%;
             top: -100%;
             z-index: 1;
-            transition: 2.5s;
+            transition: 1.5s;
 
             & ul{
                 margin-top: 1vh;
@@ -267,21 +287,21 @@ footer{
             scroll-margin-top: 6em;
     
             & div{
-                width: 70%;
-                height: 75%;
+                width: 80%;
+                height: auto;
                 margin: 0 auto;
                 color: #f5f5f5;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 position: relative;
-                margin-top: 15vh;
                 background-color: rgba(0, 0, 0, 0.753);
                 border-radius: 1em;
                 padding: 1em;
+                transform: translateY(-10vh);
     
                 & h1{
-                    font-size: 4vw;
+                    font-size: 2.7em;
                     margin-bottom: 3vh;
                 }
     
@@ -294,13 +314,35 @@ footer{
     
                 & p{
                     text-align: justify;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     padding: 20px;
+                    padding-top: 50px;
                 }
     
                 & a{
-                    color: red;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
                 }
+            }
+        }
+    }
+
+    .visible{
+        visibility: visible;
+    
+        & .contenido{
+            & a{
+                visibility: visible;
+            }
+        }
+    }
+    
+    .invisible{
+        visibility: hidden;
+    
+        & .contenido{
+            & a{
+                visibility: hidden;
             }
         }
     }
@@ -311,5 +353,46 @@ footer{
 
     .menu_oculto {
         top: -100%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    main{
+        position: relative;
+    
+        & section{
+            & div{
+                & h1{
+                    font-size: 5vw;
+                    margin-bottom: 3vh;
+                }
+    
+                & img{
+                    width: 40%;
+                    border: 3px solid white;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                }
+    
+                & p{
+                    text-align: justify;
+                    font-size: 1.1em;
+                    padding: 20px;
+                    padding-top: 20px;
+                }
+    
+                & a{
+                    margin-top: 10px;
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    }
+
+    footer{
+        & p{
+            font-size: 0.8em;
+            letter-spacing: 2px;
+        }
     }
 }
