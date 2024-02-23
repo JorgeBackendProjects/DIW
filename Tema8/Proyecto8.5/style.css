@@ -9,10 +9,6 @@
     font-family: 'Electrolize', sans-serif;
 }
 
-body{
-    overflow-y: hidden;
-}
-
 header{
     & .boton_hamburguesa{
         display: none;
@@ -95,7 +91,7 @@ main{
             background-color: rgba(0, 0, 0, 0.753);
             border-radius: 1em;
             padding: 1em;
-            top: 5%;
+            top: 3%;
 
             & h1{
                 text-align: center;
@@ -120,7 +116,7 @@ main{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 20vw;
+                width: 40%;
                 height: 40px;
                 background-color: #5e1357;
                 color: white;
@@ -201,7 +197,6 @@ footer{
 
 .icono_cruz{
     & span{
-        transform: translateY(100px);
         display: block;
         position: relative;
         width: 40px;
@@ -284,7 +279,6 @@ footer{
             background-size: cover;
             width: 100%;
             height: 100vh;
-            scroll-margin-top: 6em;
     
             & div{
                 width: 80%;
@@ -298,7 +292,7 @@ footer{
                 background-color: rgba(0, 0, 0, 0.753);
                 border-radius: 1em;
                 padding: 1em;
-                transform: translateY(-10vh);
+                transform: translateY(-5vh);
     
                 & h1{
                     font-size: 2.7em;
@@ -323,6 +317,12 @@ footer{
                     margin-top: 20px;
                     margin-bottom: 20px;
                 }
+            }
+        }
+
+        & .lienzovid{
+            & div{
+                transform: translateY(-8vh);
             }
         }
     }
@@ -368,7 +368,7 @@ footer{
                 }
     
                 & img{
-                    width: 40%;
+                    width: 60%;
                     border: 3px solid white;
                     border-radius: 10px;
                     margin: 0 auto;
@@ -382,6 +382,7 @@ footer{
                 }
     
                 & a{
+                    width: 60%;
                     margin-top: 10px;
                     font-size: 2.5vw;
                 }
@@ -393,6 +394,40 @@ footer{
         & p{
             font-size: 0.8em;
             letter-spacing: 2px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        & section{
+            & div{
+                width: 90vw;
+
+                & h1{
+                    font-size: 5.5vw;
+                    margin-bottom: 3vh;
+                }
+    
+                & img{
+                    width: 60%;
+                    border: 3px solid white;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                }
+    
+                & p{
+                    text-align: justify;
+                    font-size: 1.1em;
+                    padding: 20px;
+                    padding-top: 20px;
+                }
+    
+                & a{
+                    width: 60%;
+                    font-size: 3vw;
+                }
+            }
         }
     }
 }
