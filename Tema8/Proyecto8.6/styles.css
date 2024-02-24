@@ -1,9 +1,19 @@
 /*Jorge Muñoz García*/
 
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Varela+Round&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h1{
+    font-family: "Teko", sans-serif;
+}
+
+p, a{
+    font-family: "Varela Round", sans-serif;
 }
 
 body{
@@ -242,8 +252,8 @@ footer{
         display: flex;
         align-items: center;
         height: 6vh;
-        padding-left: 35vw;
-        padding-right: 35vw;
+        padding-left: 33vw;
+        padding-right: 33vw;
         font-size: 2vw;
         line-height: 3vh;
     }
@@ -268,6 +278,11 @@ footer{
     
                 & a{
                     font-size: 1.3em;    
+                    transition: 0.5s;
+                }
+
+                & a:hover{
+                    color: white;
                 }
             }            
         }
@@ -304,10 +319,23 @@ footer{
             & a{
                 padding-left: 2%;
                 font-size: 1.2em;
+                transition: 0.5s;
+            }
+
+            & a:hover{
+                color: white;
             }
         }
     
         & .contenido{    
+            & .titulo{
+                & h1{
+                    padding-top: 0.5vh;
+                    margin-left: 1vw;
+                    font-size: 1.7em;
+                }
+            }
+
             & img{
                 margin-top: 2vh;
                 margin-bottom: 2vh;
@@ -323,6 +351,11 @@ footer{
                 margin-top: auto;
                 padding-left: 3%;
                 font-size: 1.2em;
+                transition: 0.5s;
+            }
+
+            & a:hover{
+                color: white;
             }
         }  
     }
@@ -331,9 +364,9 @@ footer{
         display: flex;
         align-items: center;
         height: 6vh;
-        padding-left: 40vw;
-        padding-right: 40vw;
-        font-size: 1.3vw;
+        padding-left: 35vw;
+        padding-right: 35vw;
+        font-size: 1.52vw;
         line-height: 3vh;
     }
 }
