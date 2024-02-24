@@ -22,8 +22,8 @@ header{
     margin: 0 auto;
     margin-top: 2vh;
     background-color: #143537;
-    border-top: 7px solid #660225;
-    border-bottom: 7px solid #660225;
+    border-top: 5px solid #660225;
+    border-bottom: 5px solid #660225;
     border-radius: 5px;
 
     & ul{
@@ -58,8 +58,8 @@ main{
         flex-direction: column;
         margin-top: 5vh;
         background-color: #074757;
-        border-top: 7px solid #660225;
-        border-bottom: 7px solid #660225;
+        border-top: 5px solid #660225;
+        border-bottom: 5px solid #660225;
         border-radius: 5px;
 
         & .titulo{
@@ -93,7 +93,7 @@ main{
         & a{
             margin-top: 2vh;
             margin-bottom: 1vh;
-            padding-left: 3%;
+            padding-left: 2%;
             font-size: 0.9em;
             font-weight: bold;
             text-decoration: none;
@@ -107,8 +107,8 @@ main{
         margin: 0 auto;
         margin-top: 1vh;
         background-color: #074757;
-        border-top: 7px solid #660225;
-        border-bottom: 7px solid #660225;
+        border-top: 5px solid #660225;
+        border-bottom: 5px solid #660225;
         border-radius: 5px;
 
         & .titulo{
@@ -166,4 +166,91 @@ footer{
     text-align: center;
     background-color: #143537;
     color: #c61854;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        &>h1{
+            font-size: 2.5em;
+        }
+    }
+    
+    header{
+        width: 85%;
+    
+        & ul{
+            grid-template-columns: 1fr 1fr 1fr;
+    
+            & li{
+                padding: 3px;
+    
+                & a{
+                    font-size: 1.3em;    
+                }
+            }            
+        }
+    }
+    
+    main{
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+
+        & .principal{
+            grid-column: 1/3;
+            margin-top: 4vh;
+    
+            & .titulo{
+                margin-top: 1vh;
+    
+                & h1{
+                    font-size: 2em;
+                }
+            }
+    
+            & img{
+                margin-top: 1vh;
+            }
+    
+            & p{
+                color: white;
+            }
+    
+            & a{
+                padding-left: 2%;
+            }
+        }
+    
+        & .contenido{    
+            & img{
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+            }
+    
+            & p{
+                padding-top: 1vh;
+                padding-bottom: 2vh;
+            }
+    
+            & a{
+                margin-top: auto;
+                padding-left: 3%;
+            }
+        }  
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        height: 6vh;
+        padding-left: 35vw;
+        padding-right: 35vw;
+        font-size: 2vw;
+        line-height: 3vh;
+    }
+}
+  
+@media screen and (min-width: 1024px){
+ 
 }
