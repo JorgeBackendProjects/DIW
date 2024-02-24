@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 2vh;
     background-color: #143537;
@@ -50,7 +50,7 @@ header{
 }
 
 main{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     
     & .principal{
@@ -168,6 +168,7 @@ footer{
     color: #c61854;
 }
 
+/*Primer breakpoint - Tablet*/
 @media screen and (min-width: 768px){
     body{
         &>h1{
@@ -175,9 +176,7 @@ footer{
         }
     }
     
-    header{
-        width: 85%;
-    
+    header{    
         & ul{
             grid-template-columns: 1fr 1fr 1fr;
     
@@ -193,7 +192,6 @@ footer{
     
     main{
         display: grid;
-        width: 95%;
         grid-template-columns: 1fr 1fr;
         column-gap: 10px;
 
@@ -251,6 +249,91 @@ footer{
     }
 }
   
-@media screen and (min-width: 1024px){
- 
+/*Segundo breakpoint - Laptop*/
+@media screen and (min-width: 1200px){
+    body{
+        &>h1{
+            font-size: 2.5em;
+        }
+    }
+    
+    header{
+        width: 75%;
+    
+        & ul{
+            grid-template-columns: repeat(6, 1fr);
+    
+            & li{
+                padding: 3px;
+    
+                & a{
+                    font-size: 1.3em;    
+                }
+            }            
+        }
+    }
+    
+    main{
+        display: grid;
+        width: 85%;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+
+        & .principal{
+            grid-column: 1/4;
+            margin-top: 4vh;
+    
+            & .titulo{
+                margin-top: 1vh;
+    
+                & h1{
+                    font-size: 2em;
+                }
+            }
+    
+            & img{
+                margin-top: 1vh;
+                width: 40%;
+            }
+    
+            & p{
+                color: white;
+                font-size: 1.2em;
+            }
+    
+            & a{
+                padding-left: 2%;
+                font-size: 1.2em;
+            }
+        }
+    
+        & .contenido{    
+            & img{
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+            }
+    
+            & p{
+                padding-top: 1vh;
+                padding-bottom: 2vh;
+                font-size: 1.2em;
+            }
+    
+            & a{
+                margin-top: auto;
+                padding-left: 3%;
+                font-size: 1.2em;
+            }
+        }  
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        height: 6vh;
+        padding-left: 40vw;
+        padding-right: 40vw;
+        font-size: 1.3vw;
+        line-height: 3vh;
+    }
 }
