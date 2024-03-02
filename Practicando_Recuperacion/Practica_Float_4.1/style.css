@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	font-family:'Sono', sans-serif;
+	background-color: burlywood;
+}
+
+h1{
+	text-align: center;
+	font-size: 2.5em;
+	height: 10vh;
+}
+
+.parte1{
+	width: 100%;
+	height: 35vh;
+	background-color: darkorange;
+	
+	& .cajas1{
+		float: left;
+		width: 21vw;
+		height: 40%;
+		margin: 10px;
+		font-size: 1.2em;
+		padding: 20px;
+		border: 2px solid black;
+		background-color: yellow;
+	}
+	
+	& .c7{
+		position: relative;
+		height: 30vh;	
+	}
+}
+
+.parte2{
+	width: 100%;
+	height: 55vh;
+	padding: 15px;
+	background-color: green;
+
+	& .cajas2{
+		background-color: red;
+		border: 2px solid black;
+	}
+}
