@@ -1,0 +1,113 @@
+/*Jorge Muñoz García*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Color de fondo y tipo de fuente para todo el documento*/
+body {
+    background-color: #8C429E;
+    font-family: "Afacad", sans-serif;
+}
+
+/*Position fixed combinado con z-index para que no se mueva al hacer scroll*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #D86F9A;
+
+    & h1 {
+        font-size: 3.5em;
+        text-align: center;
+    }
+}
+
+/*El main tendrá una posición relativa respecto al body, le damos un top para alejarlo del elemento header fixed y un ancho para ajustar los div respecto a la imagen del ejercicio.*/
+main {
+    position: relative;
+    top: 8vh;
+    width: 64%;
+    margin: 0 auto;
+
+    & .titulo {
+        text-align: center;
+        font-size: 3em;
+        padding-top: 10px;
+        margin-bottom: 1vh;
+    }
+
+    /*El título lateral tiene position absolute para sacarlo del flujo de posicionamiento del documento. Lo ajustamos al borde superior derecho y con transform rotate y translate lo rotamos y movemos.*/
+    & h1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(90deg) translateY(-43vw) translateX(35vw);
+        font-size: 4.3em;
+        color: white;
+    }
+
+    & div {
+        width: 32vw;
+        margin-top: 10px;
+        border: 3px solid black;
+        border-radius: 5px;
+
+        & h2 {
+            background-color: white;
+            position: relative;
+            padding-left: 37%;
+            font-size: 1.8em;
+        }
+
+        & img {
+            width: 30%;
+            margin: 10px;
+        }
+
+        & p {
+            text-align: justify;
+            padding: 15px;
+            font-size: 1.25em;
+        }
+    }
+
+    & div.left {
+        float: left;
+        background: rgb(22, 48, 43);
+        background: linear-gradient(90deg, rgba(22, 48, 43, 1) 0%, rgba(133, 183, 157, 1) 40%);
+
+        & img {
+            float: left;
+        }
+    }
+
+    & div.right {
+        float: right;
+
+        background: rgb(133, 183, 157);
+        background: linear-gradient(90deg, rgba(133, 183, 157, 1) 0%, rgba(22, 48, 43, 1) 130%);
+
+        & img {
+            float: right;
+        }
+
+        & p {
+            padding-right: 35%;
+        }
+    }
+
+    & .c2,
+    .c3,
+    .c4,
+    .c5 {
+        clear: both;
+    }
+
+    & .c5 {
+        margin-bottom: 20px;
+    }
+}
